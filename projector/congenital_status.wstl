@@ -1,0 +1,26 @@
+// 
+
+
+def CongenitalStatusObservation(study, subject) {
+    if (subject.congenital_status?) {
+        meta.tag[]: StudyMeta(study);
+
+        identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".subject.congenital_status.", subject.subject_id));
+        identifier[0].use: "official";
+
+        subject: Reference_Key_Identifier(study, "Patient", subject.subject_id);
+        code.coding[]: Harmonize("congenital_status", "subject");
+
+        valueCodeableConcept.coding[]:  Harmonize(subject.congenital_status, "congenital_status");
+        valueCodeableConcept.text: subject.congenital_status;
+        
+        status: "final";
+        resourceType: "Observation";
+    }
+}
+
+def ProcessCongenitalStatus(study, subject) {
+    // There are issues with the filenames that need to be worked out ASAP and this requires the 
+    // data-dictionary codemap to work properly (with valid systems) or an alternative be used. 
+    //out condition: CongenitalStatusObservation(study, subject);
+}

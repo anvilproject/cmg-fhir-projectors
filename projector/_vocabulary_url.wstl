@@ -1,0 +1,24 @@
+// Description: Constructs a valid NCPI Vocabulary URL 
+//
+// Arguments:
+//  study_id - unique ID associated with that study
+//  table_name - The table name associated with this vocabulary
+//  varname - The variable if this vocabulary describes the values associated 
+//            with an actual variable's contents as opposed to members in a 
+//            table
+//   
+// Please note that currently, varname can be an empty string, but it MUST 
+// be present. 
+def VocabularyURL(required study, required table_name, varname) {
+  if (study.consent_group?) {
+    var study_id: $StrCat(study.id, "-", study.consent_group.code);
+  }  else {
+    var study_id: study.id;
+  }
+
+  if ($IsNil(varname)) {
+    $this: $StrCat(study.identifier-prefix, "/data-dictionary/", study_id, "/", table_name);
+  } else {
+    $this: $StrCat(study.identifier-prefix, "/data-dictionary/", study_id, "/", table_name, "/", varname); 
+  }
+}

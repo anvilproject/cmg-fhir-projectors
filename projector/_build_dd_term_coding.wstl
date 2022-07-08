@@ -1,0 +1,13 @@
+//
+// Provide a uniform function to build term entries to data-dictionary based codes suitable
+// for use in a coding list
+
+def BuildDdTermCoding(study, required table_name, varname) {
+	if (varname?) {
+		system: VocabularyURL(study, table_name, varname);
+		code: varname;
+	} else {
+		system: VocabularyURL(study, table_name, "");
+		code: table_name;
+	}
+}

@@ -1,0 +1,5371 @@
+{
+  "id": "cmg-harmony",
+  "resourceType": "ConceptMap",
+  "version": "v1",
+  "group": [
+    {
+      "source": "FamilyRelationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "FAMMEMB",
+          "display": "Family Member",
+          "target": [
+            {
+              "code": "FAMMEMB",
+              "display": "family member",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "MTH",
+              "display": "mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "FTH",
+              "display": "father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Child",
+          "display": "Child",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "SON",
+              "display": "natural son",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "DAU",
+              "display": "natural daughter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Intersex",
+          "display": "Intersex",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Twin",
+          "display": "Twin",
+          "target": [
+            {
+              "code": "TWIN",
+              "display": "twin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinBrother",
+          "display": "Twin Brother",
+          "target": [
+            {
+              "code": "TWINBRO",
+              "display": "twin brother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinSister",
+          "display": "Twin Sister",
+          "target": [
+            {
+              "code": "TWINSIS",
+              "display": "twin sister",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "FamilyRelationship",
+      "target": "self",
+      "element": [
+        {
+          "code": "FAMMEMB",
+          "display": "Family Member",
+          "target": [
+            {
+              "code": "FAMMEMB",
+              "display": "Family Member",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Child",
+          "display": "Child",
+          "target": [
+            {
+              "code": "Child",
+              "display": "Child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Intersex",
+          "display": "Intersex",
+          "target": [
+            {
+              "code": "Intersex",
+              "display": "Intersex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Twin",
+          "display": "Twin",
+          "target": [
+            {
+              "code": "Twin",
+              "display": "Twin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinBrother",
+          "display": "Twin Brother",
+          "target": [
+            {
+              "code": "TwinBrother",
+              "display": "Twin Brother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinSister",
+          "display": "Twin Sister",
+          "target": [
+            {
+              "code": "TwinSister",
+              "display": "Twin Sister",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "self",
+      "element": [
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "1002-5",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African-American",
+          "display": "Black or African-American",
+          "target": [
+            {
+              "code": "2054-5",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "2076-8",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "self",
+      "element": [
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "White",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "American Indian or Alaska Native",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "Asian",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African-American",
+          "display": "Black or African-American",
+          "target": [
+            {
+              "code": "Black or African-American",
+              "display": "Black or African-American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "More than one race",
+              "display": "More than one race",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "Native Hawaiian or Other Pacific Islander",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "2135-2",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "2186-5",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "self",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "Hispanic or Latino",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "Not Hispanic or Latino",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ConditionPresent",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "element": [
+        {
+          "code": "True",
+          "display": "True",
+          "target": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "False",
+          "display": "False",
+          "target": [
+            {
+              "code": "refuted",
+              "display": "Refuted",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Maybe",
+          "display": "Maybe",
+          "target": [
+            {
+              "code": "provisional",
+              "display": "Provisional",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ConditionPresent",
+      "target": "self",
+      "element": [
+        {
+          "code": "True",
+          "display": "True",
+          "target": [
+            {
+              "code": "True",
+              "display": "True",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "False",
+          "display": "False",
+          "target": [
+            {
+              "code": "False",
+              "display": "False",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Maybe",
+          "display": "Maybe",
+          "target": [
+            {
+              "code": "Maybe",
+              "display": "Maybe",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "tissue_affected_status",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "element": [
+        {
+          "code": "Affected",
+          "display": "Affected",
+          "target": [
+            {
+              "code": "POS",
+              "display": "Positive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unaffected",
+          "display": "Unaffected",
+          "target": [
+            {
+              "code": "NEG",
+              "display": "Negative",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "tissue_affected_status",
+      "target": "self",
+      "element": [
+        {
+          "code": "Affected",
+          "display": "Affected",
+          "target": [
+            {
+              "code": "Affected",
+              "display": "Affected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unaffected",
+          "display": "Unaffected",
+          "target": [
+            {
+              "code": "Unaffected",
+              "display": "Unaffected",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataType",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/data_types",
+      "element": [
+        {
+          "code": "bam",
+          "display": "BAM File",
+          "target": [
+            {
+              "code": "Aligned-Reads",
+              "display": "Aligned Reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gvcf",
+          "display": "gvcf",
+          "target": [
+            {
+              "code": "gVCF",
+              "display": "gVCF",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataType",
+      "target": "self",
+      "element": [
+        {
+          "code": "bam",
+          "display": "BAM File",
+          "target": [
+            {
+              "code": "bam",
+              "display": "BAM File",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gvcf",
+          "display": "gvcf",
+          "target": [
+            {
+              "code": "gvcf",
+              "display": "gvcf",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "access_type",
+      "target": "https://includedcc.org/fhir/code-systems/data_access_types",
+      "element": [
+        {
+          "code": "Controlled",
+          "display": "Controlled",
+          "target": [
+            {
+              "code": "controlled",
+              "display": "Controlled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Registered",
+          "display": "Registered",
+          "target": [
+            {
+              "code": "registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "access_type",
+      "target": "self",
+      "element": [
+        {
+          "code": "Controlled",
+          "display": "Controlled",
+          "target": [
+            {
+              "code": "Controlled",
+              "display": "Controlled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Registered",
+          "display": "Registered",
+          "target": [
+            {
+              "code": "Registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataCategory",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/data_categories",
+      "element": [
+        {
+          "code": "WHOLE_GENOME",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "Genomics",
+              "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataCategory",
+      "target": "self",
+      "element": [
+        {
+          "code": "WHOLE_GENOME",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "WHOLE_GENOME",
+              "display": "Whole Genome Sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ExperimentStrategy",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/experimental_strategies",
+      "element": [
+        {
+          "code": "WGS",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "WGS",
+              "display": "Whole Genome",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ExperimentStrategy",
+      "target": "self",
+      "element": [
+        {
+          "code": "WGS",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "WGS",
+              "display": "Whole Genome Sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "SampleType",
+      "target": "http://purl.obolibrary.org/obo/obi.owl",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "OBI:0001051",
+              "display": "DNA extract",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "SampleType",
+      "target": "self",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "disease_id",
+      "target": "https://omim.org/",
+      "element": [
+        {
+          "code": "OMIM:615369",
+          "display": "EPILEPTIC ENCEPHALOPATHY, CHILDHOOD-ONSET; EEOC",
+          "target": [
+            {
+              "code": "OMIM:615369",
+              "display": "EPILEPTIC ENCEPHALOPATHY, CHILDHOOD-ONSET; EEOC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:256850",
+          "display": "GIANT AXONAL NEUROPATHY 1, AUTOSOMAL RECESSIVE; GAN1",
+          "target": [
+            {
+              "code": "OMIM:256850",
+              "display": "GIANT AXONAL NEUROPATHY 1, AUTOSOMAL RECESSIVE; GAN1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:300894",
+          "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 5; NBIA5",
+          "target": [
+            {
+              "code": "OMIM:300894",
+              "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 5; NBIA5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:606157",
+          "display": "PANTOTHENATE KINASE 2; PANK2",
+          "target": [
+            {
+              "code": "OMIM:606157",
+              "display": "PANTOTHENATE KINASE 2; PANK2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:610217",
+          "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 2B; NBIA2B",
+          "target": [
+            {
+              "code": "OMIM:610217",
+              "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 2B; NBIA2B",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:612280",
+          "display": "FUCOSIDASE, ALPHA-L, 1; FUCA1",
+          "target": [
+            {
+              "code": "OMIM:612280",
+              "display": "FUCOSIDASE, ALPHA-L, 1; FUCA1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:134200",
+          "display": "FACIAL PALSY, FAMILIAL RECURRENT PERIPHERAL",
+          "target": [
+            {
+              "code": "OMIM:134200",
+              "display": "FACIAL PALSY, FAMILIAL RECURRENT PERIPHERAL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:142340",
+          "display": "DIAPHRAGMATIC HERNIA, CONGENITAL",
+          "target": [
+            {
+              "code": "OMIM:142340",
+              "display": "DIAPHRAGMATIC HERNIA, CONGENITAL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:271510",
+          "display": "SPONDYLOEPIMETAPHYSEAL DYSPLASIA, SPONASTRIME TYPE; SEMDSP",
+          "target": [
+            {
+              "code": "OMIM:271510",
+              "display": "SPONDYLOEPIMETAPHYSEAL DYSPLASIA, SPONASTRIME TYPE; SEMDSP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:600776",
+          "display": "FRYNS MICROPHTHALMIA SYNDROME",
+          "target": [
+            {
+              "code": "OMIM:600776",
+              "display": "FRYNS MICROPHTHALMIA SYNDROME",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:108120",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 1A; DA1A",
+          "target": [
+            {
+              "code": "OMIM:108120",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 1A; DA1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:114300",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 3; DA3",
+          "target": [
+            {
+              "code": "OMIM:114300",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 3; DA3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:115200",
+          "display": "CARDIOMYOPATHY, DILATED, 1A; CMD1A",
+          "target": [
+            {
+              "code": "OMIM:115200",
+              "display": "CARDIOMYOPATHY, DILATED, 1A; CMD1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:119530",
+          "display": "OROFACIAL CLEFT 1; OFC1",
+          "target": [
+            {
+              "code": "OMIM:119530",
+              "display": "OROFACIAL CLEFT 1; OFC1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:143465",
+          "display": "ATTENTION DEFICIT-HYPERACTIVITY DISORDER; ADHD",
+          "target": [
+            {
+              "code": "OMIM:143465",
+              "display": "ATTENTION DEFICIT-HYPERACTIVITY DISORDER; ADHD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:147920",
+          "display": "KABUKI SYNDROME 1; KABUK1",
+          "target": [
+            {
+              "code": "OMIM:147920",
+              "display": "KABUKI SYNDROME 1; KABUK1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:154400",
+          "display": "ACROFACIAL DYSOSTOSIS 1, NAGER TYPE; AFD1",
+          "target": [
+            {
+              "code": "OMIM:154400",
+              "display": "ACROFACIAL DYSOSTOSIS 1, NAGER TYPE; AFD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:178110",
+          "display": "CONTRACTURES, PTERYGIA, AND SPONDYLOCARPOTARSAL FUSION SYNDROME 1A; CPSFS1A",
+          "target": [
+            {
+              "code": "OMIM:178110",
+              "display": "CONTRACTURES, PTERYGIA, AND SPONDYLOCARPOTARSAL FUSION SYNDROME 1A; CPSFS1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:178500",
+          "display": "PULMONARY FIBROSIS, IDIOPATHIC; IPF",
+          "target": [
+            {
+              "code": "OMIM:178500",
+              "display": "PULMONARY FIBROSIS, IDIOPATHIC; IPF",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:191480",
+          "display": "UNCOMBABLE HAIR SYNDROME 1; UHS1",
+          "target": [
+            {
+              "code": "OMIM:191480",
+              "display": "UNCOMBABLE HAIR SYNDROME 1; UHS1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:209850",
+          "display": "AUTISM",
+          "target": [
+            {
+              "code": "OMIM:209850",
+              "display": "AUTISM",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:212065",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ia; CDG1A",
+          "target": [
+            {
+              "code": "OMIM:212065",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ia; CDG1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:217980",
+          "display": "CORPUS CALLOSUM, AGENESIS OF, WITH FACIAL ANOMALIES AND ROBIN SEQUENCE",
+          "target": [
+            {
+              "code": "OMIM:217980",
+              "display": "CORPUS CALLOSUM, AGENESIS OF, WITH FACIAL ANOMALIES AND ROBIN SEQUENCE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:231300",
+          "display": "GLAUCOMA 3, PRIMARY CONGENITAL, A; GLC3A",
+          "target": [
+            {
+              "code": "OMIM:231300",
+              "display": "GLAUCOMA 3, PRIMARY CONGENITAL, A; GLC3A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:236000",
+          "display": "LYMPHOMA, HODGKIN, CLASSIC; CHL",
+          "target": [
+            {
+              "code": "OMIM:236000",
+              "display": "LYMPHOMA, HODGKIN, CLASSIC; CHL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:248700",
+          "display": "MARDEN-WALKER SYNDROME; MWKS",
+          "target": [
+            {
+              "code": "OMIM:248700",
+              "display": "MARDEN-WALKER SYNDROME; MWKS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:252350",
+          "display": "MOYAMOYA DISEASE 1; MYMY1",
+          "target": [
+            {
+              "code": "OMIM:252350",
+              "display": "MOYAMOYA DISEASE 1; MYMY1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:254300",
+          "display": "MYASTHENIC SYNDROME, CONGENITAL, 10; CMS10",
+          "target": [
+            {
+              "code": "OMIM:254300",
+              "display": "MYASTHENIC SYNDROME, CONGENITAL, 10; CMS10",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:255800",
+          "display": "SCHWARTZ-JAMPEL SYNDROME, TYPE 1; SJS1",
+          "target": [
+            {
+              "code": "OMIM:255800",
+              "display": "SCHWARTZ-JAMPEL SYNDROME, TYPE 1; SJS1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:256700",
+          "display": "NEUROBLASTOMA, SUSCEPTIBILITY TO, 1; NBLST1",
+          "target": [
+            {
+              "code": "OMIM:256700",
+              "display": "NEUROBLASTOMA, SUSCEPTIBILITY TO, 1; NBLST1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:265000",
+          "display": "MULTIPLE PTERYGIUM SYNDROME, ESCOBAR VARIANT; EVMPS",
+          "target": [
+            {
+              "code": "OMIM:265000",
+              "display": "MULTIPLE PTERYGIUM SYNDROME, ESCOBAR VARIANT; EVMPS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:266265",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE IIc; CDG2C",
+          "target": [
+            {
+              "code": "OMIM:266265",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE IIc; CDG2C",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:273300",
+          "display": "TESTICULAR GERM CELL TUMOR; TGCT",
+          "target": [
+            {
+              "code": "OMIM:273300",
+              "display": "TESTICULAR GERM CELL TUMOR; TGCT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:300881",
+          "display": "MOVED TO 615777",
+          "target": [
+            {
+              "code": "OMIM:300881",
+              "display": "MOVED TO 615777",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:308350",
+          "display": "DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 1; DEE1",
+          "target": [
+            {
+              "code": "OMIM:308350",
+              "display": "DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 1; DEE1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:313850",
+          "display": "THORACOABDOMINAL SYNDROME; THAS",
+          "target": [
+            {
+              "code": "OMIM:313850",
+              "display": "THORACOABDOMINAL SYNDROME; THAS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:600618",
+          "display": "ETS VARIANT GENE 6; ETV6",
+          "target": [
+            {
+              "code": "OMIM:600618",
+              "display": "ETS VARIANT GENE 6; ETV6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:601088",
+          "display": "AYME-GRIPP SYNDROME; AYGRP",
+          "target": [
+            {
+              "code": "OMIM:601088",
+              "display": "AYME-GRIPP SYNDROME; AYGRP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:601680",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 2B1; DA2B1",
+          "target": [
+            {
+              "code": "OMIM:601680",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 2B1; DA2B1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:602579",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ib; CDG1B",
+          "target": [
+            {
+              "code": "OMIM:602579",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ib; CDG1B",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:604592",
+          "display": "T CELL IMMUNE REGULATOR 1; TCIRG1",
+          "target": [
+            {
+              "code": "OMIM:604592",
+              "display": "T CELL IMMUNE REGULATOR 1; TCIRG1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:608540",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ik; CDG1K",
+          "target": [
+            {
+              "code": "OMIM:608540",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ik; CDG1K",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:608600",
+          "display": "LIPODYSTROPHY, FAMILIAL PARTIAL, TYPE 1; FPLD1",
+          "target": [
+            {
+              "code": "OMIM:608600",
+              "display": "LIPODYSTROPHY, FAMILIAL PARTIAL, TYPE 1; FPLD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:613065",
+          "display": "LEUKEMIA, ACUTE LYMPHOBLASTIC; ALL",
+          "target": [
+            {
+              "code": "OMIM:613065",
+              "display": "LEUKEMIA, ACUTE LYMPHOBLASTIC; ALL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:614034",
+          "display": "HEME OXYGENASE 1 DEFICIENCY; HMOX1D",
+          "target": [
+            {
+              "code": "OMIM:614034",
+              "display": "HEME OXYGENASE 1 DEFICIENCY; HMOX1D",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:615065",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 5D; DA5D",
+          "target": [
+            {
+              "code": "OMIM:615065",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 5D; DA5D",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:616266",
+          "display": "CONGENITAL CONTRACTURES OF THE LIMBS AND FACE, HYPOTONIA, AND DEVELOPMENTAL DELAY; CLIFAHDD",
+          "target": [
+            {
+              "code": "OMIM:616266",
+              "display": "CONGENITAL CONTRACTURES OF THE LIMBS AND FACE, HYPOTONIA, AND DEVELOPMENTAL DELAY; CLIFAHDD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:616421",
+          "display": "MYOCLONIC-ATONIC EPILEPSY; MAE",
+          "target": [
+            {
+              "code": "OMIM:616421",
+              "display": "MYOCLONIC-ATONIC EPILEPSY; MAE",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "disease_id",
+      "target": "self",
+      "element": [
+        {
+          "code": "OMIM:615369",
+          "display": "EPILEPTIC ENCEPHALOPATHY, CHILDHOOD-ONSET; EEOC",
+          "target": [
+            {
+              "code": "OMIM:615369",
+              "display": "EPILEPTIC ENCEPHALOPATHY, CHILDHOOD-ONSET; EEOC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:256850",
+          "display": "GIANT AXONAL NEUROPATHY 1, AUTOSOMAL RECESSIVE; GAN1",
+          "target": [
+            {
+              "code": "OMIM:256850",
+              "display": "GIANT AXONAL NEUROPATHY 1, AUTOSOMAL RECESSIVE; GAN1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:300894",
+          "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 5; NBIA5",
+          "target": [
+            {
+              "code": "OMIM:300894",
+              "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 5; NBIA5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:606157",
+          "display": "PANTOTHENATE KINASE 2; PANK2",
+          "target": [
+            {
+              "code": "OMIM:606157",
+              "display": "PANTOTHENATE KINASE 2; PANK2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:610217",
+          "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 2B; NBIA2B",
+          "target": [
+            {
+              "code": "OMIM:610217",
+              "display": "NEURODEGENERATION WITH BRAIN IRON ACCUMULATION 2B; NBIA2B",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:612280",
+          "display": "FUCOSIDASE, ALPHA-L, 1; FUCA1",
+          "target": [
+            {
+              "code": "OMIM:612280",
+              "display": "FUCOSIDASE, ALPHA-L, 1; FUCA1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:134200",
+          "display": "FACIAL PALSY, FAMILIAL RECURRENT PERIPHERAL",
+          "target": [
+            {
+              "code": "OMIM:134200",
+              "display": "FACIAL PALSY, FAMILIAL RECURRENT PERIPHERAL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:142340",
+          "display": "DIAPHRAGMATIC HERNIA, CONGENITAL",
+          "target": [
+            {
+              "code": "OMIM:142340",
+              "display": "DIAPHRAGMATIC HERNIA, CONGENITAL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:271510",
+          "display": "SPONDYLOEPIMETAPHYSEAL DYSPLASIA, SPONASTRIME TYPE; SEMDSP",
+          "target": [
+            {
+              "code": "OMIM:271510",
+              "display": "SPONDYLOEPIMETAPHYSEAL DYSPLASIA, SPONASTRIME TYPE; SEMDSP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:600776",
+          "display": "FRYNS MICROPHTHALMIA SYNDROME",
+          "target": [
+            {
+              "code": "OMIM:600776",
+              "display": "FRYNS MICROPHTHALMIA SYNDROME",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:108120",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 1A; DA1A",
+          "target": [
+            {
+              "code": "OMIM:108120",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 1A; DA1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:114300",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 3; DA3",
+          "target": [
+            {
+              "code": "OMIM:114300",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 3; DA3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:115200",
+          "display": "CARDIOMYOPATHY, DILATED, 1A; CMD1A",
+          "target": [
+            {
+              "code": "OMIM:115200",
+              "display": "CARDIOMYOPATHY, DILATED, 1A; CMD1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:119530",
+          "display": "OROFACIAL CLEFT 1; OFC1",
+          "target": [
+            {
+              "code": "OMIM:119530",
+              "display": "OROFACIAL CLEFT 1; OFC1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:143465",
+          "display": "ATTENTION DEFICIT-HYPERACTIVITY DISORDER; ADHD",
+          "target": [
+            {
+              "code": "OMIM:143465",
+              "display": "ATTENTION DEFICIT-HYPERACTIVITY DISORDER; ADHD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:147920",
+          "display": "KABUKI SYNDROME 1; KABUK1",
+          "target": [
+            {
+              "code": "OMIM:147920",
+              "display": "KABUKI SYNDROME 1; KABUK1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:154400",
+          "display": "ACROFACIAL DYSOSTOSIS 1, NAGER TYPE; AFD1",
+          "target": [
+            {
+              "code": "OMIM:154400",
+              "display": "ACROFACIAL DYSOSTOSIS 1, NAGER TYPE; AFD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:178110",
+          "display": "CONTRACTURES, PTERYGIA, AND SPONDYLOCARPOTARSAL FUSION SYNDROME 1A; CPSFS1A",
+          "target": [
+            {
+              "code": "OMIM:178110",
+              "display": "CONTRACTURES, PTERYGIA, AND SPONDYLOCARPOTARSAL FUSION SYNDROME 1A; CPSFS1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:178500",
+          "display": "PULMONARY FIBROSIS, IDIOPATHIC; IPF",
+          "target": [
+            {
+              "code": "OMIM:178500",
+              "display": "PULMONARY FIBROSIS, IDIOPATHIC; IPF",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:191480",
+          "display": "UNCOMBABLE HAIR SYNDROME 1; UHS1",
+          "target": [
+            {
+              "code": "OMIM:191480",
+              "display": "UNCOMBABLE HAIR SYNDROME 1; UHS1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:209850",
+          "display": "AUTISM",
+          "target": [
+            {
+              "code": "OMIM:209850",
+              "display": "AUTISM",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:212065",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ia; CDG1A",
+          "target": [
+            {
+              "code": "OMIM:212065",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ia; CDG1A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:217980",
+          "display": "CORPUS CALLOSUM, AGENESIS OF, WITH FACIAL ANOMALIES AND ROBIN SEQUENCE",
+          "target": [
+            {
+              "code": "OMIM:217980",
+              "display": "CORPUS CALLOSUM, AGENESIS OF, WITH FACIAL ANOMALIES AND ROBIN SEQUENCE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:231300",
+          "display": "GLAUCOMA 3, PRIMARY CONGENITAL, A; GLC3A",
+          "target": [
+            {
+              "code": "OMIM:231300",
+              "display": "GLAUCOMA 3, PRIMARY CONGENITAL, A; GLC3A",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:236000",
+          "display": "LYMPHOMA, HODGKIN, CLASSIC; CHL",
+          "target": [
+            {
+              "code": "OMIM:236000",
+              "display": "LYMPHOMA, HODGKIN, CLASSIC; CHL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:248700",
+          "display": "MARDEN-WALKER SYNDROME; MWKS",
+          "target": [
+            {
+              "code": "OMIM:248700",
+              "display": "MARDEN-WALKER SYNDROME; MWKS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:252350",
+          "display": "MOYAMOYA DISEASE 1; MYMY1",
+          "target": [
+            {
+              "code": "OMIM:252350",
+              "display": "MOYAMOYA DISEASE 1; MYMY1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:254300",
+          "display": "MYASTHENIC SYNDROME, CONGENITAL, 10; CMS10",
+          "target": [
+            {
+              "code": "OMIM:254300",
+              "display": "MYASTHENIC SYNDROME, CONGENITAL, 10; CMS10",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:255800",
+          "display": "SCHWARTZ-JAMPEL SYNDROME, TYPE 1; SJS1",
+          "target": [
+            {
+              "code": "OMIM:255800",
+              "display": "SCHWARTZ-JAMPEL SYNDROME, TYPE 1; SJS1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:256700",
+          "display": "NEUROBLASTOMA, SUSCEPTIBILITY TO, 1; NBLST1",
+          "target": [
+            {
+              "code": "OMIM:256700",
+              "display": "NEUROBLASTOMA, SUSCEPTIBILITY TO, 1; NBLST1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:265000",
+          "display": "MULTIPLE PTERYGIUM SYNDROME, ESCOBAR VARIANT; EVMPS",
+          "target": [
+            {
+              "code": "OMIM:265000",
+              "display": "MULTIPLE PTERYGIUM SYNDROME, ESCOBAR VARIANT; EVMPS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:266265",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE IIc; CDG2C",
+          "target": [
+            {
+              "code": "OMIM:266265",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE IIc; CDG2C",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:273300",
+          "display": "TESTICULAR GERM CELL TUMOR; TGCT",
+          "target": [
+            {
+              "code": "OMIM:273300",
+              "display": "TESTICULAR GERM CELL TUMOR; TGCT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:300881",
+          "display": "MOVED TO 615777",
+          "target": [
+            {
+              "code": "OMIM:300881",
+              "display": "MOVED TO 615777",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:308350",
+          "display": "DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 1; DEE1",
+          "target": [
+            {
+              "code": "OMIM:308350",
+              "display": "DEVELOPMENTAL AND EPILEPTIC ENCEPHALOPATHY 1; DEE1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:313850",
+          "display": "THORACOABDOMINAL SYNDROME; THAS",
+          "target": [
+            {
+              "code": "OMIM:313850",
+              "display": "THORACOABDOMINAL SYNDROME; THAS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:600618",
+          "display": "ETS VARIANT GENE 6; ETV6",
+          "target": [
+            {
+              "code": "OMIM:600618",
+              "display": "ETS VARIANT GENE 6; ETV6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:601088",
+          "display": "AYME-GRIPP SYNDROME; AYGRP",
+          "target": [
+            {
+              "code": "OMIM:601088",
+              "display": "AYME-GRIPP SYNDROME; AYGRP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:601680",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 2B1; DA2B1",
+          "target": [
+            {
+              "code": "OMIM:601680",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 2B1; DA2B1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:602579",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ib; CDG1B",
+          "target": [
+            {
+              "code": "OMIM:602579",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ib; CDG1B",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:604592",
+          "display": "T CELL IMMUNE REGULATOR 1; TCIRG1",
+          "target": [
+            {
+              "code": "OMIM:604592",
+              "display": "T CELL IMMUNE REGULATOR 1; TCIRG1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:608540",
+          "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ik; CDG1K",
+          "target": [
+            {
+              "code": "OMIM:608540",
+              "display": "CONGENITAL DISORDER OF GLYCOSYLATION, TYPE Ik; CDG1K",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:608600",
+          "display": "LIPODYSTROPHY, FAMILIAL PARTIAL, TYPE 1; FPLD1",
+          "target": [
+            {
+              "code": "OMIM:608600",
+              "display": "LIPODYSTROPHY, FAMILIAL PARTIAL, TYPE 1; FPLD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:613065",
+          "display": "LEUKEMIA, ACUTE LYMPHOBLASTIC; ALL",
+          "target": [
+            {
+              "code": "OMIM:613065",
+              "display": "LEUKEMIA, ACUTE LYMPHOBLASTIC; ALL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:614034",
+          "display": "HEME OXYGENASE 1 DEFICIENCY; HMOX1D",
+          "target": [
+            {
+              "code": "OMIM:614034",
+              "display": "HEME OXYGENASE 1 DEFICIENCY; HMOX1D",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:615065",
+          "display": "ARTHROGRYPOSIS, DISTAL, TYPE 5D; DA5D",
+          "target": [
+            {
+              "code": "OMIM:615065",
+              "display": "ARTHROGRYPOSIS, DISTAL, TYPE 5D; DA5D",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:616266",
+          "display": "CONGENITAL CONTRACTURES OF THE LIMBS AND FACE, HYPOTONIA, AND DEVELOPMENTAL DELAY; CLIFAHDD",
+          "target": [
+            {
+              "code": "OMIM:616266",
+              "display": "CONGENITAL CONTRACTURES OF THE LIMBS AND FACE, HYPOTONIA, AND DEVELOPMENTAL DELAY; CLIFAHDD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:616421",
+          "display": "MYOCLONIC-ATONIC EPILEPSY; MAE",
+          "target": [
+            {
+              "code": "OMIM:616421",
+              "display": "MYOCLONIC-ATONIC EPILEPSY; MAE",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_code",
+      "target": "https://uberon.github.io/",
+      "element": [
+        {
+          "code": "HP:0001627",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "HP:0001627",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "condition_code",
+      "target": "self",
+      "element": [
+        {
+          "code": "HP:0001627",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "HP:0001627",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "subject",
+      "target": "https://uberon.github.io/",
+      "element": [
+        {
+          "code": "HP:0000707",
+          "display": "Abnormality of the nervous system",
+          "target": [
+            {
+              "code": "HP:0000707",
+              "display": "Abnormality of the nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012638",
+          "display": "Abnormal nervous system physiology",
+          "target": [
+            {
+              "code": "HP:0012638",
+              "display": "Abnormal nervous system physiology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0200134",
+          "display": "Epileptic encephalopathy",
+          "target": [
+            {
+              "code": "HP:0200134",
+              "display": "Epileptic encephalopathy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000657",
+          "display": "Oculomotor apraxia",
+          "target": [
+            {
+              "code": "HP:0000657",
+              "display": "Oculomotor apraxia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001272",
+          "display": "Cerebellar atrophy",
+          "target": [
+            {
+              "code": "HP:0001272",
+              "display": "Cerebellar atrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001305",
+          "display": "Dandy-Walker malformation",
+          "target": [
+            {
+              "code": "HP:0001305",
+              "display": "Dandy-Walker malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001320",
+          "display": "Cerebellar vermis hypoplasia",
+          "target": [
+            {
+              "code": "HP:0001320",
+              "display": "Cerebellar vermis hypoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001321",
+          "display": "Cerebellar hypoplasia",
+          "target": [
+            {
+              "code": "HP:0001321",
+              "display": "Cerebellar hypoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002119",
+          "display": "Ventriculomegaly",
+          "target": [
+            {
+              "code": "HP:0002119",
+              "display": "Ventriculomegaly",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002438",
+          "display": "Cerebellar malformation",
+          "target": [
+            {
+              "code": "HP:0002438",
+              "display": "Cerebellar malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0007033",
+          "display": "Cerebellar dysplasia",
+          "target": [
+            {
+              "code": "HP:0007033",
+              "display": "Cerebellar dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0007068",
+          "display": "Inferior vermis hypoplasia",
+          "target": [
+            {
+              "code": "HP:0007068",
+              "display": "Inferior vermis hypoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011932",
+          "display": "Abnormal superior cerebellar peduncle morphology",
+          "target": [
+            {
+              "code": "HP:0011932",
+              "display": "Abnormal superior cerebellar peduncle morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012110",
+          "display": "Hypoplasia of the pons",
+          "target": [
+            {
+              "code": "HP:0012110",
+              "display": "Hypoplasia of the pons",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012443",
+          "display": "Abnormality of brain morphology",
+          "target": [
+            {
+              "code": "HP:0012443",
+              "display": "Abnormality of brain morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0020185",
+          "display": "Superior cerebellar dysplasia",
+          "target": [
+            {
+              "code": "HP:0020185",
+              "display": "Superior cerebellar dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0025102",
+          "display": "Dysgenesis of the basal ganglia",
+          "target": [
+            {
+              "code": "HP:0025102",
+              "display": "Dysgenesis of the basal ganglia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002011",
+          "display": "Morphological central nervous system abnormality",
+          "target": [
+            {
+              "code": "HP:0002011",
+              "display": "Morphological central nervous system abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002180",
+          "display": "Neurodegeneration",
+          "target": [
+            {
+              "code": "HP:0002180",
+              "display": "Neurodegeneration",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001626",
+          "display": "Abnormality of the cardiovascular system",
+          "target": [
+            {
+              "code": "HP:0001626",
+              "display": "Abnormality of the cardiovascular system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001627",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "HP:0001627",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001647",
+          "display": "Bicuspid aortic valve",
+          "target": [
+            {
+              "code": "HP:0001647",
+              "display": "Bicuspid aortic valve",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000002",
+          "display": "Abnormality of body height",
+          "target": [
+            {
+              "code": "HP:0000002",
+              "display": "Abnormality of body height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000152",
+          "display": "Abnormality of head or neck",
+          "target": [
+            {
+              "code": "HP:0000152",
+              "display": "Abnormality of head or neck",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000153",
+          "display": "Abnormality of the mouth",
+          "target": [
+            {
+              "code": "HP:0000153",
+              "display": "Abnormality of the mouth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000271",
+          "display": "Abnormality of the face",
+          "target": [
+            {
+              "code": "HP:0000271",
+              "display": "Abnormality of the face",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000478",
+          "display": "Abnormality of the eye",
+          "target": [
+            {
+              "code": "HP:0000478",
+              "display": "Abnormality of the eye",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000528",
+          "display": "Anophthalmia",
+          "target": [
+            {
+              "code": "HP:0000528",
+              "display": "Anophthalmia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000775",
+          "display": "Abnormality of the diaphragm",
+          "target": [
+            {
+              "code": "HP:0000775",
+              "display": "Abnormality of the diaphragm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000776",
+          "display": "Congenital diaphragmatic hernia",
+          "target": [
+            {
+              "code": "HP:0000776",
+              "display": "Congenital diaphragmatic hernia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000924",
+          "display": "Abnormality of the skeletal system",
+          "target": [
+            {
+              "code": "HP:0000924",
+              "display": "Abnormality of the skeletal system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000925",
+          "display": "Abnormality of the vertebral column",
+          "target": [
+            {
+              "code": "HP:0000925",
+              "display": "Abnormality of the vertebral column",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000951",
+          "display": "Abnormality of the skin",
+          "target": [
+            {
+              "code": "HP:0000951",
+              "display": "Abnormality of the skin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000992",
+          "display": "Cutaneous photosensitivity",
+          "target": [
+            {
+              "code": "HP:0000992",
+              "display": "Cutaneous photosensitivity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001159",
+          "display": "Syndactyly",
+          "target": [
+            {
+              "code": "HP:0001159",
+              "display": "Syndactyly",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001161",
+          "display": "Hand polydactyly",
+          "target": [
+            {
+              "code": "HP:0001161",
+              "display": "Hand polydactyly",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001263",
+          "display": "Global developmental delay",
+          "target": [
+            {
+              "code": "HP:0001263",
+              "display": "Global developmental delay",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001274",
+          "display": "Agenesis of corpus callosum",
+          "target": [
+            {
+              "code": "HP:0001274",
+              "display": "Agenesis of corpus callosum",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001367",
+          "display": "Abnormal joint morphology",
+          "target": [
+            {
+              "code": "HP:0001367",
+              "display": "Abnormal joint morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001382",
+          "display": "Joint hypermobility",
+          "target": [
+            {
+              "code": "HP:0001382",
+              "display": "Joint hypermobility",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001438",
+          "display": "Abnormal abdomen morphology",
+          "target": [
+            {
+              "code": "HP:0001438",
+              "display": "Abnormal abdomen morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001507",
+          "display": "Growth abnormality",
+          "target": [
+            {
+              "code": "HP:0001507",
+              "display": "Growth abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001574",
+          "display": "Abnormality of the integument",
+          "target": [
+            {
+              "code": "HP:0001574",
+              "display": "Abnormality of the integument",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001595",
+          "display": "Abnormal hair morphology",
+          "target": [
+            {
+              "code": "HP:0001595",
+              "display": "Abnormal hair morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002086",
+          "display": "Abnormality of the respiratory system",
+          "target": [
+            {
+              "code": "HP:0002086",
+              "display": "Abnormality of the respiratory system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002088",
+          "display": "Abnormal lung morphology",
+          "target": [
+            {
+              "code": "HP:0002088",
+              "display": "Abnormal lung morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002650",
+          "display": "Scoliosis",
+          "target": [
+            {
+              "code": "HP:0002650",
+              "display": "Scoliosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002652",
+          "display": "Skeletal dysplasia",
+          "target": [
+            {
+              "code": "HP:0002652",
+              "display": "Skeletal dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002795",
+          "display": "Abnormal respiratory system physiology",
+          "target": [
+            {
+              "code": "HP:0002795",
+              "display": "Abnormal respiratory system physiology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002803",
+          "display": "Congenital contracture",
+          "target": [
+            {
+              "code": "HP:0002803",
+              "display": "Congenital contracture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003011",
+          "display": "Abnormality of the musculature",
+          "target": [
+            {
+              "code": "HP:0003011",
+              "display": "Abnormality of the musculature",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003202",
+          "display": "Skeletal muscle atrophy",
+          "target": [
+            {
+              "code": "HP:0003202",
+              "display": "Skeletal muscle atrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003330",
+          "display": "Abnormal bone structure",
+          "target": [
+            {
+              "code": "HP:0003330",
+              "display": "Abnormal bone structure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003549",
+          "display": "Abnormality of connective tissue",
+          "target": [
+            {
+              "code": "HP:0003549",
+              "display": "Abnormality of connective tissue",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003560",
+          "display": "Muscular dystrophy",
+          "target": [
+            {
+              "code": "HP:0003560",
+              "display": "Muscular dystrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004322",
+          "display": "Short stature",
+          "target": [
+            {
+              "code": "HP:0004322",
+              "display": "Short stature",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0005684",
+          "display": "Distal arthrogryposis",
+          "target": [
+            {
+              "code": "HP:0005684",
+              "display": "Distal arthrogryposis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009830",
+          "display": "Peripheral neuropathy",
+          "target": [
+            {
+              "code": "HP:0009830",
+              "display": "Peripheral neuropathy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0010628",
+          "display": "Facial palsy",
+          "target": [
+            {
+              "code": "HP:0010628",
+              "display": "Facial palsy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0010719",
+          "display": "Abnormality of hair texture",
+          "target": [
+            {
+              "code": "HP:0010719",
+              "display": "Abnormality of hair texture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011024",
+          "display": "Abnormality of the gastrointestinal tract",
+          "target": [
+            {
+              "code": "HP:0011024",
+              "display": "Abnormality of the gastrointestinal tract",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011121",
+          "display": "Abnormality of skin morphology",
+          "target": [
+            {
+              "code": "HP:0011121",
+              "display": "Abnormality of skin morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011297",
+          "display": "Abnormal digit morphology",
+          "target": [
+            {
+              "code": "HP:0011297",
+              "display": "Abnormal digit morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011805",
+          "display": "Abnormal skeletal muscle morphology",
+          "target": [
+            {
+              "code": "HP:0011805",
+              "display": "Abnormal skeletal muscle morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012265",
+          "display": "Ciliary dyskinesia",
+          "target": [
+            {
+              "code": "HP:0012265",
+              "display": "Ciliary dyskinesia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012372",
+          "display": "Abnormal eye morphology",
+          "target": [
+            {
+              "code": "HP:0012372",
+              "display": "Abnormal eye morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012639",
+          "display": "Abnormal nervous system morphology",
+          "target": [
+            {
+              "code": "HP:0012639",
+              "display": "Abnormal nervous system morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012759",
+          "display": "Neurodevelopmental abnormality",
+          "target": [
+            {
+              "code": "HP:0012759",
+              "display": "Neurodevelopmental abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0030056",
+          "display": "Uncombable hair",
+          "target": [
+            {
+              "code": "HP:0030056",
+              "display": "Uncombable hair",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0033127",
+          "display": "Abnormality of the musculoskeletal system",
+          "target": [
+            {
+              "code": "HP:0033127",
+              "display": "Abnormality of the musculoskeletal system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0040064",
+          "display": "Abnormality of limbs",
+          "target": [
+            {
+              "code": "HP:0040064",
+              "display": "Abnormality of limbs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000164",
+          "display": "Abnormality of the dentition",
+          "target": [
+            {
+              "code": "HP:0000164",
+              "display": "Abnormality of the dentition",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000202",
+          "display": "Oral cleft",
+          "target": [
+            {
+              "code": "HP:0000202",
+              "display": "Oral cleft",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000501",
+          "display": "Glaucoma",
+          "target": [
+            {
+              "code": "HP:0000501",
+              "display": "Glaucoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000708",
+          "display": "Behavioral abnormality",
+          "target": [
+            {
+              "code": "HP:0000708",
+              "display": "Behavioral abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000717",
+          "display": "Autism",
+          "target": [
+            {
+              "code": "HP:0000717",
+              "display": "Autism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001059",
+          "display": "Pterygium",
+          "target": [
+            {
+              "code": "HP:0001059",
+              "display": "Pterygium",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001249",
+          "display": "Intellectual disability",
+          "target": [
+            {
+              "code": "HP:0001249",
+              "display": "Intellectual disability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001250",
+          "display": "Seizure",
+          "target": [
+            {
+              "code": "HP:0001250",
+              "display": "Seizure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001252",
+          "display": "Hypotonia",
+          "target": [
+            {
+              "code": "HP:0001252",
+              "display": "Hypotonia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001324",
+          "display": "Muscle weakness",
+          "target": [
+            {
+              "code": "HP:0001324",
+              "display": "Muscle weakness",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001679",
+          "display": "Abnormal aortic morphology",
+          "target": [
+            {
+              "code": "HP:0001679",
+              "display": "Abnormal aortic morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001743",
+          "display": "Abnormality of the spleen",
+          "target": [
+            {
+              "code": "HP:0001743",
+              "display": "Abnormality of the spleen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001760",
+          "display": "Abnormal foot morphology",
+          "target": [
+            {
+              "code": "HP:0001760",
+              "display": "Abnormal foot morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001871",
+          "display": "Abnormality of blood and blood-forming tissues",
+          "target": [
+            {
+              "code": "HP:0001871",
+              "display": "Abnormality of blood and blood-forming tissues",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001881",
+          "display": "Abnormal leukocyte morphology",
+          "target": [
+            {
+              "code": "HP:0001881",
+              "display": "Abnormal leukocyte morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001883",
+          "display": "Talipes",
+          "target": [
+            {
+              "code": "HP:0001883",
+              "display": "Talipes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001939",
+          "display": "Abnormality of metabolism/homeostasis",
+          "target": [
+            {
+              "code": "HP:0001939",
+              "display": "Abnormality of metabolism/homeostasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002140",
+          "display": "Ischemic stroke",
+          "target": [
+            {
+              "code": "HP:0002140",
+              "display": "Ischemic stroke",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002308",
+          "display": "Arnold-Chiari malformation",
+          "target": [
+            {
+              "code": "HP:0002308",
+              "display": "Arnold-Chiari malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002564",
+          "display": "obsolete Malformation of the heart and great vessels",
+          "target": [
+            {
+              "code": "HP:0002564",
+              "display": "obsolete Malformation of the heart and great vessels",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002664",
+          "display": "Neoplasm",
+          "target": [
+            {
+              "code": "HP:0002664",
+              "display": "Neoplasm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002715",
+          "display": "Abnormality of the immune system",
+          "target": [
+            {
+              "code": "HP:0002715",
+              "display": "Abnormality of the immune system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002721",
+          "display": "Immunodeficiency",
+          "target": [
+            {
+              "code": "HP:0002721",
+              "display": "Immunodeficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002960",
+          "display": "Autoimmunity",
+          "target": [
+            {
+              "code": "HP:0002960",
+              "display": "Autoimmunity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003634",
+          "display": "Amyoplasia",
+          "target": [
+            {
+              "code": "HP:0003634",
+              "display": "Amyoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003808",
+          "display": "Abnormal muscle tone",
+          "target": [
+            {
+              "code": "HP:0003808",
+              "display": "Abnormal muscle tone",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004377",
+          "display": "Hematological neoplasm",
+          "target": [
+            {
+              "code": "HP:0004377",
+              "display": "Hematological neoplasm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004439",
+          "display": "Craniofacial dysostosis",
+          "target": [
+            {
+              "code": "HP:0004439",
+              "display": "Craniofacial dysostosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004944",
+          "display": "Dilatation of the cerebral artery",
+          "target": [
+            {
+              "code": "HP:0004944",
+              "display": "Dilatation of the cerebral artery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0005294",
+          "display": "Arterial dissection",
+          "target": [
+            {
+              "code": "HP:0005294",
+              "display": "Arterial dissection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0005549",
+          "display": "obsolete Congenital neutropenia",
+          "target": [
+            {
+              "code": "HP:0005549",
+              "display": "obsolete Congenital neutropenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009124",
+          "display": "Abnormal adipose tissue morphology",
+          "target": [
+            {
+              "code": "HP:0009124",
+              "display": "Abnormal adipose tissue morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009125",
+          "display": "Lipodystrophy",
+          "target": [
+            {
+              "code": "HP:0009125",
+              "display": "Lipodystrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011013",
+          "display": "Abnormal circulating carbohydrate concentration",
+          "target": [
+            {
+              "code": "HP:0011013",
+              "display": "Abnormal circulating carbohydrate concentration",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011014",
+          "display": "Abnormal glucose homeostasis",
+          "target": [
+            {
+              "code": "HP:0011014",
+              "display": "Abnormal glucose homeostasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011842",
+          "display": "Abnormality of skeletal morphology",
+          "target": [
+            {
+              "code": "HP:0011842",
+              "display": "Abnormality of skeletal morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012337",
+          "display": "Abnormal homeostasis",
+          "target": [
+            {
+              "code": "HP:0012337",
+              "display": "Abnormal homeostasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012373",
+          "display": "Abnormal eye physiology",
+          "target": [
+            {
+              "code": "HP:0012373",
+              "display": "Abnormal eye physiology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012727",
+          "display": "Thoracic aortic aneurysm",
+          "target": [
+            {
+              "code": "HP:0012727",
+              "display": "Thoracic aortic aneurysm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0025015",
+          "display": "Abnormal vascular morphology",
+          "target": [
+            {
+              "code": "HP:0025015",
+              "display": "Abnormal vascular morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100006",
+          "display": "Neoplasm of the central nervous system",
+          "target": [
+            {
+              "code": "HP:0100006",
+              "display": "Neoplasm of the central nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100545",
+          "display": "Arterial stenosis",
+          "target": [
+            {
+              "code": "HP:0100545",
+              "display": "Arterial stenosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100659",
+          "display": "Abnormal cerebral vascular morphology",
+          "target": [
+            {
+              "code": "HP:0100659",
+              "display": "Abnormal cerebral vascular morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0410008",
+          "display": "Abnormality of the peripheral nervous system",
+          "target": [
+            {
+              "code": "HP:0410008",
+              "display": "Abnormality of the peripheral nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "subject",
+      "target": "self",
+      "element": [
+        {
+          "code": "HP:0000707",
+          "display": "Abnormality of the nervous system",
+          "target": [
+            {
+              "code": "HP:0000707",
+              "display": "Abnormality of the nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012638",
+          "display": "Abnormal nervous system physiology",
+          "target": [
+            {
+              "code": "HP:0012638",
+              "display": "Abnormal nervous system physiology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0200134",
+          "display": "Epileptic encephalopathy",
+          "target": [
+            {
+              "code": "HP:0200134",
+              "display": "Epileptic encephalopathy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000657",
+          "display": "Oculomotor apraxia",
+          "target": [
+            {
+              "code": "HP:0000657",
+              "display": "Oculomotor apraxia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001272",
+          "display": "Cerebellar atrophy",
+          "target": [
+            {
+              "code": "HP:0001272",
+              "display": "Cerebellar atrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001305",
+          "display": "Dandy-Walker malformation",
+          "target": [
+            {
+              "code": "HP:0001305",
+              "display": "Dandy-Walker malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001320",
+          "display": "Cerebellar vermis hypoplasia",
+          "target": [
+            {
+              "code": "HP:0001320",
+              "display": "Cerebellar vermis hypoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001321",
+          "display": "Cerebellar hypoplasia",
+          "target": [
+            {
+              "code": "HP:0001321",
+              "display": "Cerebellar hypoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002119",
+          "display": "Ventriculomegaly",
+          "target": [
+            {
+              "code": "HP:0002119",
+              "display": "Ventriculomegaly",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002438",
+          "display": "Cerebellar malformation",
+          "target": [
+            {
+              "code": "HP:0002438",
+              "display": "Cerebellar malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0007033",
+          "display": "Cerebellar dysplasia",
+          "target": [
+            {
+              "code": "HP:0007033",
+              "display": "Cerebellar dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0007068",
+          "display": "Inferior vermis hypoplasia",
+          "target": [
+            {
+              "code": "HP:0007068",
+              "display": "Inferior vermis hypoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011932",
+          "display": "Abnormal superior cerebellar peduncle morphology",
+          "target": [
+            {
+              "code": "HP:0011932",
+              "display": "Abnormal superior cerebellar peduncle morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012110",
+          "display": "Hypoplasia of the pons",
+          "target": [
+            {
+              "code": "HP:0012110",
+              "display": "Hypoplasia of the pons",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012443",
+          "display": "Abnormality of brain morphology",
+          "target": [
+            {
+              "code": "HP:0012443",
+              "display": "Abnormality of brain morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0020185",
+          "display": "Superior cerebellar dysplasia",
+          "target": [
+            {
+              "code": "HP:0020185",
+              "display": "Superior cerebellar dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0025102",
+          "display": "Dysgenesis of the basal ganglia",
+          "target": [
+            {
+              "code": "HP:0025102",
+              "display": "Dysgenesis of the basal ganglia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002011",
+          "display": "Morphological central nervous system abnormality",
+          "target": [
+            {
+              "code": "HP:0002011",
+              "display": "Morphological central nervous system abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002180",
+          "display": "Neurodegeneration",
+          "target": [
+            {
+              "code": "HP:0002180",
+              "display": "Neurodegeneration",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001626",
+          "display": "Abnormality of the cardiovascular system",
+          "target": [
+            {
+              "code": "HP:0001626",
+              "display": "Abnormality of the cardiovascular system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001627",
+          "display": "Abnormal heart morphology",
+          "target": [
+            {
+              "code": "HP:0001627",
+              "display": "Abnormal heart morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001647",
+          "display": "Bicuspid aortic valve",
+          "target": [
+            {
+              "code": "HP:0001647",
+              "display": "Bicuspid aortic valve",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000002",
+          "display": "Abnormality of body height",
+          "target": [
+            {
+              "code": "HP:0000002",
+              "display": "Abnormality of body height",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000152",
+          "display": "Abnormality of head or neck",
+          "target": [
+            {
+              "code": "HP:0000152",
+              "display": "Abnormality of head or neck",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000153",
+          "display": "Abnormality of the mouth",
+          "target": [
+            {
+              "code": "HP:0000153",
+              "display": "Abnormality of the mouth",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000271",
+          "display": "Abnormality of the face",
+          "target": [
+            {
+              "code": "HP:0000271",
+              "display": "Abnormality of the face",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000478",
+          "display": "Abnormality of the eye",
+          "target": [
+            {
+              "code": "HP:0000478",
+              "display": "Abnormality of the eye",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000528",
+          "display": "Anophthalmia",
+          "target": [
+            {
+              "code": "HP:0000528",
+              "display": "Anophthalmia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000775",
+          "display": "Abnormality of the diaphragm",
+          "target": [
+            {
+              "code": "HP:0000775",
+              "display": "Abnormality of the diaphragm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000776",
+          "display": "Congenital diaphragmatic hernia",
+          "target": [
+            {
+              "code": "HP:0000776",
+              "display": "Congenital diaphragmatic hernia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000924",
+          "display": "Abnormality of the skeletal system",
+          "target": [
+            {
+              "code": "HP:0000924",
+              "display": "Abnormality of the skeletal system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000925",
+          "display": "Abnormality of the vertebral column",
+          "target": [
+            {
+              "code": "HP:0000925",
+              "display": "Abnormality of the vertebral column",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000951",
+          "display": "Abnormality of the skin",
+          "target": [
+            {
+              "code": "HP:0000951",
+              "display": "Abnormality of the skin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000992",
+          "display": "Cutaneous photosensitivity",
+          "target": [
+            {
+              "code": "HP:0000992",
+              "display": "Cutaneous photosensitivity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001159",
+          "display": "Syndactyly",
+          "target": [
+            {
+              "code": "HP:0001159",
+              "display": "Syndactyly",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001161",
+          "display": "Hand polydactyly",
+          "target": [
+            {
+              "code": "HP:0001161",
+              "display": "Hand polydactyly",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001263",
+          "display": "Global developmental delay",
+          "target": [
+            {
+              "code": "HP:0001263",
+              "display": "Global developmental delay",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001274",
+          "display": "Agenesis of corpus callosum",
+          "target": [
+            {
+              "code": "HP:0001274",
+              "display": "Agenesis of corpus callosum",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001367",
+          "display": "Abnormal joint morphology",
+          "target": [
+            {
+              "code": "HP:0001367",
+              "display": "Abnormal joint morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001382",
+          "display": "Joint hypermobility",
+          "target": [
+            {
+              "code": "HP:0001382",
+              "display": "Joint hypermobility",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001438",
+          "display": "Abnormal abdomen morphology",
+          "target": [
+            {
+              "code": "HP:0001438",
+              "display": "Abnormal abdomen morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001507",
+          "display": "Growth abnormality",
+          "target": [
+            {
+              "code": "HP:0001507",
+              "display": "Growth abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001574",
+          "display": "Abnormality of the integument",
+          "target": [
+            {
+              "code": "HP:0001574",
+              "display": "Abnormality of the integument",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001595",
+          "display": "Abnormal hair morphology",
+          "target": [
+            {
+              "code": "HP:0001595",
+              "display": "Abnormal hair morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002086",
+          "display": "Abnormality of the respiratory system",
+          "target": [
+            {
+              "code": "HP:0002086",
+              "display": "Abnormality of the respiratory system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002088",
+          "display": "Abnormal lung morphology",
+          "target": [
+            {
+              "code": "HP:0002088",
+              "display": "Abnormal lung morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002650",
+          "display": "Scoliosis",
+          "target": [
+            {
+              "code": "HP:0002650",
+              "display": "Scoliosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002652",
+          "display": "Skeletal dysplasia",
+          "target": [
+            {
+              "code": "HP:0002652",
+              "display": "Skeletal dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002795",
+          "display": "Abnormal respiratory system physiology",
+          "target": [
+            {
+              "code": "HP:0002795",
+              "display": "Abnormal respiratory system physiology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002803",
+          "display": "Congenital contracture",
+          "target": [
+            {
+              "code": "HP:0002803",
+              "display": "Congenital contracture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003011",
+          "display": "Abnormality of the musculature",
+          "target": [
+            {
+              "code": "HP:0003011",
+              "display": "Abnormality of the musculature",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003202",
+          "display": "Skeletal muscle atrophy",
+          "target": [
+            {
+              "code": "HP:0003202",
+              "display": "Skeletal muscle atrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003330",
+          "display": "Abnormal bone structure",
+          "target": [
+            {
+              "code": "HP:0003330",
+              "display": "Abnormal bone structure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003549",
+          "display": "Abnormality of connective tissue",
+          "target": [
+            {
+              "code": "HP:0003549",
+              "display": "Abnormality of connective tissue",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003560",
+          "display": "Muscular dystrophy",
+          "target": [
+            {
+              "code": "HP:0003560",
+              "display": "Muscular dystrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004322",
+          "display": "Short stature",
+          "target": [
+            {
+              "code": "HP:0004322",
+              "display": "Short stature",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0005684",
+          "display": "Distal arthrogryposis",
+          "target": [
+            {
+              "code": "HP:0005684",
+              "display": "Distal arthrogryposis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009830",
+          "display": "Peripheral neuropathy",
+          "target": [
+            {
+              "code": "HP:0009830",
+              "display": "Peripheral neuropathy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0010628",
+          "display": "Facial palsy",
+          "target": [
+            {
+              "code": "HP:0010628",
+              "display": "Facial palsy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0010719",
+          "display": "Abnormality of hair texture",
+          "target": [
+            {
+              "code": "HP:0010719",
+              "display": "Abnormality of hair texture",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011024",
+          "display": "Abnormality of the gastrointestinal tract",
+          "target": [
+            {
+              "code": "HP:0011024",
+              "display": "Abnormality of the gastrointestinal tract",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011121",
+          "display": "Abnormality of skin morphology",
+          "target": [
+            {
+              "code": "HP:0011121",
+              "display": "Abnormality of skin morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011297",
+          "display": "Abnormal digit morphology",
+          "target": [
+            {
+              "code": "HP:0011297",
+              "display": "Abnormal digit morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011805",
+          "display": "Abnormal skeletal muscle morphology",
+          "target": [
+            {
+              "code": "HP:0011805",
+              "display": "Abnormal skeletal muscle morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012265",
+          "display": "Ciliary dyskinesia",
+          "target": [
+            {
+              "code": "HP:0012265",
+              "display": "Ciliary dyskinesia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012372",
+          "display": "Abnormal eye morphology",
+          "target": [
+            {
+              "code": "HP:0012372",
+              "display": "Abnormal eye morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012639",
+          "display": "Abnormal nervous system morphology",
+          "target": [
+            {
+              "code": "HP:0012639",
+              "display": "Abnormal nervous system morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012759",
+          "display": "Neurodevelopmental abnormality",
+          "target": [
+            {
+              "code": "HP:0012759",
+              "display": "Neurodevelopmental abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0030056",
+          "display": "Uncombable hair",
+          "target": [
+            {
+              "code": "HP:0030056",
+              "display": "Uncombable hair",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0033127",
+          "display": "Abnormality of the musculoskeletal system",
+          "target": [
+            {
+              "code": "HP:0033127",
+              "display": "Abnormality of the musculoskeletal system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0040064",
+          "display": "Abnormality of limbs",
+          "target": [
+            {
+              "code": "HP:0040064",
+              "display": "Abnormality of limbs",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000164",
+          "display": "Abnormality of the dentition",
+          "target": [
+            {
+              "code": "HP:0000164",
+              "display": "Abnormality of the dentition",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000202",
+          "display": "Oral cleft",
+          "target": [
+            {
+              "code": "HP:0000202",
+              "display": "Oral cleft",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000501",
+          "display": "Glaucoma",
+          "target": [
+            {
+              "code": "HP:0000501",
+              "display": "Glaucoma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000708",
+          "display": "Behavioral abnormality",
+          "target": [
+            {
+              "code": "HP:0000708",
+              "display": "Behavioral abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000717",
+          "display": "Autism",
+          "target": [
+            {
+              "code": "HP:0000717",
+              "display": "Autism",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001059",
+          "display": "Pterygium",
+          "target": [
+            {
+              "code": "HP:0001059",
+              "display": "Pterygium",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001249",
+          "display": "Intellectual disability",
+          "target": [
+            {
+              "code": "HP:0001249",
+              "display": "Intellectual disability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001250",
+          "display": "Seizure",
+          "target": [
+            {
+              "code": "HP:0001250",
+              "display": "Seizure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001252",
+          "display": "Hypotonia",
+          "target": [
+            {
+              "code": "HP:0001252",
+              "display": "Hypotonia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001324",
+          "display": "Muscle weakness",
+          "target": [
+            {
+              "code": "HP:0001324",
+              "display": "Muscle weakness",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001679",
+          "display": "Abnormal aortic morphology",
+          "target": [
+            {
+              "code": "HP:0001679",
+              "display": "Abnormal aortic morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001743",
+          "display": "Abnormality of the spleen",
+          "target": [
+            {
+              "code": "HP:0001743",
+              "display": "Abnormality of the spleen",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001760",
+          "display": "Abnormal foot morphology",
+          "target": [
+            {
+              "code": "HP:0001760",
+              "display": "Abnormal foot morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001871",
+          "display": "Abnormality of blood and blood-forming tissues",
+          "target": [
+            {
+              "code": "HP:0001871",
+              "display": "Abnormality of blood and blood-forming tissues",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001881",
+          "display": "Abnormal leukocyte morphology",
+          "target": [
+            {
+              "code": "HP:0001881",
+              "display": "Abnormal leukocyte morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001883",
+          "display": "Talipes",
+          "target": [
+            {
+              "code": "HP:0001883",
+              "display": "Talipes",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001939",
+          "display": "Abnormality of metabolism/homeostasis",
+          "target": [
+            {
+              "code": "HP:0001939",
+              "display": "Abnormality of metabolism/homeostasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002140",
+          "display": "Ischemic stroke",
+          "target": [
+            {
+              "code": "HP:0002140",
+              "display": "Ischemic stroke",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002308",
+          "display": "Arnold-Chiari malformation",
+          "target": [
+            {
+              "code": "HP:0002308",
+              "display": "Arnold-Chiari malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002564",
+          "display": "obsolete Malformation of the heart and great vessels",
+          "target": [
+            {
+              "code": "HP:0002564",
+              "display": "obsolete Malformation of the heart and great vessels",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002664",
+          "display": "Neoplasm",
+          "target": [
+            {
+              "code": "HP:0002664",
+              "display": "Neoplasm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002715",
+          "display": "Abnormality of the immune system",
+          "target": [
+            {
+              "code": "HP:0002715",
+              "display": "Abnormality of the immune system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002721",
+          "display": "Immunodeficiency",
+          "target": [
+            {
+              "code": "HP:0002721",
+              "display": "Immunodeficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002960",
+          "display": "Autoimmunity",
+          "target": [
+            {
+              "code": "HP:0002960",
+              "display": "Autoimmunity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003634",
+          "display": "Amyoplasia",
+          "target": [
+            {
+              "code": "HP:0003634",
+              "display": "Amyoplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003808",
+          "display": "Abnormal muscle tone",
+          "target": [
+            {
+              "code": "HP:0003808",
+              "display": "Abnormal muscle tone",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004377",
+          "display": "Hematological neoplasm",
+          "target": [
+            {
+              "code": "HP:0004377",
+              "display": "Hematological neoplasm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004439",
+          "display": "Craniofacial dysostosis",
+          "target": [
+            {
+              "code": "HP:0004439",
+              "display": "Craniofacial dysostosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004944",
+          "display": "Dilatation of the cerebral artery",
+          "target": [
+            {
+              "code": "HP:0004944",
+              "display": "Dilatation of the cerebral artery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0005294",
+          "display": "Arterial dissection",
+          "target": [
+            {
+              "code": "HP:0005294",
+              "display": "Arterial dissection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0005549",
+          "display": "obsolete Congenital neutropenia",
+          "target": [
+            {
+              "code": "HP:0005549",
+              "display": "obsolete Congenital neutropenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009124",
+          "display": "Abnormal adipose tissue morphology",
+          "target": [
+            {
+              "code": "HP:0009124",
+              "display": "Abnormal adipose tissue morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009125",
+          "display": "Lipodystrophy",
+          "target": [
+            {
+              "code": "HP:0009125",
+              "display": "Lipodystrophy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011013",
+          "display": "Abnormal circulating carbohydrate concentration",
+          "target": [
+            {
+              "code": "HP:0011013",
+              "display": "Abnormal circulating carbohydrate concentration",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011014",
+          "display": "Abnormal glucose homeostasis",
+          "target": [
+            {
+              "code": "HP:0011014",
+              "display": "Abnormal glucose homeostasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011842",
+          "display": "Abnormality of skeletal morphology",
+          "target": [
+            {
+              "code": "HP:0011842",
+              "display": "Abnormality of skeletal morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012337",
+          "display": "Abnormal homeostasis",
+          "target": [
+            {
+              "code": "HP:0012337",
+              "display": "Abnormal homeostasis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012373",
+          "display": "Abnormal eye physiology",
+          "target": [
+            {
+              "code": "HP:0012373",
+              "display": "Abnormal eye physiology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012727",
+          "display": "Thoracic aortic aneurysm",
+          "target": [
+            {
+              "code": "HP:0012727",
+              "display": "Thoracic aortic aneurysm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0025015",
+          "display": "Abnormal vascular morphology",
+          "target": [
+            {
+              "code": "HP:0025015",
+              "display": "Abnormal vascular morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100006",
+          "display": "Neoplasm of the central nervous system",
+          "target": [
+            {
+              "code": "HP:0100006",
+              "display": "Neoplasm of the central nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100545",
+          "display": "Arterial stenosis",
+          "target": [
+            {
+              "code": "HP:0100545",
+              "display": "Arterial stenosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100659",
+          "display": "Abnormal cerebral vascular morphology",
+          "target": [
+            {
+              "code": "HP:0100659",
+              "display": "Abnormal cerebral vascular morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0410008",
+          "display": "Abnormality of the peripheral nervous system",
+          "target": [
+            {
+              "code": "HP:0410008",
+              "display": "Abnormality of the peripheral nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "subject",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/subject",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "Subject ID",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "Subject ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "family_id",
+          "display": "Family ID",
+          "target": [
+            {
+              "code": "family_id",
+              "display": "Family ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sex",
+          "display": "Sex",
+          "target": [
+            {
+              "code": "sex",
+              "display": "Sex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "affected_status",
+          "display": "Affected Status",
+          "target": [
+            {
+              "code": "affected_status",
+              "display": "Affected Status",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proband_relationship",
+          "display": "Proband Relationship",
+          "target": [
+            {
+              "code": "proband_relationship",
+              "display": "Proband Relationship",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "maternal_id",
+          "display": "Maternal ID",
+          "target": [
+            {
+              "code": "maternal_id",
+              "display": "Maternal ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "paternal_id",
+          "display": "Paternal ID",
+          "target": [
+            {
+              "code": "paternal_id",
+              "display": "Paternal ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "twin_id",
+          "display": "Twin ID",
+          "target": [
+            {
+              "code": "twin_id",
+              "display": "Twin ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ancestry",
+          "display": "Ancestry",
+          "target": [
+            {
+              "code": "ancestry",
+              "display": "Ancestry",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ancestry_detail",
+          "display": "Ancestry Detail",
+          "target": [
+            {
+              "code": "ancestry_detail",
+              "display": "Ancestry Detail",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disease_description",
+          "display": "Disease Description",
+          "target": [
+            {
+              "code": "disease_description",
+              "display": "Disease Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disease_id",
+          "display": "Disease ID",
+          "target": [
+            {
+              "code": "disease_id",
+              "display": "Disease ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hpo_present",
+          "display": "HPO Present?",
+          "target": [
+            {
+              "code": "hpo_present",
+              "display": "HPO Present?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hpo_absent",
+          "display": "HPO Absent?",
+          "target": [
+            {
+              "code": "hpo_absent",
+              "display": "HPO Absent?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phenotype_description",
+          "display": "Phenotype Description",
+          "target": [
+            {
+              "code": "phenotype_description",
+              "display": "Phenotype Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phenotype_group",
+          "display": "Phenotype Group",
+          "target": [
+            {
+              "code": "phenotype_group",
+              "display": "Phenotype Group",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "age_at_last_observation",
+          "display": "Age at Last Observation",
+          "target": [
+            {
+              "code": "age_at_last_observation",
+              "display": "Age at Last Observation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "age_of_onset",
+          "display": "Age of Onset",
+          "target": [
+            {
+              "code": "age_of_onset",
+              "display": "Age of Onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "prior_testing",
+          "display": "prior_testing",
+          "target": [
+            {
+              "code": "prior_testing",
+              "display": "prior_testing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "congenital_status",
+          "display": "congenital_status",
+          "target": [
+            {
+              "code": "congenital_status",
+              "display": "congenital_status",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_study_id",
+          "display": "dbgap_study_id",
+          "target": [
+            {
+              "code": "dbgap_study_id",
+              "display": "dbgap_study_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_subject_id",
+          "display": "dbgap_subject_id",
+          "target": [
+            {
+              "code": "dbgap_subject_id",
+              "display": "dbgap_subject_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_submission",
+          "display": "dbgap_submission",
+          "target": [
+            {
+              "code": "dbgap_submission",
+              "display": "dbgap_submission",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pmid_id",
+          "display": "pmid_id",
+          "target": [
+            {
+              "code": "pmid_id",
+              "display": "pmid_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "solve_state",
+          "display": "solve_state",
+          "target": [
+            {
+              "code": "solve_state",
+              "display": "solve_state",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "project_id",
+          "display": "project_id",
+          "target": [
+            {
+              "code": "project_id",
+              "display": "project_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "multiple_datasets",
+          "display": "multiple_datasets",
+          "target": [
+            {
+              "code": "multiple_datasets",
+              "display": "multiple_datasets",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "sample",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/sample",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "subject_id",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "subject_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sample_id",
+          "display": "sample_id",
+          "target": [
+            {
+              "code": "sample_id",
+              "display": "sample_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_sample_id",
+          "display": "dbgap_sample_id",
+          "target": [
+            {
+              "code": "dbgap_sample_id",
+              "display": "dbgap_sample_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sample_source",
+          "display": "sample_source",
+          "target": [
+            {
+              "code": "sample_source",
+              "display": "sample_source",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sequencing_center",
+          "display": "sequencing_center",
+          "target": [
+            {
+              "code": "sequencing_center",
+              "display": "sequencing_center",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tissue_affected_status",
+          "display": "tissue_affected_status",
+          "target": [
+            {
+              "code": "tissue_affected_status",
+              "display": "tissue_affected_status",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "sequencing",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/sequencing",
+      "element": [
+        {
+          "code": "sample_id",
+          "display": "sample_id",
+          "target": [
+            {
+              "code": "sample_id",
+              "display": "sample_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "seq_filename",
+          "display": "seq_filename",
+          "target": [
+            {
+              "code": "seq_filename",
+              "display": "seq_filename",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "analyte_type",
+          "display": "analyte_type",
+          "target": [
+            {
+              "code": "analyte_type",
+              "display": "analyte_type",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sequencing_assay",
+          "display": "sequencing_assay",
+          "target": [
+            {
+              "code": "sequencing_assay",
+              "display": "sequencing_assay",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "library_prep_kit_method",
+          "display": "library_prep_kit_method",
+          "target": [
+            {
+              "code": "library_prep_kit_method",
+              "display": "library_prep_kit_method",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exome_capture_platform",
+          "display": "exome_capture_platform",
+          "target": [
+            {
+              "code": "exome_capture_platform",
+              "display": "exome_capture_platform",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "capture_region_bed_file",
+          "display": "capture_region_bed_file",
+          "target": [
+            {
+              "code": "capture_region_bed_file",
+              "display": "capture_region_bed_file",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reference_genome_build",
+          "display": "reference_genome_build",
+          "target": [
+            {
+              "code": "reference_genome_build",
+              "display": "reference_genome_build",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "alignment_method",
+          "display": "alignment_method",
+          "target": [
+            {
+              "code": "alignment_method",
+              "display": "alignment_method",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data_processing_pipeline",
+          "display": "data_processing_pipeline",
+          "target": [
+            {
+              "code": "data_processing_pipeline",
+              "display": "data_processing_pipeline",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "functional_equivalence_standard",
+          "display": "functional_equivalence_standard",
+          "target": [
+            {
+              "code": "functional_equivalence_standard",
+              "display": "functional_equivalence_standard",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "date_data_generation",
+          "display": "date_data_generation",
+          "target": [
+            {
+              "code": "date_data_generation",
+              "display": "date_data_generation",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "family",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/family",
+      "element": [
+        {
+          "code": "family_id",
+          "display": "family_id",
+          "target": [
+            {
+              "code": "family_id",
+              "display": "family_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "consanguinity",
+          "display": "consanguinity",
+          "target": [
+            {
+              "code": "consanguinity",
+              "display": "consanguinity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "consanguinity_detail",
+          "display": "consanguinity_detail",
+          "target": [
+            {
+              "code": "consanguinity_detail",
+              "display": "consanguinity_detail",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pedigree_image",
+          "display": "pedigree_image",
+          "target": [
+            {
+              "code": "pedigree_image",
+              "display": "pedigree_image",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pedigree_detail",
+          "display": "pedigree_detail",
+          "target": [
+            {
+              "code": "pedigree_detail",
+              "display": "pedigree_detail",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "family_history",
+          "display": "family_history",
+          "target": [
+            {
+              "code": "family_history",
+              "display": "family_history",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "family_onset",
+          "display": "family_onset",
+          "target": [
+            {
+              "code": "family_onset",
+              "display": "family_onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "conditions",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/conditions",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "subject_id",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "subject_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_code",
+          "display": "condition_code",
+          "target": [
+            {
+              "code": "condition_code",
+              "display": "condition_code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_name",
+          "display": "condition_name",
+          "target": [
+            {
+              "code": "condition_name",
+              "display": "condition_name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "present_absent",
+          "display": "present_absent",
+          "target": [
+            {
+              "code": "present_absent",
+              "display": "present_absent",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "diseases",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/diseases",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "Subject ID",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "Subject ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_code",
+          "display": "Condition Code",
+          "target": [
+            {
+              "code": "condition_code",
+              "display": "Condition Code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_name",
+          "display": "Condition Name",
+          "target": [
+            {
+              "code": "condition_name",
+              "display": "Condition Name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "affected_status",
+          "display": "Affected Status",
+          "target": [
+            {
+              "code": "affected_status",
+              "display": "Affected Status",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disease_description",
+          "display": "Disease Description",
+          "target": [
+            {
+              "code": "disease_description",
+              "display": "Disease Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phenotype_description",
+          "display": "Phenotype Description",
+          "target": [
+            {
+              "code": "phenotype_description",
+              "display": "Phenotype Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

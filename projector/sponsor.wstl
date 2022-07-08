@@ -1,0 +1,13 @@
+
+
+def SponsorOrganization(study) {
+    if (study.sponsor?) {
+        meta.tag[]: StudyMeta(study);
+        
+        identifier[0]: Key_Identifier(study, "Organization",study.sponsor.id);
+        identifier[0].use: "official";      
+
+        name: study.sponsor.name;
+        resourceType: "Organization";
+    }
+}

@@ -1,0 +1,141 @@
+// Functions associated with code harmonization.
+
+
+// Description: We are creating a concept map "self" which contains a complete
+//              display for the local code. This function strips out non-self
+//              entries from the return
+//
+// Arguments:
+//  coding - This is a single result from $HarmonizeCode
+def SelfOnly(coding) {
+  if (coding.system = "self") {
+    $this: coding;
+  }
+}
+
+// Description: Strip out all self referenced codings. 
+//
+// Arguments:
+//  coding - This is a single result from $HarmonizeCode
+//
+// The result here is only external mappings will be returned
+def NonSelfOnly(coding) {
+    if (coding.system ~= "self" and coding.system ~= "cmg-harmony-unharmonized") {
+        $this: coding;
+    }
+}
+
+// Description: Get all matching codes, including self references
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def Harmonize(code, system) {
+    $this: $HarmonizeCode("$Local", code, system, "cmg-harmony");
+}
+
+// Description: Filter out self references (return array of codings)
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def HarmonizeMapped(code, system) {
+    var coding: Harmonize(code, system);
+    $this: NonSelfOnly(coding[]);
+}
+
+// Description: Return first external code mapping
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def HarmonizeMappedFirst(code, system) {
+    var coding: HarmonizeMapped(code, system);
+    $this: coding[0];
+}
+
+// Description: Filtered out self references, as coding: [codeableConcept, ...]
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def HarmonizeAsCoding(code, system) {
+    coding: HarmonizeMapped(code, system);
+}
+
+// Description: Return external code matching the code/system queried
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+// Only the first code is returned. 
+def HarmonizeAsCode(code, system) {
+    var coding: HarmonizeMapped(code, system);
+    $this: coding[0].code;
+}
+
+// Description: Return self's display value (useful for determining the
+//              original question associated with a substituted question varname)
+//
+// Arguments:
+//  code - Code to be harmonized
+//  system - The system where the code should be quried
+//
+def HarmonizedLocalDisplay(code, system) {
+    var coding: Harmonize(code, system);
+    var local_coding: SelfOnly(coding[]);
+    $this: local_coding[0].display;
+}
+
+// Description: Build codeable concept used for populating the responses to 
+//              checkbox type questions
+//
+// Arguments:
+//  study - This is the study id
+//  table_name - The table from which the question is found (IHQ)
+//  question - varname associated with the question being 
+//  code - The answer's code given 
+//  display - The answer itself
+//
+def ValueCodeableConcept(study, table, question, required code, display) {
+    system: VocabularyURL(study, table, question);
+    code (if code?): code;
+    display: display;
+}
+
+// Description: Build a codeable concept suitable for use in observation.components
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  table_name - The table from which the question is found (IHQ)
+//  varname - varname associated with the question being 
+//  code - Code associated with the answer
+//
+// We are not currently employing Observation.components so this is 
+// currently unused in practice. 
+def LocalVarCodeSystemReference(study, table_name, varname, code) {
+    code: code;
+    system: VocabularyURL(study, table_name, varname);
+    display: HarmonizedLocalDisplay(code, varname);
+}
+
+// Description: Build a codeable concept suitable for use in observation.coding for 
+//              Conditions and Observations. These will be the secondary codings 
+//              associated with their data-dictionary entry
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  table_name - The table from which the question is found (IHQ)
+//  code - Code associated with the answer
+//
+def LocalCodeSystemReference(study, table_name, code) {
+    code: code;
+    system: VocabularyURL(study, table_name, "");
+    display: HarmonizedLocalDisplay(code, table_name);
+}
+

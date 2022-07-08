@@ -1,0 +1,70 @@
+
+
+// Definition: Construct a Condition resource for disease. These will have either Mondo/OMIM code or a descriptive bit of text
+//
+// Disease Resources must have one of the following fields present:
+//  * disease_code (disease_id)
+//  * disease_description 
+//  * phenotype_description (not 'Normal'). Normal indicates controls and won't yield a condition resource
+// 
+// Because of the nature of these diseases, we do create Conditions even if there is no
+// term associated with an official diagnosis. 
+// 
+// code.text will be disease_description unless that's missing, in which case it will be the phenotype_description
+//
+// affected_status is used to set the verificationStatus (Affected = Confirmed)
+
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  condition - Row containing condition code and it's response (condition_status)
+//
+def Disease(study, condition) {
+
+    if condition.phenotype_description ~= "Normal" and condition.affected_status ~= "Unaffected" and condition.affected_status ~= "Unknown" {
+        
+        var subject_id: condition.subject_id;
+
+        // Because these are super rare, we will tolerate conditions without a disease ID, but they will
+        // be bare conditions as opposed to disease profiles.
+        var coding: HarmonizeMapped(condition.condition_code, "disease_id");
+
+        code.coding[]: coding;
+        code.coding[]: LocalCodeSystemReference(study, "disease_id", "subject");
+        
+        meta.tag[]: StudyMeta(study);
+        
+        if (~$IsNil(coding)) {
+            meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease";
+            identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.condition_code));
+            code.text: condition.condition_name;
+        } else {
+            if (condition.disease_description?) {
+                identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.disease_description));
+                code.text: condition.disease_description;
+        } else {
+                identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.phenotype_description));
+                code.text: $StrCat("Disease Phenotype: ", condition.phenotype_description);
+            }
+        }
+        
+        identifier[0].use: "official";
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+        verificationStatus: HarmonizeAsCoding(condition.affected_status, "affected_status");
+
+        category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
+        category[0].coding[0].code: "encounter-diagnosis";
+        category[0].coding[0].display: "Encounter Diagnosis";
+
+        _onsetDateTime.extension[0] (if subject.age_of_onset?): AgeAtExtension(study, subject_id, subject.age_of_onset, "years");
+
+        if (condition.phenotype_description?) {
+            note[].text: condition.phenotype_description;
+        }
+        resourceType: "Condition";
+    }
+}
+
+def ProcessDisease(study, condition) {
+    out condition: Disease(study, condition);
+}

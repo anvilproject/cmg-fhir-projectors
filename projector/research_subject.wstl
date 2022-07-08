@@ -1,0 +1,36 @@
+// The ResearchSubject is used to associate a patient with a given ResearchStudy.
+// 
+
+// Description: Research Subject 
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject - Must have a subject_id
+def ResearchSubject(study, subject) {
+    meta.tag[]: StudyMeta(study);
+    identifier[]: Key_Identifier(study, "ResearchSubject", subject.subject_id);
+    identifier[0].use: "official";
+    identifier[1].value (if subject.dbgap_subject_id?): subject.dbgap_subject_id;
+    identifier[1].system (if subject.dbgap_subject_id?): $StrCat("https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=", study.accession);
+    status: "on-study";
+
+
+    if (study.consent_group?) {
+        study: Reference_Key_Identifier(study, "ResearchStudy", study.consent_group.code);
+    } else {
+        study: Reference_Key_Identifier(study, "ResearchStudy", study.id);
+    }
+    individual: Reference_Key_Identifier(study, "Patient", subject.subject_id);
+    resourceType: "ResearchSubject";
+}
+
+
+// Description: Wrapper for generating ResearchSubject records
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  demo - Must have a subject_id
+// 
+def ProcessResearchSubject(study, subject) {
+    out research_study: ResearchSubject(study, subject);
+}

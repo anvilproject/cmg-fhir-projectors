@@ -1,0 +1,98 @@
+study_id: BHCMG
+study_accession:  phs000744
+study_title: Baylor-Hopkins Center for Mendelian Genomics (BHCMG)
+study_desc: Johns Hopkins and Baylor College of Medicine have received NIH-NHGRI grant support for the creation of a Center for Mendelian Genomics (CMG) to help “solve” Mendelian disorders for which the genetic etiology is presently unknown.
+url: https://mendeliangenomics.org/
+identifier_prefix: https://bhcmg.org/fhir
+output_filename: bhcmg-hmb
+id_colname: ParticipantID
+whistle_src: _cmg.wstl
+study_sponsor:
+  id: nhgri
+  name: National Human Genome Research Institute (NHGRI)
+consent_group: 
+  code: HMB-NPU
+  name: https://omim.org/
+  description: For health/medical/biomedical purposes and other biological research, including the study of population origins or ancestry.
+code_harmonization_dir: harmony/bh
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+projector_lib: projector
+dataset:
+  subject: 
+    filename: data/bh/hmb-npu/hmb-npu-subject.csv
+    data_dictionary: 
+      filename:  data/subject-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/bh/cmg-harmony.csv
+  sample: 
+    filename: data/bh/hmb-npu/hmb-npu-sample.csv
+    data_dictionary: 
+      filename:  data/sample-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/bh/cmg-harmony.csv
+  sequencing: 
+    filename: data/bh/hmb-npu/hmb-npu/hmb-npu-sequencing.csv
+    embed:
+      dataset: sample
+      colname: sample_id
+    data_dictionary: 
+      filename:  data/sequencing-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/bh/cmg-harmony.csv
+  family:
+    filename: data/bh/hmb-npu/hmb-npu-family.csv
+    data_dictionary: 
+      filename:  data/family-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/bh/cmg-harmony.csv
+  discovery:
+    filename: data/bh/hmb-npu/hmb-npu-discovery.csv
+    data_dictionary: 
+      filename:  data/discovery-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/bh/cmg-harmony.csv
+  conditions:
+    filename: data/bh/hmb-npu/conditions-hmb.csv
+    data_dictionary: 
+      filename: data/conditions-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/bh/cmg-harmony.csv
+  diseases:
+    filename: data/bh/hmb-npu/diseases-hmb.csv
+    data_dictionary: 
+      filename: data/disease-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/bh/cmg-harmony.csv
+active_tables:
+  ALL: true

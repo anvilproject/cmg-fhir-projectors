@@ -1,0 +1,77 @@
+// Description: Build Out Family Relationships as Observations
+// 
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject_id - is a participantid and is the participant described by the code
+//  focus_id - is a participantid
+//  code - Code describing subject_id's relationship to focus_id
+// Note:
+//  Subject is the individual we whose relationship with focus_id we are describing in code
+//  so if code=mother, then subject_id is the "mother" of focus_id
+def FamilyRelationshipObservation(study, subject_id, focus_id, code) {
+    if (subject_id ~= focus_id) {
+        var varcode: HarmonizeMapped(code, "FamilyRelationship");
+
+        meta.tag[]: StudyMeta(study);
+        meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+
+        identifier[]: Key_Identifier(study, "Observation",  $StrCat(study.id, ".", subject_id, ".", varcode[0].code, ".", focus_id));
+        identifier[0].use: "official";
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+        focus[]: Reference_Key_Identifier(study, "Patient", focus_id);
+
+        code.text: "Family Relationship";
+        code.coding[]: HarmonizeMapped("FAMMEMB", "FamilyRelationship");
+        valueCodeableConcept.coding: varcode;
+        valueCodeableConcept.text: varcode[0].display;
+        
+        status: "final";
+        resourceType: "Observation";
+    }
+}
+
+def ProcessParentRelationships(study, subject) {
+    // If we have a mother, we'll generate the relationships for each of the two
+    // We'll use the sex of the subject to select son/daughter or child
+    if (subject.maternal_id?) {
+        out family_members: FamilyRelationshipObservation(study, subject.maternal_id, subject.subject_id, "Mother");
+        out family_members: FamilyRelationshipObservation(study, subject.subject_id, subject.maternal_id, subject.sex);
+    }
+
+    if (subject.paternal_id?) {
+        out family_members: FamilyRelationshipObservation(study, subject.paternal_id, subject.subject_id, "Father");
+        out family_members: FamilyRelationshipObservation(study, subject.subject_id, subject.paternal_id, subject.sex);
+    }
+
+    if (subject.twin_id?) {
+        out family_members: FamilyRelationshipObservation(study, subject.paternal_id, subject.subject_id, "Twin");
+        if (subject.sex = "Male") {
+            out family_members: FamilyRelationshipObservation(study, subject.subject_id, subject.paternal_id, "TwinBrother");
+        } else {
+            if (subject.sex = "Female") {
+                out family_members: FamilyRelationshipObservation(study, subject.subject_id, subject.paternal_id, "TwinSister");
+            } else {
+                out family_members: FamilyRelationshipObservation(study, subject.subject_id, subject.paternal_id, "Twin");
+            }
+        }        
+    }
+
+}
+
+// Iterate over family_members and build all possible "relationships" with subject_id
+// 
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject_id - is a participantid and is the participant described by the code
+//  family_members - is all participant IDs related to subject_id
+//  code - Code describing subject_id's relationship to focus_id
+// Note:
+//  It should be noted that a relationship between subject_id and all ids in 
+//  family_members will be created using the exact same code. This probably
+//  doesn't apply to most situations, but for HTP, all we have is the fact
+//  that any related paticipants will have the same "parent_id" (or be the 
+//  one pointed to with parent_id). In this case, parent_id is not an 
+//  appropriate descriptor for the contents of the variable 
+def ProcessFamilyRelationships(study, subject_id, family_members, code) {
+    $this: FamilyRelationshipObservation(study, subject_id, family_members[], code);
+}

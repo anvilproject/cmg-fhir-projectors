@@ -1,0 +1,107 @@
+local code,text,table_name,parent_varname,local code system,code,display,code system,comment
+FAMMEMB,Family Member,subject,subject,FamilyRelationship,FAMMEMB,family member,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Male,Male,participant,Sex,Sex,male,Male,http://hl7.org/fhir/administrative-gender,
+Female,Female,participant,Sex,Sex,female,Female,http://hl7.org/fhir/administrative-gender,
+White,White,participant,ancestry,Race,2028-9,White,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+American Indian or Alaska Native,American Indian or Alaska Native,participant,ancestry,Race,1002-5,American Indian or Alaska Native,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+Asian,Asian,participant,ancestry,Race,2028-9,Asian,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+Black or African-American,Black or African-American,participant,ancestry,Race,2054-5,Black or African American,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+More than one race,More than one race,participant,ancestry,Race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,
+NA,NA,participant,ancestry,Race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+Native Hawaiian or Other Pacific Islander,Native Hawaiian or Other Pacific Islander,participant,ancestry,Race,2076-8,Native Hawaiian or Other Pacific Islander,urn:oid:2.16.840.1.113883.6.238,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+Other,Other,participant,ancestry,Race,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+Other,Other,participant,ancestry,Race,other,Other,http://hl7.org/fhir/administrative-gender,
+Prefer not to answer,Prefer not to answer,participant,ancestry,Race,ASKU,asked but unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+Hispanic or Latino,Hispanic or Latino,participant,ancestry,Ethnicity,2135-2,Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+NA,NA,participant,Ethnicity,Ethnicity,UNK,Unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+Not Hispanic or Latino,Not Hispanic or Latino,participant,Ethnicity,Ethnicity,2186-5,Not Hispanic or Latino,urn:oid:2.16.840.1.113883.6.238,
+Prefer not to answer,Prefer not to answer,participant,Ethnicity,Ethnicity,ASKU,asked but unknown,http://terminology.hl7.org/CodeSystem/v3-NullFlavor,https://docs.google.com/spreadsheets/d/1cHSburUDg6CR4az5FZR82FI992h7cyv-22pLVTFLZvE/edit#gid=1746314807
+True,True,conditions,ConditionPresent,ConditionPresent,confirmed,Confirmed,http://terminology.hl7.org/CodeSystem/condition-ver-status
+False,False,conditions,ConditionPresent,ConditionPresent,refuted,Refuted,http://terminology.hl7.org/CodeSystem/condition-ver-status
+Maybe,Maybe,conditions,ConditionPresent,ConditionPresent,provisional,Provisional,http://terminology.hl7.org/CodeSystem/condition-ver-status
+Affected,Affected,sample,tissue_affected_status,tissue_affected_status,POS,Positive,http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation,
+Unaffected,Unaffected,sample,tissue_affected_status,tissue_affected_status,NEG,Negative,http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation,
+Mother,Mother,subject,maternal_id,FamilyRelationship,MTH,mother,http://terminology.hl7.org/CodeSystem/v3-RoleCode,
+Father,Father,subject,paternal_id,FamilyRelationship,FTH,father,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Child,Child,subject,subject,FamilyRelationship,NCHILD,natural child,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Male,Male,subject,subject,FamilyRelationship,SON,natural son,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Female,Female,subject,subject,FamilyRelationship,DAU,natural daughter,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Unknown,Unknown,subject,subject,FamilyRelationship,NCHILD,natural child,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Intersex,Intersex,subject,subject,FamilyRelationship,NCHILD,natural child,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Twin,Twin,subject,subject,FamilyRelationship,TWIN,twin,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+TwinBrother,Twin Brother,subject,subject,FamilyRelationship,TWINBRO,twin brother,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+TwinSister,Twin Sister,subject,subject,FamilyRelationship,TWINSIS,twin sister,http://terminology.hl7.org/CodeSystem/v3-RoleCode
+bam,BAM File,sequencing,seq_filename,DataType,Aligned-Reads,Aligned Reads,https://nih-ncpi.github.io/ncpi-fhir-ig/data_types,
+gvcf,gvcf,sequencing,seq_filename,DataType,gVCF,gVCF,https://nih-ncpi.github.io/ncpi-fhir-ig/data_types,
+Controlled,Controlled,sequencing,access_type,access_type,controlled,Controlled,https://includedcc.org/fhir/code-systems/data_access_types,https://docs.google.com/spreadsheets/d/1_qbnn1VVlQS0tGprkiJbOhHZFixvs2qAVj5Rrdi2EaU/edit#gid=857513026
+Registered,Registered,sequencing,access_type,access_type,registered,Registered,https://includedcc.org/fhir/code-systems/data_access_types,https://docs.google.com/spreadsheets/d/1_qbnn1VVlQS0tGprkiJbOhHZFixvs2qAVj5Rrdi2EaU/edit#gid=857513026
+WHOLE_GENOME,Whole Genome Sequencing,sequencing,exome_capture_platform,DataCategory,Genomics,Genomics,https://nih-ncpi.github.io/ncpi-fhir-ig/data_categories,
+WGS,Whole Genome Sequencing,sequencing,sequencing_assay,ExperimentStrategy,WGS,Whole Genome,https://nih-ncpi.github.io/ncpi-fhir-ig/experimental_strategies,
+DNA,DNA,sequencing,analyte_type,SampleType,OBI:0001051,DNA extract,http://purl.obolibrary.org/obo/obi.owl,
+190400,Trigeminal Neuralgia,subject,disease_id,disease_id,OMIM:190400,Trigeminal Neuralgia,https://omim.org/,
+207790,"Arachnoid Cysts, Intracranial",subject,disease_id,disease_id,OMIM:207790,"Arachnoid Cysts, Intracranial",https://omim.org/,
+OMIM:137580,GILLES DE LA TOURETTE SYNDROME; GTS,subject,disease_id,disease_id,OMIM:137580,GILLES DE LA TOURETTE SYNDROME; GTS,https://omim.org/,
+OMIM:164230,OBSESSIVE-COMPULSIVE DISORDER; OCD,subject,disease_id,disease_id,OMIM:164230,OBSESSIVE-COMPULSIVE DISORDER; OCD,https://omim.org/,
+OMIM:607834,ANXIETY,subject,disease_id,disease_id,OMIM:607834,ANXIETY,https://omim.org/,
+OMIM:613229,TRICHOTILLOMANIA; TTM,subject,disease_id,disease_id,OMIM:613229,TRICHOTILLOMANIA; TTM,https://omim.org/,
+PS123100,CRANIOSYNOSTOSIS 1; CRS1,subject,disease_id,disease_id,OMIM:123100,CRANIOSYNOSTOSIS 1; CRS1,https://omim.org/,
+PS173900,POLYCYSTIC KIDNEY DISEASE 1 WITH OR WITHOUT POLYCYSTIC LIVER DISEASE; PKD1,subject,disease_id,disease_id,OMIM:173900,POLYCYSTIC KIDNEY DISEASE 1 WITH OR WITHOUT POLYCYSTIC LIVER DISEASE; PKD1,https://omim.org/,
+PS174050,POLYCYSTIC LIVER DISEASE 1 WITH OR WITHOUT KIDNEY CYSTS; PCLD1,subject,disease_id,disease_id,OMIM:174050,POLYCYSTIC LIVER DISEASE 1 WITH OR WITHOUT KIDNEY CYSTS; PCLD1,https://omim.org/,
+PS252350,MOYAMOYA DISEASE 1; MYMY1,subject,disease_id,disease_id,OMIM:252350,MOYAMOYA DISEASE 1; MYMY1,https://omim.org/,
+PS258150,SPERMATOGENIC FAILURE 1; SPGF1,subject,disease_id,disease_id,OMIM:258150,SPERMATOGENIC FAILURE 1; SPGF1,https://omim.org/,
+PS308230,"IMMUNODEFICIENCY WITH HYPER-IgM, TYPE 1; HIGM1",subject,disease_id,disease_id,OMIM:308230,"IMMUNODEFICIENCY WITH HYPER-IgM, TYPE 1; HIGM1",https://omim.org/,
+HP:0000027,Azoospermia,subject,hpo_present,subject,HP:0000027,Azoospermia,https://uberon.github.io/,
+HP:0000093,Proteinuria,subject,hpo_present,subject,HP:0000093,Proteinuria,https://uberon.github.io/,
+HP:0000097,Focal segmental glomerulosclerosis,subject,hpo_present,subject,HP:0000097,Focal segmental glomerulosclerosis,https://uberon.github.io/,
+HP:0000113,Polycystic kidney dysplasia,subject,hpo_present,subject,HP:0000113,Polycystic kidney dysplasia,https://uberon.github.io/,
+HP:0000118,Phenotypic abnormality,subject,hpo_present,subject,HP:0000118,Phenotypic abnormality,https://uberon.github.io/,
+HP:0000238,Hydrocephalus,subject,hpo_present,subject,HP:0000238,Hydrocephalus,https://uberon.github.io/,
+HP:0000478,Abnormality of the eye,subject,hpo_present,subject,HP:0000478,Abnormality of the eye,https://uberon.github.io/,
+HP:0000707,Abnormality of the nervous system,subject,hpo_present,subject,HP:0000707,Abnormality of the nervous system,https://uberon.github.io/,
+HP:0000718,Aggressive behavior,subject,hpo_present,subject,HP:0000718,Aggressive behavior,https://uberon.github.io/,
+HP:0000722,Obsessive-compulsive behavior,subject,hpo_present,subject,HP:0000722,Obsessive-compulsive behavior,https://uberon.github.io/,
+HP:0000739,Anxiety,subject,hpo_present,subject,HP:0000739,Anxiety,https://uberon.github.io/,
+HP:0000776,Congenital diaphragmatic hernia,subject,hpo_present,subject,HP:0000776,Congenital diaphragmatic hernia,https://uberon.github.io/,
+HP:0000798,Oligospermia,subject,hpo_present,subject,HP:0000798,Oligospermia,https://uberon.github.io/,
+HP:0001249,Intellectual disability,subject,hpo_present,subject,HP:0001249,Intellectual disability,https://uberon.github.io/,
+HP:0001250,Seizure,subject,hpo_present,subject,HP:0001250,Seizure,https://uberon.github.io/,
+HP:0001256,"Intellectual disability, mild",subject,hpo_present,subject,HP:0001256,"Intellectual disability, mild",https://uberon.github.io/,
+HP:0001334,Communicating hydrocephalus,subject,hpo_present,subject,HP:0001334,Communicating hydrocephalus,https://uberon.github.io/,
+HP:0001363,Craniosynostosis,subject,hpo_present,subject,HP:0001363,Craniosynostosis,https://uberon.github.io/,
+HP:0001392,Abnormality of the liver,subject,hpo_present,subject,HP:0001392,Abnormality of the liver,https://uberon.github.io/,
+HP:0001543,Gastroschisis,subject,hpo_present,subject,HP:0001543,Gastroschisis,https://uberon.github.io/,
+HP:0001888,Lymphopenia,subject,hpo_present,subject,HP:0001888,Lymphopenia,https://uberon.github.io/,
+HP:0002148,Hypophosphatemia,subject,hpo_present,subject,HP:0002148,Hypophosphatemia,https://uberon.github.io/,
+HP:0002202,Pleural effusion,subject,hpo_present,subject,HP:0002202,Pleural effusion,https://uberon.github.io/,
+HP:0002414,Spina bifida,subject,hpo_present,subject,HP:0002414,Spina bifida,https://uberon.github.io/,
+HP:0002719,Recurrent infections,subject,hpo_present,subject,HP:0002719,Recurrent infections,https://uberon.github.io/,
+HP:0002721,Immunodeficiency,subject,hpo_present,subject,HP:0002721,Immunodeficiency,https://uberon.github.io/,
+HP:0003011,Abnormality of the musculature,subject,hpo_present,subject,HP:0003011,Abnormality of the musculature,https://uberon.github.io/,
+HP:0003251,Male infertility,subject,hpo_present,subject,HP:0003251,Male infertility,https://uberon.github.io/,
+HP:0003549,Abnormality of connective tissue,subject,hpo_present,subject,HP:0003549,Abnormality of connective tissue,https://uberon.github.io/,
+HP:0004944,Dilatation of the cerebral artery,subject,hpo_present,subject,HP:0004944,Dilatation of the cerebral artery,https://uberon.github.io/,
+HP:0006530,Abnormal pulmonary interstitial morphology,subject,hpo_present,subject,HP:0006530,Abnormal pulmonary interstitial morphology,https://uberon.github.io/,
+HP:0006557,Polycystic liver disease,subject,hpo_present,subject,HP:0006557,Polycystic liver disease,https://uberon.github.io/,
+HP:0007481,Hyperpigmented nevi,subject,hpo_present,subject,HP:0007481,Hyperpigmented nevi,https://uberon.github.io/,
+HP:0008232,Elevated circulating follicle stimulating hormone level,subject,hpo_present,subject,HP:0008232,Elevated circulating follicle stimulating hormone level,https://uberon.github.io/,
+HP:0009804,Tooth agenesis,subject,hpo_present,subject,HP:0009804,Tooth agenesis,https://uberon.github.io/,
+HP:0010953,Noncommunicating hydrocephalus,subject,hpo_present,subject,HP:0010953,Noncommunicating hydrocephalus,https://uberon.github.io/,
+HP:0011834,Moyamoya phenomenon,subject,hpo_present,subject,HP:0011834,Moyamoya phenomenon,https://uberon.github.io/,
+HP:0011969,Elevated circulating luteinizing hormone level,subject,hpo_present,subject,HP:0011969,Elevated circulating luteinizing hormone level,https://uberon.github.io/,
+HP:0012166,Skin-picking,subject,hpo_present,subject,HP:0012166,Skin-picking,https://uberon.github.io/,
+HP:0012167,Hair-pulling,subject,hpo_present,subject,HP:0012167,Hair-pulling,https://uberon.github.io/,
+HP:0012207,Reduced sperm motility,subject,hpo_present,subject,HP:0012207,Reduced sperm motility,https://uberon.github.io/,
+HP:0012208,Immotile sperm,subject,hpo_present,subject,HP:0012208,Immotile sperm,https://uberon.github.io/,
+HP:0012469,Infantile spasms,subject,hpo_present,subject,HP:0012469,Infantile spasms,https://uberon.github.io/,
+HP:0012864,Abnormal sperm morphology,subject,hpo_present,subject,HP:0012864,Abnormal sperm morphology,https://uberon.github.io/,
+HP:0030713,Vein of Galen aneurysmal malformation,subject,hpo_present,subject,HP:0030713,Vein of Galen aneurysmal malformation,https://uberon.github.io/,
+HP:0030875,Abnormality of pulmonary circulation,subject,hpo_present,subject,HP:0030875,Abnormality of pulmonary circulation,https://uberon.github.io/,
+HP:0032894,Seizure precipitated by febrile infection,subject,hpo_present,subject,HP:0032894,Seizure precipitated by febrile infection,https://uberon.github.io/,
+HP:0040306,Decreased male libido,subject,hpo_present,subject,HP:0040306,Decreased male libido,https://uberon.github.io/,
+HP:0045026,Abnormality of the mediastinum,subject,hpo_present,subject,HP:0045026,Abnormality of the mediastinum,https://uberon.github.io/,
+HP:0100022,Abnormality of movement,subject,hpo_present,subject,HP:0100022,Abnormality of movement,https://uberon.github.io/,
+HP:0100033,Tics,subject,hpo_present,subject,HP:0100033,Tics,https://uberon.github.io/,
+HP:0100661,Trigeminal neuralgia,subject,hpo_present,subject,HP:0100661,Trigeminal neuralgia,https://uberon.github.io/,
+HP:0100702,Arachnoid cyst,subject,hpo_present,subject,HP:0100702,Arachnoid cyst,https://uberon.github.io/,
+HP:0410323,Drug allergy,subject,hpo_present,subject,HP:0410323,Drug allergy,https://uberon.github.io/,
+HP:100766,HP:100766,subject,hpo_present,subject,HP:100766,HP:100766,https://uberon.github.io/,

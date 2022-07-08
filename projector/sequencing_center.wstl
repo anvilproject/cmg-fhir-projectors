@@ -1,0 +1,34 @@
+//
+// Sequencing Center 
+//
+
+
+// Description: Build the Organization entry
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  subjects - array of subjects, each of which should have a participantid 
+//
+// We don't currently have access to consent details, so this just builds the 
+// entire enrollment for the study. 
+def SequencingCenter(study, sequencing_center) {
+    meta.tag[]: StudyMeta(study);
+    
+    identifier[0]: Key_Identifier(study, "Organization", sequencing_center);
+    identifier[0].use: "official";
+
+    name: sequencing_center;
+    active: true;
+
+    resourceType: "Organization";
+}
+
+// Description: Wrapper to create the organization(s)
+// 
+//  study - This is the full study object created by Whistler
+//  sample - Array of sample objects  
+def ProcessSequencingCenter(study, sequencing_center) {
+    out sequencing: SequencingCenter(study, sequencing_center);
+}
+
+

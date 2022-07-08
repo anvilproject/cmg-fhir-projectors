@@ -1,0 +1,8 @@
+# Local dev specific files which shouldn't make their way into a public repo
+activate
+fhir_hosts
+todo
+
+# Data should remain isolated from github
+data
+output

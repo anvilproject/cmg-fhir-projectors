@@ -1,0 +1,3407 @@
+{
+  "id": "cmg-harmony",
+  "resourceType": "ConceptMap",
+  "version": "v1",
+  "group": [
+    {
+      "source": "FamilyRelationship",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "element": [
+        {
+          "code": "FAMMEMB",
+          "display": "Family Member",
+          "target": [
+            {
+              "code": "FAMMEMB",
+              "display": "family member",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "MTH",
+              "display": "mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "FTH",
+              "display": "father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Child",
+          "display": "Child",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "SON",
+              "display": "natural son",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "DAU",
+              "display": "natural daughter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Intersex",
+          "display": "Intersex",
+          "target": [
+            {
+              "code": "NCHILD",
+              "display": "natural child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Twin",
+          "display": "Twin",
+          "target": [
+            {
+              "code": "TWIN",
+              "display": "twin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinBrother",
+          "display": "Twin Brother",
+          "target": [
+            {
+              "code": "TWINBRO",
+              "display": "twin brother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinSister",
+          "display": "Twin Sister",
+          "target": [
+            {
+              "code": "TWINSIS",
+              "display": "twin sister",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "FamilyRelationship",
+      "target": "self",
+      "element": [
+        {
+          "code": "FAMMEMB",
+          "display": "Family Member",
+          "target": [
+            {
+              "code": "FAMMEMB",
+              "display": "Family Member",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Child",
+          "display": "Child",
+          "target": [
+            {
+              "code": "Child",
+              "display": "Child",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Intersex",
+          "display": "Intersex",
+          "target": [
+            {
+              "code": "Intersex",
+              "display": "Intersex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Twin",
+          "display": "Twin",
+          "target": [
+            {
+              "code": "Twin",
+              "display": "Twin",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinBrother",
+          "display": "Twin Brother",
+          "target": [
+            {
+              "code": "TwinBrother",
+              "display": "Twin Brother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "TwinSister",
+          "display": "Twin Sister",
+          "target": [
+            {
+              "code": "TwinSister",
+              "display": "Twin Sister",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Sex",
+      "target": "self",
+      "element": [
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "1002-5",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "2028-9",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African-American",
+          "display": "Black or African-American",
+          "target": [
+            {
+              "code": "2054-5",
+              "display": "Black or African American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "2076-8",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "self",
+      "element": [
+        {
+          "code": "White",
+          "display": "White",
+          "target": [
+            {
+              "code": "White",
+              "display": "White",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "American Indian or Alaska Native",
+          "display": "American Indian or Alaska Native",
+          "target": [
+            {
+              "code": "American Indian or Alaska Native",
+              "display": "American Indian or Alaska Native",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Asian",
+          "display": "Asian",
+          "target": [
+            {
+              "code": "Asian",
+              "display": "Asian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Black or African-American",
+          "display": "Black or African-American",
+          "target": [
+            {
+              "code": "Black or African-American",
+              "display": "Black or African-American",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "More than one race",
+              "display": "More than one race",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Native Hawaiian or Other Pacific Islander",
+          "display": "Native Hawaiian or Other Pacific Islander",
+          "target": [
+            {
+              "code": "Native Hawaiian or Other Pacific Islander",
+              "display": "Native Hawaiian or Other Pacific Islander",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "Other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "More than one race",
+          "display": "More than one race",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Race",
+      "target": "http://hl7.org/fhir/administrative-gender",
+      "element": [
+        {
+          "code": "Other",
+          "display": "Other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "urn:oid:2.16.840.1.113883.6.238",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "2135-2",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "2186-5",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "self",
+      "element": [
+        {
+          "code": "Hispanic or Latino",
+          "display": "Hispanic or Latino",
+          "target": [
+            {
+              "code": "Hispanic or Latino",
+              "display": "Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "NA",
+              "display": "NA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Not Hispanic or Latino",
+          "display": "Not Hispanic or Latino",
+          "target": [
+            {
+              "code": "Not Hispanic or Latino",
+              "display": "Not Hispanic or Latino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "Prefer not to answer",
+              "display": "Prefer not to answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Ethnicity",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "element": [
+        {
+          "code": "NA",
+          "display": "NA",
+          "target": [
+            {
+              "code": "UNK",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Prefer not to answer",
+          "display": "Prefer not to answer",
+          "target": [
+            {
+              "code": "ASKU",
+              "display": "asked but unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ConditionPresent",
+      "target": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "element": [
+        {
+          "code": "True",
+          "display": "True",
+          "target": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "False",
+          "display": "False",
+          "target": [
+            {
+              "code": "refuted",
+              "display": "Refuted",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Maybe",
+          "display": "Maybe",
+          "target": [
+            {
+              "code": "provisional",
+              "display": "Provisional",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ConditionPresent",
+      "target": "self",
+      "element": [
+        {
+          "code": "True",
+          "display": "True",
+          "target": [
+            {
+              "code": "True",
+              "display": "True",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "False",
+          "display": "False",
+          "target": [
+            {
+              "code": "False",
+              "display": "False",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Maybe",
+          "display": "Maybe",
+          "target": [
+            {
+              "code": "Maybe",
+              "display": "Maybe",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "tissue_affected_status",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "element": [
+        {
+          "code": "Affected",
+          "display": "Affected",
+          "target": [
+            {
+              "code": "POS",
+              "display": "Positive",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unaffected",
+          "display": "Unaffected",
+          "target": [
+            {
+              "code": "NEG",
+              "display": "Negative",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "tissue_affected_status",
+      "target": "self",
+      "element": [
+        {
+          "code": "Affected",
+          "display": "Affected",
+          "target": [
+            {
+              "code": "Affected",
+              "display": "Affected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unaffected",
+          "display": "Unaffected",
+          "target": [
+            {
+              "code": "Unaffected",
+              "display": "Unaffected",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataType",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/data_types",
+      "element": [
+        {
+          "code": "bam",
+          "display": "BAM File",
+          "target": [
+            {
+              "code": "Aligned-Reads",
+              "display": "Aligned Reads",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gvcf",
+          "display": "gvcf",
+          "target": [
+            {
+              "code": "gVCF",
+              "display": "gVCF",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataType",
+      "target": "self",
+      "element": [
+        {
+          "code": "bam",
+          "display": "BAM File",
+          "target": [
+            {
+              "code": "bam",
+              "display": "BAM File",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gvcf",
+          "display": "gvcf",
+          "target": [
+            {
+              "code": "gvcf",
+              "display": "gvcf",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "access_type",
+      "target": "https://includedcc.org/fhir/code-systems/data_access_types",
+      "element": [
+        {
+          "code": "Controlled",
+          "display": "Controlled",
+          "target": [
+            {
+              "code": "controlled",
+              "display": "Controlled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Registered",
+          "display": "Registered",
+          "target": [
+            {
+              "code": "registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "access_type",
+      "target": "self",
+      "element": [
+        {
+          "code": "Controlled",
+          "display": "Controlled",
+          "target": [
+            {
+              "code": "Controlled",
+              "display": "Controlled",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Registered",
+          "display": "Registered",
+          "target": [
+            {
+              "code": "Registered",
+              "display": "Registered",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataCategory",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/data_categories",
+      "element": [
+        {
+          "code": "WHOLE_GENOME",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "Genomics",
+              "display": "Genomics",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "DataCategory",
+      "target": "self",
+      "element": [
+        {
+          "code": "WHOLE_GENOME",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "WHOLE_GENOME",
+              "display": "Whole Genome Sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ExperimentStrategy",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/experimental_strategies",
+      "element": [
+        {
+          "code": "WGS",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "WGS",
+              "display": "Whole Genome",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "ExperimentStrategy",
+      "target": "self",
+      "element": [
+        {
+          "code": "WGS",
+          "display": "Whole Genome Sequencing",
+          "target": [
+            {
+              "code": "WGS",
+              "display": "Whole Genome Sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "SampleType",
+      "target": "http://purl.obolibrary.org/obo/obi.owl",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "OBI:0001051",
+              "display": "DNA extract",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "SampleType",
+      "target": "self",
+      "element": [
+        {
+          "code": "DNA",
+          "display": "DNA",
+          "target": [
+            {
+              "code": "DNA",
+              "display": "DNA",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "disease_id",
+      "target": "https://omim.org/",
+      "element": [
+        {
+          "code": "190400",
+          "display": "Trigeminal Neuralgia",
+          "target": [
+            {
+              "code": "OMIM:190400",
+              "display": "Trigeminal Neuralgia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "207790",
+          "display": "Arachnoid Cysts, Intracranial",
+          "target": [
+            {
+              "code": "OMIM:207790",
+              "display": "Arachnoid Cysts, Intracranial",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:137580",
+          "display": "GILLES DE LA TOURETTE SYNDROME; GTS",
+          "target": [
+            {
+              "code": "OMIM:137580",
+              "display": "GILLES DE LA TOURETTE SYNDROME; GTS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:164230",
+          "display": "OBSESSIVE-COMPULSIVE DISORDER; OCD",
+          "target": [
+            {
+              "code": "OMIM:164230",
+              "display": "OBSESSIVE-COMPULSIVE DISORDER; OCD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:607834",
+          "display": "ANXIETY",
+          "target": [
+            {
+              "code": "OMIM:607834",
+              "display": "ANXIETY",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:613229",
+          "display": "TRICHOTILLOMANIA; TTM",
+          "target": [
+            {
+              "code": "OMIM:613229",
+              "display": "TRICHOTILLOMANIA; TTM",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS123100",
+          "display": "CRANIOSYNOSTOSIS 1; CRS1",
+          "target": [
+            {
+              "code": "OMIM:123100",
+              "display": "CRANIOSYNOSTOSIS 1; CRS1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS173900",
+          "display": "POLYCYSTIC KIDNEY DISEASE 1 WITH OR WITHOUT POLYCYSTIC LIVER DISEASE; PKD1",
+          "target": [
+            {
+              "code": "OMIM:173900",
+              "display": "POLYCYSTIC KIDNEY DISEASE 1 WITH OR WITHOUT POLYCYSTIC LIVER DISEASE; PKD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS174050",
+          "display": "POLYCYSTIC LIVER DISEASE 1 WITH OR WITHOUT KIDNEY CYSTS; PCLD1",
+          "target": [
+            {
+              "code": "OMIM:174050",
+              "display": "POLYCYSTIC LIVER DISEASE 1 WITH OR WITHOUT KIDNEY CYSTS; PCLD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS252350",
+          "display": "MOYAMOYA DISEASE 1; MYMY1",
+          "target": [
+            {
+              "code": "OMIM:252350",
+              "display": "MOYAMOYA DISEASE 1; MYMY1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS258150",
+          "display": "SPERMATOGENIC FAILURE 1; SPGF1",
+          "target": [
+            {
+              "code": "OMIM:258150",
+              "display": "SPERMATOGENIC FAILURE 1; SPGF1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS308230",
+          "display": "IMMUNODEFICIENCY WITH HYPER-IgM, TYPE 1; HIGM1",
+          "target": [
+            {
+              "code": "OMIM:308230",
+              "display": "IMMUNODEFICIENCY WITH HYPER-IgM, TYPE 1; HIGM1",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "disease_id",
+      "target": "self",
+      "element": [
+        {
+          "code": "190400",
+          "display": "Trigeminal Neuralgia",
+          "target": [
+            {
+              "code": "190400",
+              "display": "Trigeminal Neuralgia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "207790",
+          "display": "Arachnoid Cysts, Intracranial",
+          "target": [
+            {
+              "code": "207790",
+              "display": "Arachnoid Cysts, Intracranial",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:137580",
+          "display": "GILLES DE LA TOURETTE SYNDROME; GTS",
+          "target": [
+            {
+              "code": "OMIM:137580",
+              "display": "GILLES DE LA TOURETTE SYNDROME; GTS",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:164230",
+          "display": "OBSESSIVE-COMPULSIVE DISORDER; OCD",
+          "target": [
+            {
+              "code": "OMIM:164230",
+              "display": "OBSESSIVE-COMPULSIVE DISORDER; OCD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:607834",
+          "display": "ANXIETY",
+          "target": [
+            {
+              "code": "OMIM:607834",
+              "display": "ANXIETY",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OMIM:613229",
+          "display": "TRICHOTILLOMANIA; TTM",
+          "target": [
+            {
+              "code": "OMIM:613229",
+              "display": "TRICHOTILLOMANIA; TTM",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS123100",
+          "display": "CRANIOSYNOSTOSIS 1; CRS1",
+          "target": [
+            {
+              "code": "PS123100",
+              "display": "CRANIOSYNOSTOSIS 1; CRS1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS173900",
+          "display": "POLYCYSTIC KIDNEY DISEASE 1 WITH OR WITHOUT POLYCYSTIC LIVER DISEASE; PKD1",
+          "target": [
+            {
+              "code": "PS173900",
+              "display": "POLYCYSTIC KIDNEY DISEASE 1 WITH OR WITHOUT POLYCYSTIC LIVER DISEASE; PKD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS174050",
+          "display": "POLYCYSTIC LIVER DISEASE 1 WITH OR WITHOUT KIDNEY CYSTS; PCLD1",
+          "target": [
+            {
+              "code": "PS174050",
+              "display": "POLYCYSTIC LIVER DISEASE 1 WITH OR WITHOUT KIDNEY CYSTS; PCLD1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS252350",
+          "display": "MOYAMOYA DISEASE 1; MYMY1",
+          "target": [
+            {
+              "code": "PS252350",
+              "display": "MOYAMOYA DISEASE 1; MYMY1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS258150",
+          "display": "SPERMATOGENIC FAILURE 1; SPGF1",
+          "target": [
+            {
+              "code": "PS258150",
+              "display": "SPERMATOGENIC FAILURE 1; SPGF1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "PS308230",
+          "display": "IMMUNODEFICIENCY WITH HYPER-IgM, TYPE 1; HIGM1",
+          "target": [
+            {
+              "code": "PS308230",
+              "display": "IMMUNODEFICIENCY WITH HYPER-IgM, TYPE 1; HIGM1",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "subject",
+      "target": "https://uberon.github.io/",
+      "element": [
+        {
+          "code": "HP:0000027",
+          "display": "Azoospermia",
+          "target": [
+            {
+              "code": "HP:0000027",
+              "display": "Azoospermia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000093",
+          "display": "Proteinuria",
+          "target": [
+            {
+              "code": "HP:0000093",
+              "display": "Proteinuria",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000097",
+          "display": "Focal segmental glomerulosclerosis",
+          "target": [
+            {
+              "code": "HP:0000097",
+              "display": "Focal segmental glomerulosclerosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000113",
+          "display": "Polycystic kidney dysplasia",
+          "target": [
+            {
+              "code": "HP:0000113",
+              "display": "Polycystic kidney dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000118",
+          "display": "Phenotypic abnormality",
+          "target": [
+            {
+              "code": "HP:0000118",
+              "display": "Phenotypic abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000238",
+          "display": "Hydrocephalus",
+          "target": [
+            {
+              "code": "HP:0000238",
+              "display": "Hydrocephalus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000478",
+          "display": "Abnormality of the eye",
+          "target": [
+            {
+              "code": "HP:0000478",
+              "display": "Abnormality of the eye",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000707",
+          "display": "Abnormality of the nervous system",
+          "target": [
+            {
+              "code": "HP:0000707",
+              "display": "Abnormality of the nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000718",
+          "display": "Aggressive behavior",
+          "target": [
+            {
+              "code": "HP:0000718",
+              "display": "Aggressive behavior",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000722",
+          "display": "Obsessive-compulsive behavior",
+          "target": [
+            {
+              "code": "HP:0000722",
+              "display": "Obsessive-compulsive behavior",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000739",
+          "display": "Anxiety",
+          "target": [
+            {
+              "code": "HP:0000739",
+              "display": "Anxiety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000776",
+          "display": "Congenital diaphragmatic hernia",
+          "target": [
+            {
+              "code": "HP:0000776",
+              "display": "Congenital diaphragmatic hernia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000798",
+          "display": "Oligospermia",
+          "target": [
+            {
+              "code": "HP:0000798",
+              "display": "Oligospermia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001249",
+          "display": "Intellectual disability",
+          "target": [
+            {
+              "code": "HP:0001249",
+              "display": "Intellectual disability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001250",
+          "display": "Seizure",
+          "target": [
+            {
+              "code": "HP:0001250",
+              "display": "Seizure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001256",
+          "display": "Intellectual disability, mild",
+          "target": [
+            {
+              "code": "HP:0001256",
+              "display": "Intellectual disability, mild",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001334",
+          "display": "Communicating hydrocephalus",
+          "target": [
+            {
+              "code": "HP:0001334",
+              "display": "Communicating hydrocephalus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001363",
+          "display": "Craniosynostosis",
+          "target": [
+            {
+              "code": "HP:0001363",
+              "display": "Craniosynostosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001392",
+          "display": "Abnormality of the liver",
+          "target": [
+            {
+              "code": "HP:0001392",
+              "display": "Abnormality of the liver",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001543",
+          "display": "Gastroschisis",
+          "target": [
+            {
+              "code": "HP:0001543",
+              "display": "Gastroschisis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001888",
+          "display": "Lymphopenia",
+          "target": [
+            {
+              "code": "HP:0001888",
+              "display": "Lymphopenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002148",
+          "display": "Hypophosphatemia",
+          "target": [
+            {
+              "code": "HP:0002148",
+              "display": "Hypophosphatemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002202",
+          "display": "Pleural effusion",
+          "target": [
+            {
+              "code": "HP:0002202",
+              "display": "Pleural effusion",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002414",
+          "display": "Spina bifida",
+          "target": [
+            {
+              "code": "HP:0002414",
+              "display": "Spina bifida",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002719",
+          "display": "Recurrent infections",
+          "target": [
+            {
+              "code": "HP:0002719",
+              "display": "Recurrent infections",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002721",
+          "display": "Immunodeficiency",
+          "target": [
+            {
+              "code": "HP:0002721",
+              "display": "Immunodeficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003011",
+          "display": "Abnormality of the musculature",
+          "target": [
+            {
+              "code": "HP:0003011",
+              "display": "Abnormality of the musculature",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003251",
+          "display": "Male infertility",
+          "target": [
+            {
+              "code": "HP:0003251",
+              "display": "Male infertility",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003549",
+          "display": "Abnormality of connective tissue",
+          "target": [
+            {
+              "code": "HP:0003549",
+              "display": "Abnormality of connective tissue",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004944",
+          "display": "Dilatation of the cerebral artery",
+          "target": [
+            {
+              "code": "HP:0004944",
+              "display": "Dilatation of the cerebral artery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0006530",
+          "display": "Abnormal pulmonary interstitial morphology",
+          "target": [
+            {
+              "code": "HP:0006530",
+              "display": "Abnormal pulmonary interstitial morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0006557",
+          "display": "Polycystic liver disease",
+          "target": [
+            {
+              "code": "HP:0006557",
+              "display": "Polycystic liver disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0007481",
+          "display": "Hyperpigmented nevi",
+          "target": [
+            {
+              "code": "HP:0007481",
+              "display": "Hyperpigmented nevi",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0008232",
+          "display": "Elevated circulating follicle stimulating hormone level",
+          "target": [
+            {
+              "code": "HP:0008232",
+              "display": "Elevated circulating follicle stimulating hormone level",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009804",
+          "display": "Tooth agenesis",
+          "target": [
+            {
+              "code": "HP:0009804",
+              "display": "Tooth agenesis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0010953",
+          "display": "Noncommunicating hydrocephalus",
+          "target": [
+            {
+              "code": "HP:0010953",
+              "display": "Noncommunicating hydrocephalus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011834",
+          "display": "Moyamoya phenomenon",
+          "target": [
+            {
+              "code": "HP:0011834",
+              "display": "Moyamoya phenomenon",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011969",
+          "display": "Elevated circulating luteinizing hormone level",
+          "target": [
+            {
+              "code": "HP:0011969",
+              "display": "Elevated circulating luteinizing hormone level",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012166",
+          "display": "Skin-picking",
+          "target": [
+            {
+              "code": "HP:0012166",
+              "display": "Skin-picking",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012167",
+          "display": "Hair-pulling",
+          "target": [
+            {
+              "code": "HP:0012167",
+              "display": "Hair-pulling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012207",
+          "display": "Reduced sperm motility",
+          "target": [
+            {
+              "code": "HP:0012207",
+              "display": "Reduced sperm motility",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012208",
+          "display": "Immotile sperm",
+          "target": [
+            {
+              "code": "HP:0012208",
+              "display": "Immotile sperm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012469",
+          "display": "Infantile spasms",
+          "target": [
+            {
+              "code": "HP:0012469",
+              "display": "Infantile spasms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012864",
+          "display": "Abnormal sperm morphology",
+          "target": [
+            {
+              "code": "HP:0012864",
+              "display": "Abnormal sperm morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0030713",
+          "display": "Vein of Galen aneurysmal malformation",
+          "target": [
+            {
+              "code": "HP:0030713",
+              "display": "Vein of Galen aneurysmal malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0030875",
+          "display": "Abnormality of pulmonary circulation",
+          "target": [
+            {
+              "code": "HP:0030875",
+              "display": "Abnormality of pulmonary circulation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0032894",
+          "display": "Seizure precipitated by febrile infection",
+          "target": [
+            {
+              "code": "HP:0032894",
+              "display": "Seizure precipitated by febrile infection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0040306",
+          "display": "Decreased male libido",
+          "target": [
+            {
+              "code": "HP:0040306",
+              "display": "Decreased male libido",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0045026",
+          "display": "Abnormality of the mediastinum",
+          "target": [
+            {
+              "code": "HP:0045026",
+              "display": "Abnormality of the mediastinum",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100022",
+          "display": "Abnormality of movement",
+          "target": [
+            {
+              "code": "HP:0100022",
+              "display": "Abnormality of movement",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100033",
+          "display": "Tics",
+          "target": [
+            {
+              "code": "HP:0100033",
+              "display": "Tics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100661",
+          "display": "Trigeminal neuralgia",
+          "target": [
+            {
+              "code": "HP:0100661",
+              "display": "Trigeminal neuralgia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100702",
+          "display": "Arachnoid cyst",
+          "target": [
+            {
+              "code": "HP:0100702",
+              "display": "Arachnoid cyst",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0410323",
+          "display": "Drug allergy",
+          "target": [
+            {
+              "code": "HP:0410323",
+              "display": "Drug allergy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:100766",
+          "display": "HP:100766",
+          "target": [
+            {
+              "code": "HP:100766",
+              "display": "HP:100766",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "subject",
+      "target": "self",
+      "element": [
+        {
+          "code": "HP:0000027",
+          "display": "Azoospermia",
+          "target": [
+            {
+              "code": "HP:0000027",
+              "display": "Azoospermia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000093",
+          "display": "Proteinuria",
+          "target": [
+            {
+              "code": "HP:0000093",
+              "display": "Proteinuria",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000097",
+          "display": "Focal segmental glomerulosclerosis",
+          "target": [
+            {
+              "code": "HP:0000097",
+              "display": "Focal segmental glomerulosclerosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000113",
+          "display": "Polycystic kidney dysplasia",
+          "target": [
+            {
+              "code": "HP:0000113",
+              "display": "Polycystic kidney dysplasia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000118",
+          "display": "Phenotypic abnormality",
+          "target": [
+            {
+              "code": "HP:0000118",
+              "display": "Phenotypic abnormality",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000238",
+          "display": "Hydrocephalus",
+          "target": [
+            {
+              "code": "HP:0000238",
+              "display": "Hydrocephalus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000478",
+          "display": "Abnormality of the eye",
+          "target": [
+            {
+              "code": "HP:0000478",
+              "display": "Abnormality of the eye",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000707",
+          "display": "Abnormality of the nervous system",
+          "target": [
+            {
+              "code": "HP:0000707",
+              "display": "Abnormality of the nervous system",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000718",
+          "display": "Aggressive behavior",
+          "target": [
+            {
+              "code": "HP:0000718",
+              "display": "Aggressive behavior",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000722",
+          "display": "Obsessive-compulsive behavior",
+          "target": [
+            {
+              "code": "HP:0000722",
+              "display": "Obsessive-compulsive behavior",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000739",
+          "display": "Anxiety",
+          "target": [
+            {
+              "code": "HP:0000739",
+              "display": "Anxiety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000776",
+          "display": "Congenital diaphragmatic hernia",
+          "target": [
+            {
+              "code": "HP:0000776",
+              "display": "Congenital diaphragmatic hernia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0000798",
+          "display": "Oligospermia",
+          "target": [
+            {
+              "code": "HP:0000798",
+              "display": "Oligospermia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001249",
+          "display": "Intellectual disability",
+          "target": [
+            {
+              "code": "HP:0001249",
+              "display": "Intellectual disability",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001250",
+          "display": "Seizure",
+          "target": [
+            {
+              "code": "HP:0001250",
+              "display": "Seizure",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001256",
+          "display": "Intellectual disability, mild",
+          "target": [
+            {
+              "code": "HP:0001256",
+              "display": "Intellectual disability, mild",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001334",
+          "display": "Communicating hydrocephalus",
+          "target": [
+            {
+              "code": "HP:0001334",
+              "display": "Communicating hydrocephalus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001363",
+          "display": "Craniosynostosis",
+          "target": [
+            {
+              "code": "HP:0001363",
+              "display": "Craniosynostosis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001392",
+          "display": "Abnormality of the liver",
+          "target": [
+            {
+              "code": "HP:0001392",
+              "display": "Abnormality of the liver",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001543",
+          "display": "Gastroschisis",
+          "target": [
+            {
+              "code": "HP:0001543",
+              "display": "Gastroschisis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0001888",
+          "display": "Lymphopenia",
+          "target": [
+            {
+              "code": "HP:0001888",
+              "display": "Lymphopenia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002148",
+          "display": "Hypophosphatemia",
+          "target": [
+            {
+              "code": "HP:0002148",
+              "display": "Hypophosphatemia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002202",
+          "display": "Pleural effusion",
+          "target": [
+            {
+              "code": "HP:0002202",
+              "display": "Pleural effusion",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002414",
+          "display": "Spina bifida",
+          "target": [
+            {
+              "code": "HP:0002414",
+              "display": "Spina bifida",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002719",
+          "display": "Recurrent infections",
+          "target": [
+            {
+              "code": "HP:0002719",
+              "display": "Recurrent infections",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0002721",
+          "display": "Immunodeficiency",
+          "target": [
+            {
+              "code": "HP:0002721",
+              "display": "Immunodeficiency",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003011",
+          "display": "Abnormality of the musculature",
+          "target": [
+            {
+              "code": "HP:0003011",
+              "display": "Abnormality of the musculature",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003251",
+          "display": "Male infertility",
+          "target": [
+            {
+              "code": "HP:0003251",
+              "display": "Male infertility",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0003549",
+          "display": "Abnormality of connective tissue",
+          "target": [
+            {
+              "code": "HP:0003549",
+              "display": "Abnormality of connective tissue",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0004944",
+          "display": "Dilatation of the cerebral artery",
+          "target": [
+            {
+              "code": "HP:0004944",
+              "display": "Dilatation of the cerebral artery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0006530",
+          "display": "Abnormal pulmonary interstitial morphology",
+          "target": [
+            {
+              "code": "HP:0006530",
+              "display": "Abnormal pulmonary interstitial morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0006557",
+          "display": "Polycystic liver disease",
+          "target": [
+            {
+              "code": "HP:0006557",
+              "display": "Polycystic liver disease",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0007481",
+          "display": "Hyperpigmented nevi",
+          "target": [
+            {
+              "code": "HP:0007481",
+              "display": "Hyperpigmented nevi",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0008232",
+          "display": "Elevated circulating follicle stimulating hormone level",
+          "target": [
+            {
+              "code": "HP:0008232",
+              "display": "Elevated circulating follicle stimulating hormone level",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0009804",
+          "display": "Tooth agenesis",
+          "target": [
+            {
+              "code": "HP:0009804",
+              "display": "Tooth agenesis",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0010953",
+          "display": "Noncommunicating hydrocephalus",
+          "target": [
+            {
+              "code": "HP:0010953",
+              "display": "Noncommunicating hydrocephalus",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011834",
+          "display": "Moyamoya phenomenon",
+          "target": [
+            {
+              "code": "HP:0011834",
+              "display": "Moyamoya phenomenon",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0011969",
+          "display": "Elevated circulating luteinizing hormone level",
+          "target": [
+            {
+              "code": "HP:0011969",
+              "display": "Elevated circulating luteinizing hormone level",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012166",
+          "display": "Skin-picking",
+          "target": [
+            {
+              "code": "HP:0012166",
+              "display": "Skin-picking",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012167",
+          "display": "Hair-pulling",
+          "target": [
+            {
+              "code": "HP:0012167",
+              "display": "Hair-pulling",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012207",
+          "display": "Reduced sperm motility",
+          "target": [
+            {
+              "code": "HP:0012207",
+              "display": "Reduced sperm motility",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012208",
+          "display": "Immotile sperm",
+          "target": [
+            {
+              "code": "HP:0012208",
+              "display": "Immotile sperm",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012469",
+          "display": "Infantile spasms",
+          "target": [
+            {
+              "code": "HP:0012469",
+              "display": "Infantile spasms",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0012864",
+          "display": "Abnormal sperm morphology",
+          "target": [
+            {
+              "code": "HP:0012864",
+              "display": "Abnormal sperm morphology",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0030713",
+          "display": "Vein of Galen aneurysmal malformation",
+          "target": [
+            {
+              "code": "HP:0030713",
+              "display": "Vein of Galen aneurysmal malformation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0030875",
+          "display": "Abnormality of pulmonary circulation",
+          "target": [
+            {
+              "code": "HP:0030875",
+              "display": "Abnormality of pulmonary circulation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0032894",
+          "display": "Seizure precipitated by febrile infection",
+          "target": [
+            {
+              "code": "HP:0032894",
+              "display": "Seizure precipitated by febrile infection",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0040306",
+          "display": "Decreased male libido",
+          "target": [
+            {
+              "code": "HP:0040306",
+              "display": "Decreased male libido",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0045026",
+          "display": "Abnormality of the mediastinum",
+          "target": [
+            {
+              "code": "HP:0045026",
+              "display": "Abnormality of the mediastinum",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100022",
+          "display": "Abnormality of movement",
+          "target": [
+            {
+              "code": "HP:0100022",
+              "display": "Abnormality of movement",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100033",
+          "display": "Tics",
+          "target": [
+            {
+              "code": "HP:0100033",
+              "display": "Tics",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100661",
+          "display": "Trigeminal neuralgia",
+          "target": [
+            {
+              "code": "HP:0100661",
+              "display": "Trigeminal neuralgia",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0100702",
+          "display": "Arachnoid cyst",
+          "target": [
+            {
+              "code": "HP:0100702",
+              "display": "Arachnoid cyst",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:0410323",
+          "display": "Drug allergy",
+          "target": [
+            {
+              "code": "HP:0410323",
+              "display": "Drug allergy",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "HP:100766",
+          "display": "HP:100766",
+          "target": [
+            {
+              "code": "HP:100766",
+              "display": "HP:100766",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "subject",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/subject",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "Subject ID",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "Subject ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "family_id",
+          "display": "Family ID",
+          "target": [
+            {
+              "code": "family_id",
+              "display": "Family ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sex",
+          "display": "Sex",
+          "target": [
+            {
+              "code": "sex",
+              "display": "Sex",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "affected_status",
+          "display": "Affected Status",
+          "target": [
+            {
+              "code": "affected_status",
+              "display": "Affected Status",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "proband_relationship",
+          "display": "Proband Relationship",
+          "target": [
+            {
+              "code": "proband_relationship",
+              "display": "Proband Relationship",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "maternal_id",
+          "display": "Maternal ID",
+          "target": [
+            {
+              "code": "maternal_id",
+              "display": "Maternal ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "paternal_id",
+          "display": "Paternal ID",
+          "target": [
+            {
+              "code": "paternal_id",
+              "display": "Paternal ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "twin_id",
+          "display": "Twin ID",
+          "target": [
+            {
+              "code": "twin_id",
+              "display": "Twin ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ancestry",
+          "display": "Ancestry",
+          "target": [
+            {
+              "code": "ancestry",
+              "display": "Ancestry",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ancestry_detail",
+          "display": "Ancestry Detail",
+          "target": [
+            {
+              "code": "ancestry_detail",
+              "display": "Ancestry Detail",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disease_description",
+          "display": "Disease Description",
+          "target": [
+            {
+              "code": "disease_description",
+              "display": "Disease Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disease_id",
+          "display": "Disease ID",
+          "target": [
+            {
+              "code": "disease_id",
+              "display": "Disease ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hpo_present",
+          "display": "HPO Present?",
+          "target": [
+            {
+              "code": "hpo_present",
+              "display": "HPO Present?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hpo_absent",
+          "display": "HPO Absent?",
+          "target": [
+            {
+              "code": "hpo_absent",
+              "display": "HPO Absent?",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phenotype_description",
+          "display": "Phenotype Description",
+          "target": [
+            {
+              "code": "phenotype_description",
+              "display": "Phenotype Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phenotype_group",
+          "display": "Phenotype Group",
+          "target": [
+            {
+              "code": "phenotype_group",
+              "display": "Phenotype Group",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "age_at_last_observation",
+          "display": "Age at Last Observation",
+          "target": [
+            {
+              "code": "age_at_last_observation",
+              "display": "Age at Last Observation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "age_of_onset",
+          "display": "Age of Onset",
+          "target": [
+            {
+              "code": "age_of_onset",
+              "display": "Age of Onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "prior_testing",
+          "display": "prior_testing",
+          "target": [
+            {
+              "code": "prior_testing",
+              "display": "prior_testing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "congenital_status",
+          "display": "congenital_status",
+          "target": [
+            {
+              "code": "congenital_status",
+              "display": "congenital_status",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_study_id",
+          "display": "dbgap_study_id",
+          "target": [
+            {
+              "code": "dbgap_study_id",
+              "display": "dbgap_study_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_subject_id",
+          "display": "dbgap_subject_id",
+          "target": [
+            {
+              "code": "dbgap_subject_id",
+              "display": "dbgap_subject_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_submission",
+          "display": "dbgap_submission",
+          "target": [
+            {
+              "code": "dbgap_submission",
+              "display": "dbgap_submission",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pmid_id",
+          "display": "pmid_id",
+          "target": [
+            {
+              "code": "pmid_id",
+              "display": "pmid_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "solve_state",
+          "display": "solve_state",
+          "target": [
+            {
+              "code": "solve_state",
+              "display": "solve_state",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "project_id",
+          "display": "project_id",
+          "target": [
+            {
+              "code": "project_id",
+              "display": "project_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "multiple_datasets",
+          "display": "multiple_datasets",
+          "target": [
+            {
+              "code": "multiple_datasets",
+              "display": "multiple_datasets",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "sample",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/sample",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "subject_id",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "subject_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sample_id",
+          "display": "sample_id",
+          "target": [
+            {
+              "code": "sample_id",
+              "display": "sample_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dbgap_sample_id",
+          "display": "dbgap_sample_id",
+          "target": [
+            {
+              "code": "dbgap_sample_id",
+              "display": "dbgap_sample_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sample_source",
+          "display": "sample_source",
+          "target": [
+            {
+              "code": "sample_source",
+              "display": "sample_source",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sequencing_center",
+          "display": "sequencing_center",
+          "target": [
+            {
+              "code": "sequencing_center",
+              "display": "sequencing_center",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "tissue_affected_status",
+          "display": "tissue_affected_status",
+          "target": [
+            {
+              "code": "tissue_affected_status",
+              "display": "tissue_affected_status",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "sequencing",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/sequencing",
+      "element": [
+        {
+          "code": "sample_id",
+          "display": "sample_id",
+          "target": [
+            {
+              "code": "sample_id",
+              "display": "sample_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "seq_filename",
+          "display": "seq_filename",
+          "target": [
+            {
+              "code": "seq_filename",
+              "display": "seq_filename",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "analyte_type",
+          "display": "analyte_type",
+          "target": [
+            {
+              "code": "analyte_type",
+              "display": "analyte_type",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sequencing_assay",
+          "display": "sequencing_assay",
+          "target": [
+            {
+              "code": "sequencing_assay",
+              "display": "sequencing_assay",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "library_prep_kit_method",
+          "display": "library_prep_kit_method",
+          "target": [
+            {
+              "code": "library_prep_kit_method",
+              "display": "library_prep_kit_method",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "exome_capture_platform",
+          "display": "exome_capture_platform",
+          "target": [
+            {
+              "code": "exome_capture_platform",
+              "display": "exome_capture_platform",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "capture_region_bed_file",
+          "display": "capture_region_bed_file",
+          "target": [
+            {
+              "code": "capture_region_bed_file",
+              "display": "capture_region_bed_file",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "reference_genome_build",
+          "display": "reference_genome_build",
+          "target": [
+            {
+              "code": "reference_genome_build",
+              "display": "reference_genome_build",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "alignment_method",
+          "display": "alignment_method",
+          "target": [
+            {
+              "code": "alignment_method",
+              "display": "alignment_method",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "data_processing_pipeline",
+          "display": "data_processing_pipeline",
+          "target": [
+            {
+              "code": "data_processing_pipeline",
+              "display": "data_processing_pipeline",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "functional_equivalence_standard",
+          "display": "functional_equivalence_standard",
+          "target": [
+            {
+              "code": "functional_equivalence_standard",
+              "display": "functional_equivalence_standard",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "date_data_generation",
+          "display": "date_data_generation",
+          "target": [
+            {
+              "code": "date_data_generation",
+              "display": "date_data_generation",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "family",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/family",
+      "element": [
+        {
+          "code": "family_id",
+          "display": "family_id",
+          "target": [
+            {
+              "code": "family_id",
+              "display": "family_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "consanguinity",
+          "display": "consanguinity",
+          "target": [
+            {
+              "code": "consanguinity",
+              "display": "consanguinity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "consanguinity_detail",
+          "display": "consanguinity_detail",
+          "target": [
+            {
+              "code": "consanguinity_detail",
+              "display": "consanguinity_detail",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pedigree_image",
+          "display": "pedigree_image",
+          "target": [
+            {
+              "code": "pedigree_image",
+              "display": "pedigree_image",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pedigree_detail",
+          "display": "pedigree_detail",
+          "target": [
+            {
+              "code": "pedigree_detail",
+              "display": "pedigree_detail",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "family_history",
+          "display": "family_history",
+          "target": [
+            {
+              "code": "family_history",
+              "display": "family_history",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "family_onset",
+          "display": "family_onset",
+          "target": [
+            {
+              "code": "family_onset",
+              "display": "family_onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "discovery",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/discovery",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "subject_id",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "subject_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sample_id",
+          "display": "sample_id",
+          "target": [
+            {
+              "code": "sample_id",
+              "display": "sample_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gene",
+          "display": "gene",
+          "target": [
+            {
+              "code": "gene",
+              "display": "gene",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gene_class",
+          "display": "gene_class",
+          "target": [
+            {
+              "code": "gene_class",
+              "display": "gene_class",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inheritance_description",
+          "display": "inheritance_description",
+          "target": [
+            {
+              "code": "inheritance_description",
+              "display": "inheritance_description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "zygosity",
+          "display": "zygosity",
+          "target": [
+            {
+              "code": "zygosity",
+              "display": "zygosity",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "chrom",
+          "display": "chrom",
+          "target": [
+            {
+              "code": "chrom",
+              "display": "chrom",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pos",
+          "display": "pos",
+          "target": [
+            {
+              "code": "pos",
+              "display": "pos",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ref",
+          "display": "ref",
+          "target": [
+            {
+              "code": "ref",
+              "display": "ref",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "alt",
+          "display": "alt",
+          "target": [
+            {
+              "code": "alt",
+              "display": "alt",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hgvsc",
+          "display": "hgvsc",
+          "target": [
+            {
+              "code": "hgvsc",
+              "display": "hgvsc",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hgvsp",
+          "display": "hgvsp",
+          "target": [
+            {
+              "code": "hgvsp",
+              "display": "hgvsp",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "transcript",
+          "display": "transcript",
+          "target": [
+            {
+              "code": "transcript",
+              "display": "transcript",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sv_name",
+          "display": "sv_name",
+          "target": [
+            {
+              "code": "sv_name",
+              "display": "sv_name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sv_type",
+          "display": "sv_type",
+          "target": [
+            {
+              "code": "sv_type",
+              "display": "sv_type",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "significance",
+          "display": "significance",
+          "target": [
+            {
+              "code": "significance",
+              "display": "significance",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "conditions",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/conditions",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "subject_id",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "subject_id",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_code",
+          "display": "condition_code",
+          "target": [
+            {
+              "code": "condition_code",
+              "display": "condition_code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_name",
+          "display": "condition_name",
+          "target": [
+            {
+              "code": "condition_name",
+              "display": "condition_name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "present_absent",
+          "display": "present_absent",
+          "target": [
+            {
+              "code": "present_absent",
+              "display": "present_absent",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "diseases",
+      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/diseases",
+      "element": [
+        {
+          "code": "subject_id",
+          "display": "Subject ID",
+          "target": [
+            {
+              "code": "subject_id",
+              "display": "Subject ID",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_code",
+          "display": "Condition Code",
+          "target": [
+            {
+              "code": "condition_code",
+              "display": "Condition Code",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "condition_name",
+          "display": "Condition Name",
+          "target": [
+            {
+              "code": "condition_name",
+              "display": "Condition Name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "affected_status",
+          "display": "Affected Status",
+          "target": [
+            {
+              "code": "affected_status",
+              "display": "Affected Status",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "disease_description",
+          "display": "Disease Description",
+          "target": [
+            {
+              "code": "disease_description",
+              "display": "Disease Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phenotype_description",
+          "display": "Phenotype Description",
+          "target": [
+            {
+              "code": "phenotype_description",
+              "display": "Phenotype Description",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

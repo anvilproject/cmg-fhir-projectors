@@ -1,0 +1,17 @@
+// Common function used to annotate each resource with the meta.tag = study_id (in this case HTP)
+// 
+// This makes for convenient searching for tasks like filtering resources to a given study
+
+// Portal team has asked that we provide a tag for the study to simplify
+// their data pulls
+def StudyMeta(study) {
+    
+    if (study.consent_group.code?) {
+        var study_identifier: Key_Identifier(study, "ResearchStudy", $StrCat(study.id, "-", study.consent_group.code))
+    } else {
+        var study_identifier: Key_Identifier(study, "ResearchStudy", study.id);
+    }
+    
+    code: study_identifier.value;
+    system: study_identifier.system;
+}

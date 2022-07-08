@@ -1,0 +1,88 @@
+study_id: UW-CMG
+study_accession:  phs000693
+study_title: University of Washington Center for Mendelian Genomics (UW-CMG)
+study_desc: The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.
+url: https://uwcmg.org/fhir
+identifier_prefix: https://uwcmg.org/fhir
+output_filename: uwcmg-ds-bav
+id_colname: ParticipantID
+whistle_src: _cmg.wstl
+code_harmonization_dir: harmony/uw
+study_sponsor:
+  id: nhgri
+  name: National Human Genome Research Institute (NHGRI)
+consent_group: 
+  code: DS-BAV-IRB-PUB-RD
+  name: Bicuspid aortic valve
+  description: Use of the data must be related to [disease]. Requestor must provide documentation of local IRB/REC approval. Requestor agrees to make results of studies using the data available to the larger scientific community. (Programmer's note, the disease should be confirmed by someone in the know)
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+projector_lib: projector
+dataset:
+  subject: 
+    filename: data/uw/ds-bav/uw_phs000693_ds-bav-irb-pub-rd_subject_2021-01-11_y9q5.csv
+    data_dictionary: 
+      filename:  data/subject-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  sample: 
+    filename: data/uw/ds-bav/uw_phs000693_ds-bav-irb-pub-rd_sample_2021-01-11_y9q5.csv
+    data_dictionary: 
+      filename:  data/sample-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  sequencing: 
+    filename: data/uw/ds-bav/uw_phs000693_ds-bav-irb-pub-rd_sequencing_2021-01-11_y9q5.csv
+    embed:
+      dataset: sample
+      colname: sample_id
+    data_dictionary: 
+      filename:  data/sequencing-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  family:
+    filename: data/uw/ds-bav/uw_phs000693_ds-bav-irb-pub-rd_family_2021-01-11_y9q5.csv
+    data_dictionary: 
+      filename:  data/family-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  conditions:
+    filename: data/uw/ds-bav/conditions-ds-bav.csv
+    data_dictionary: 
+      filename: data/conditions-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  diseases:
+    filename: data/uw/ds-bav/diseases-ds-bav.csv
+    data_dictionary: 
+      filename: data/disease-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+active_tables:
+  ALL: true

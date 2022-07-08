@@ -1,0 +1,44 @@
+// Specimen use the standard FHIR Specimen resource with a few potential specialized 
+// interpretations of the standard properties:
+//   * parent - If the specimen type is derived from another, the "parent" specimen is referenced here
+//   * processing[x].additive - References to the appropriate Substance associated with the preservation_method
+//   * aliquots are stored inside the .container array
+//
+def ProcessSpecimen(study, specimen) {
+    // We may not get subject id or it's name will change. This is based on 
+    // RJC example but the final dataset may look very different.
+    var subject_id: specimen.subject_id;
+
+    meta.tag[]: StudyMeta(study);
+    
+    // add labID to identifier as separate entry???
+    identifier[0]: Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, specimen.sample_id));
+    identifier[0].use: "official";
+
+    if (specimen.dbgap_sample_id?) {
+        identifier[1].system: "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000744.v4.p2&phv=202584"
+        identifier[1].value: specimen.dbgap_sample_id;
+    }
+
+    if (specimen.sample_source?) {
+        collection.bodySite: HarmonizeMapped(specimen.sample_source, "SampleSource");
+    }
+
+    if ($ListLen(specimen.sequencing) > 0) {
+        type.coding[]: HarmonizeMapped(specimen.sequencing[0].analyte_type, "SampleType");
+        type.text: specimen.sequencing[0].analyte_type;
+    }
+
+
+    // No consistency...ever
+    collection._collectedDateTime.extension[0] (if specimen.age_at_collection ~= "NA" and specimen.age_at_collection ~= "#N/A"): AgeAtExtension(study, subject_id, specimen.age_at_collection, "days");
+
+    subject: Reference_Key_Identifier(study, "Patient", subject_id);
+    resourceType: "Specimen";    
+
+}
+
+def ProcessSpecimenData(study, sample) {
+    out specimen: ProcessSpecimen(study, sample);
+    out file_meta: ProcessFileMetadata(study, sample.subject_id, sample.sequencing[]);
+}

@@ -1,0 +1,31 @@
+// Tissue Affected Status
+//
+// Represented via Observation
+
+def Tissue_Affected_Status(study, sample) {
+    var mapped_status: HarmonizeMapped(sample.tissue_affected_status, "tissue_affected_status");
+
+    if (mapped_status?) {
+        meta.tag[]: StudyMeta(study);
+
+        identifier[]: Key_Identifier(study, "Observation", BuildObservationId(study, sample.subject_id, "tissue-affected-status"))
+        identifier[0].use: "official";
+
+        status: "final";
+        subject: Reference_Key_Identifier(study, "Patient", sample.subject_id);
+        specimen: Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, sample.subject_id, specimen.sample_id));
+
+        var mapped_status: HarmonizeMapped(sample.tissue_affected_status, "tissue_affected_status");
+
+        code.coding[]: HarmonizeMapped(sample.tissue_affected_status, "tissue_affected_status");
+
+        code.coding[]: LocalCodeSystemReference(study, "sample", "tissue_affected_status");
+        code.text: sample.tissue_affected_status;
+
+        resourceType: "Observation";
+    }
+}
+
+def ProcessTissueAffectedStatus(study, subject) {
+    out specimen: Tissue_Affected_Status(study, subject);
+}

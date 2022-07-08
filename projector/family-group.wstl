@@ -1,0 +1,46 @@
+// Group to represent a family
+
+// Description: Build the group entry
+// 
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  subjects - array of subjects, each of which should have a participantid 
+//
+// We don't currently have access to consent details, so this just builds the 
+// entire enrollment for the study. 
+def FamilyGroup(study, subjects, famid) {
+    meta.tag[]: StudyMeta(study);
+
+    identifier[0]: Key_Identifier(study, "Group", $StrCat(study.id, ".", famid));
+    identifier[1]: Key_Identifier(study, "Group/id", famid);
+    identifier[1].use: "official";
+    type: "person";
+    actual: true;
+    var familymembers: subjects[where $.family_id=famid];
+    member: Reference_Enrollment(study, familymembers[]);
+    quantity: $ListLen(member);
+
+    code.coding[0].system: "http://terminology.hl7.org/CodeSystem/v3-RoleCode";
+    code.coding[0].code: "FAMMEMB";
+    code.coding[0].display: "family member";
+
+    resourceType: "Group";
+}
+
+
+
+// Description: Wrapper to create the group(s)
+// 
+//  study - This is the full study object created by Whistler
+//  demo - Array of demo objects  
+def ProcessFamilyGroups(study, participants, familyid) {
+    out research_study: FamilyGroup(study, participants, familyid);
+
+    var familymembers: participants[where $.family_id=familyid];
+    var subjectids: $Unique(familymembers[*].subject_id);
+    //out family_members: ProcessParentRelationships(study, participants[]);
+
+    //out family_members: ProcessFamilyRelationships(study, subjectids[], subjectids[*], "FAMMEMB");
+
+    out research_study: FamilyIdObservation(study, "subject", "family_id", familyid);
+}

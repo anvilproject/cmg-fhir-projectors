@@ -1,0 +1,39 @@
+
+
+def Transform_CMG_Dataset(resource) {
+    if (resource.study?) {
+        $this (if resource.code-systems?): ProcessCodeSystem(resource.study, resource.code-systems[]);
+        $this (if resource.study.data-dictionary?): ProcessDatasetDefinitions(resource.study, resource.study.data-dictionary[]);
+    }
+    if resource.harmony? {
+        $this: ProcessDDHarmony(resource.study, resource.harmony[]);
+    }
+    if resource.subject? {
+        $this: ProcessParticipant(resource.study, resource.subject[]);
+        $this: ProcessGroup(resource.study, resource.subject[*]);
+        $this: ProcessStudy(resource.study);
+        $this: ProcessResearchSubject(resource.study, resource.subject[]);
+
+        var familyids: $Unique(resource.subject[*].family_id);
+        // 2022-7-5 -- We can't actually create relationships to non-patients. Do we create stub patient resources?
+        //$this: ProcessParentRelationships(resource.study, resource.subject[]);
+        $this: ProcessFamilyGroups(resource.study, resource.subject[*], familyids[]);
+        $this: ProcessCongenitalStatus(resource.study, resource.subject[]);
+        $this: ProcessAges(resource.study, resource.subject[]);
+    }
+
+    if resource.conditions? {
+        $this: ProcessCondition(resource.study, resource.conditions[]);
+    }
+
+    if resource.diseases? {
+        $this: ProcessDisease(resource.study, resource.diseases[]);
+    }
+
+    if resource.sample? {
+        var sequencing_centers: $Unique(resource.sample[*].sequencing_center);
+        $this: ProcessSequencingCenter(resource.study, sequencing_centers[]);
+        $this: ProcessSpecimenData(resource.study, resource.sample[]);
+        $this: ProcessTissueAffectedStatus(resource.study, resource.subject[]);
+    }
+}

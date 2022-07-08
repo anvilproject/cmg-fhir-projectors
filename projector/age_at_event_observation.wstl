@@ -1,0 +1,43 @@
+
+// Definition: Construct basic Observation representing age at enrollment
+//
+// Arguments:
+//  study - This is the full study object created by Whistler
+//  subject_id - This is the participant ID which will be used to build a proper reference to the Patient resource
+//  
+def AgeAtEventObservation(study, subject, age_at, event_name, age_units) {
+    var subject_id: subject.subject_id;
+    //var age_at: subject.age_at_enrollment_d;
+
+    if (age_at?) {
+        meta.tag[]: StudyMeta(study);
+
+        identifier[]: Key_Identifier(study, "Observation", $StrCat(study.id, ".", subject_id, ".", event_name));
+        identifier[0].use: "official";
+
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+        // Technically, this is supposed to work, but it doesn't
+        // basedOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "participant", "Age at enrollment (d)"));
+        code.text: HarmonizedLocalDisplay("age_at_enrollment_d", "participant");
+        code.coding[]: HarmonizeMapped("age_at_enrollment_d", "participant");
+        code.coding[]: LocalCodeSystemReference(study, "participant", event_name);
+        
+        _valueDateTime.extension[0]: AgeAtExtension(study, subject_id, age_at, age_units);
+        status: "final";
+        resourceType: "Observation";
+    }
+}
+
+def AgeAtLastObservation(study, subject) {
+    var age_at: subject.age_at_last_observation;
+    $this: AgeAtEventObservation(study, subject, age_at, "age_at_last_observation", "years");
+}
+def AgeOfOnsetObservation(study, subject) {
+    var age_at: subject.age_of_onset;
+    $this: AgeAtEventObservation(study, subject, age_at, "age_of_onset", "years");
+}
+
+def ProcessAges(study, subject) {
+    out age_data: AgeAtLastObservation(study, subject);
+    out age_data: AgeOfOnsetObservation(study, subject);
+}

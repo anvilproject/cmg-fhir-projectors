@@ -1,0 +1,9 @@
+// Description: Build basic reference to a Patient 
+//
+//  study - This is the full study object created by Whistler
+//  subject - Must have a participantid
+def Reference_Enrollment(study, subject) {
+    if ($IsNotNil(subject.participantid)) {
+        entity: Reference_Key_Identifier(study, "Patient", subject.participantid);
+    }
+}

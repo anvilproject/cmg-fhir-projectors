@@ -1,0 +1,88 @@
+study_id: UW-CMG
+study_accession:  phs000693
+study_title: University of Washington Center for Mendelian Genomics (UW-CMG)
+study_desc: The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.
+url: https://uwcmg.org/fhir
+identifier_prefix: https://uwcmg.org/fhir
+output_filename: uwcmg-hmb
+id_colname: ParticipantID
+whistle_src: _cmg.wstl
+code_harmonization_dir: harmony/uw
+study_sponsor:
+  id: nhgri
+  name: National Human Genome Research Institute (NHGRI)
+consent_group: 
+  code: HMB
+  name: health/medical/biomedical research and clinical care
+  description: Use of the data is limited to health/medical/biomedical purposes, does not include the study of population origins or ancestry
+require_official: True
+curies:
+  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/mondo.owl: MONDO
+projector_lib: projector
+dataset:
+  subject: 
+    filename: data/uw/hmb/uw_phs000693_hmb_subject_2021-02-09_y9q5.csv
+    data_dictionary: 
+      filename:  data/subject-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  sample: 
+    filename: data/uw/hmb/uw_phs000693_hmb_sample_2021-02-09_y9q5.csv
+    data_dictionary: 
+      filename:  data/sample-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  sequencing: 
+    filename: data/uw/hmb/uw_phs000693_hmb_sequencing_2021-02-09_y9q5.csv
+    embed:
+      dataset: sample
+      colname: sample_id
+    data_dictionary: 
+      filename:  data/sequencing-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  family:
+    filename: data/uw/hmb/uw_phs000693_hmb_family_2021-02-09_y9q5.csv
+    data_dictionary: 
+      filename:  data/family-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  conditions:
+    filename: data/uw/hmb/conditions-hmb.csv
+    data_dictionary: 
+      filename: data/conditions-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+  diseases:
+    filename: data/uw/hmb/diseases-hmb.csv
+    data_dictionary: 
+      filename: data/disease-dd.csv
+      colnames:
+        varname: varname
+        desc: vardesc
+        type: type
+        values: values
+    code_harmonization: harmony/uw/cmg-harmony.csv
+active_tables:
+  ALL: true

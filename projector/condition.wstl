@@ -1,0 +1,36 @@
+
+
+// Definition: Construct a Condition record. These will have either Mondo and/or HP code
+//
+// Arguments: 
+//  study - This is the full study object created by Whistler
+//  condition - Row containing condition code and it's response (condition_status)
+//
+def Condition(study, condition) {
+    var subject_id: condition.subject_id;
+    var coding: HarmonizeMapped(condition.condition_code, "condition_code");
+    
+    if (~$IsNil(coding)) {
+        meta.tag[]: StudyMeta(study);
+        
+        identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.condition_code));
+        identifier[0].use: "official";
+        subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+        verificationStatus: HarmonizeAsCoding(condition.present_absent, "ConditionPresent");
+
+        category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
+        category[0].coding[0].code: "encounter-diagnosis";
+        category[0].coding[0].display: "Encounter Diagnosis";
+
+        code.coding[]: coding;
+        //code.coding[]: LocalCodeSystemReference(study, "condition_code", condition.condition_code);
+        code.text: condition.condition_name;
+
+        resourceType: "Condition";
+    }
+}
+
+def ProcessCondition(study, condition) {
+    out condition: Condition(study, condition);
+}
