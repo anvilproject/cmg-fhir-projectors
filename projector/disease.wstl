@@ -24,44 +24,47 @@ def Disease(study, condition) {
         
         var subject_id: condition.subject_id;
 
-        // Because these are super rare, we will tolerate conditions without a disease ID, but they will
-        // be bare conditions as opposed to disease profiles.
-        var coding: HarmonizeMapped(condition.condition_code, "disease_id");
 
-        code.coding[]: coding;
-        code.coding[]: LocalCodeSystemReference(study, "disease_id", "subject");
-        
-        meta.tag[]: StudyMeta(study);
-        
-        if (~$IsNil(coding)) {
-            meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease";
-            identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.condition_code));
-            code.text: condition.condition_name;
-        } else {
-            if (condition.disease_description?) {
-                identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.disease_description));
-                code.text: condition.disease_description;
-        } else {
-                identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.phenotype_description));
-                code.text: $StrCat("Disease Phenotype: ", condition.phenotype_description);
+        // We can't do much of anything if we don't have at least some sort of disease information    
+        if (condition.condition_code? or condition.disease_description? or condition.phenotype_description?) {
+            // Because these are super rare, we will tolerate conditions without a disease ID, but they will
+            // be bare conditions as opposed to disease profiles.
+            var coding: HarmonizeMapped(condition.condition_code, "disease_id");
+
+            code.coding[]: coding;
+            code.coding[]: LocalCodeSystemReference(study, "disease_id", "subject");
+
+            meta.tag[]: StudyMeta(study);
+            if (~$IsNil(coding)) {
+                meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease";
+                identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.condition_code));
+                code.text: condition.condition_name;
+            } else {
+                if (condition.disease_description?) {
+                    identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.disease_description));
+                    code.text: condition.disease_description;
+            } else {
+                    identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.phenotype_description));
+                    code.text: $StrCat("Disease Phenotype: ", condition.phenotype_description);
+                }
             }
+            
+            identifier[0].use: "official";
+            subject: Reference_Key_Identifier(study, "Patient", subject_id);
+
+            verificationStatus: HarmonizeAsCoding(condition.affected_status, "affected_status");
+
+            category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
+            category[0].coding[0].code: "encounter-diagnosis";
+            category[0].coding[0].display: "Encounter Diagnosis";
+
+            _onsetDateTime.extension[0] (if subject.age_of_onset?): AgeAtExtension(study, subject_id, subject.age_of_onset, "years");
+
+            if (condition.phenotype_description?) {
+                note[].text: condition.phenotype_description;
+            }
+            resourceType: "Condition";
         }
-        
-        identifier[0].use: "official";
-        subject: Reference_Key_Identifier(study, "Patient", subject_id);
-
-        verificationStatus: HarmonizeAsCoding(condition.affected_status, "affected_status");
-
-        category[0].coding[0].system: "http://terminology.hl7.org/CodeSystem/condition-category";
-        category[0].coding[0].code: "encounter-diagnosis";
-        category[0].coding[0].display: "Encounter Diagnosis";
-
-        _onsetDateTime.extension[0] (if subject.age_of_onset?): AgeAtExtension(study, subject_id, subject.age_of_onset, "years");
-
-        if (condition.phenotype_description?) {
-            note[].text: condition.phenotype_description;
-        }
-        resourceType: "Condition";
     }
 }
 
