@@ -11,8 +11,8 @@
 //  age_unit - years/days - indicate the units associated with age (above)
 //  
 def AgeAtExtension(study, subject_id, age, age_unit) {
-    if (age?) {
-        if (age_unit = "years"){
+    if (age? and age ~= "-") {
+        if (age = "Less than 5 years of age") {
             url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
             extension[0].url: "target";
             extension[0].valueReference: Reference_Key_Identifier(study, "Patient", subject_id);
@@ -21,25 +21,64 @@ def AgeAtExtension(study, subject_id, age, age_unit) {
             extension[2].url: "relationship";
             extension[2].valueCode: "after";
             extension[3].url: "offset";
-            extension[3].valueDuration.value: $ParseFloat(age);
-            extension[3].valueDuration.system: "http://unitsofmeasure.org";
-            extension[3].valueDuration.code: "a";
-        }
-        if (age_unit = "days"){
-            var days: $ParseFloat(age);
-            
-            url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
-            extension[0].url: "target";
-            extension[0].valueReference: Reference_Key_Identifier(study, "Patient", subject_id);
-            extension[1].url: "targetPath";
-            extension[1].valueString: "birthDate";
-            extension[2].url: "relationship";
-            extension[2].valueCode: "after";
-            extension[3].url: "offset";
-            extension[3].valueDuration.value: days;
-            extension[3].valueDuration.unit: "d";
-            extension[3].valueDuration.system: "http://unitsofmeasure.org";
-            extension[3].valueDuration.code: "days";
+            extension[3].valueRange.low.value: 0;
+            extension[3].valueRange.low.unit: "year";
+            extension[3].valueRange.low.system: "http://unitsofmeasure.org";
+            extension[3].valueRange.low.code: "a";
+            extension[3].valueRange.high.value: 5;
+            extension[3].valueRange.high.unit: "year";
+            extension[3].valueRange.high.system: "http://unitsofmeasure.org";
+            extension[3].valueRange.high.code: "a";  
+        } else {
+            if (age_unit = "years"){
+                url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+                extension[0].url: "target";
+                extension[0].valueReference: Reference_Key_Identifier(study, "Patient", subject_id);
+                extension[1].url: "targetPath";
+                extension[1].valueString: "birthDate";
+                extension[2].url: "relationship";
+                extension[2].valueCode: "after";
+                extension[3].url: "offset";
+                extension[3].valueDuration.value: $ParseFloat(age);
+                extension[3].valueDuration.system: "http://unitsofmeasure.org";
+                extension[3].valueDuration.code: "a";
+            }
+            if (age_unit = "days"){
+                var days: $ParseFloat(age);
+                
+                url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+                extension[0].url: "target";
+                extension[0].valueReference: Reference_Key_Identifier(study, "Patient", subject_id);
+                extension[1].url: "targetPath";
+                extension[1].valueString: "birthDate";
+                extension[2].url: "relationship";
+                extension[2].valueCode: "after";
+                extension[3].url: "offset";
+                extension[3].valueDuration.value: days;
+                extension[3].valueDuration.unit: "d";
+                extension[3].valueDuration.system: "http://unitsofmeasure.org";
+                extension[3].valueDuration.code: "days";
+            }
+            if (age_unit = "decade") {
+                var age_range: $StrSplit(age, "-");
+                
+                url: "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime";
+                extension[0].url: "target";
+                extension[0].valueReference: Reference_Key_Identifier(study, "Patient", subject_id);
+                extension[1].url: "targetPath";
+                extension[1].valueString: "birthDate";
+                extension[2].url: "relationship";
+                extension[2].valueCode: "after";
+                extension[3].url: "offset";
+                extension[3].valueRange.low.value: $ParseFloat(age_range[0]);
+                extension[3].valueRange.low.unit: "year";
+                extension[3].valueRange.low.system: "http://unitsofmeasure.org";
+                extension[3].valueRange.low.code: "a";
+                extension[3].valueRange.high.value: $ParseFloat(age_range[1]);
+                extension[3].valueRange.high.unit: "year";
+                extension[3].valueRange.high.system: "http://unitsofmeasure.org";
+                extension[3].valueRange.high.code: "a";  
+            }
         }
     }
 }
