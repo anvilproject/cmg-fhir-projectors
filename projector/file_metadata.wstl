@@ -133,11 +133,11 @@ def FileSpecimenReference(study, subject_id, sequencing) {
     $this: Reference_Key_Identifier(study, "Specimen", BuildSpecimenIdentifier(study, subject_id, sequencing.sample_id));
 }
 
-def FileDetailExtension(study, sequencing) {
+def FileDetailExtension(study, sequencing, seq_filename) {
     //extension[]: KfFileSizeExtension(study, manifest);
 
     // url: manifest.drs_uri;
-    title: sequencing.seq_filename; 
+    title: seq_filename; 
 }
 
 def FileAcl(study, acl) {
@@ -191,19 +191,19 @@ def GetDataTypeFromFilename(filename) {
 
 // The only references I currently have to DRS are from the broad stuff which is
 // a huge mess and probably can't really be used unless they've cleaned it up
-def MetaDocumentReference(study, subject_id, sequencing) {
+def MetaDocumentReference(study, subject_id, seq_filename, sequencing) {
 
     meta.tag[]: StudyMeta(study);
     // Skipping the DRS Stuff for now
     // meta.profile[]: "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
 
-    identifier[]: Key_Identifier(study, "DocumentReference", DocumentReferenceID(study, sequencing.seq_filename));
+    identifier[]: Key_Identifier(study, "DocumentReference", DocumentReferenceID(study, seq_filename));
     identifier[0].use: "official";
 
     status: "current";
     docStatus: "final";
 
-    var file_extension: GetDataTypeFromFilename(sequencing.seq_filename);
+    var file_extension: GetDataTypeFromFilename(seq_filename);
     type: FileCategoryMap(study, "DataType", file_extension);
     subject: Reference_Key_Identifier(study, "Patient", subject_id);
 
@@ -218,7 +218,7 @@ def MetaDocumentReference(study, subject_id, sequencing) {
 
     //content[]: KfDocAttachment(study, manifests);
 
-    content[0].attachment: FileDetailExtension(study, sequencing);
+    content[0].attachment: FileDetailExtension(study, sequencing, seq_filename);
     content[0].format.display: file_extension
 
     context.related[]: FileSpecimenReference(study, subject_id, sequencing);
@@ -227,5 +227,15 @@ def MetaDocumentReference(study, subject_id, sequencing) {
 }
 
 def ProcessFileMetadata(study, subject_id, sequencing) {
-    out files: MetaDocumentReference(study, subject_id, sequencing);
+    if (sequencing.crai?) {
+        out files: MetaDocumentReference(study, subject_id, sequencing.cram, sequencing);
+        out files: MetaDocumentReference(study, subject_id, sequencing.crai, sequencing);
+    } else {
+        if (sequencing.seq_filename?) {
+            out files: MetaDocumentReference(study, subject_id, sequencing.seq_filename, sequencing);
+        } else  {
+            out files: MetaDocumentReference(study, subject_id, sequencing.cram_id, sequencing);
+            out files: MetaDocumentReference(study, subject_id, sequencing.crai_id, sequencing);
+        } 
+    }
 }
