@@ -20,7 +20,6 @@ def TraitObservation(study, subject_id, varname, value, tablename) {
     // basedOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
     code.text: HarmonizedLocalDisplay(varname, tablename);
     code.coding[]: HarmonizeMapped(varname, tablename);
-    code.coding[]: LocalCodeSystemReference(study, tablename, varname);
 
     valueCodeableConcept.coding[]: HarmonizeMapped(value, $ToLower(varname));
     valueCodeableConcept.text: value;

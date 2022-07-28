@@ -32,7 +32,7 @@ def Disease(study, condition) {
             var coding: HarmonizeMapped(condition.condition_code, "disease_id");
 
             code.coding[]: coding;
-            code.coding[]: LocalCodeSystemReference(study, "disease_id", "subject");
+            code.coding[]: HarmonizeMapped("disease_id", "subject");
 
             meta.tag[]: StudyMeta(study);
             if (~$IsNil(coding)) {

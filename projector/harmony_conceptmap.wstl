@@ -53,6 +53,7 @@ def BuildHarmonyConceptMap(study, harmony) {
     identifier.use: "official";
     status: "active";
     purpose: "Represent transformations applied to the HTP dataset";
+    
     if (study.consent_group?) {
         url:  $StrCat(study.identifier-prefix, "/data-dictionary/conceptmap/", study.id, "-", study.consent_group.code, "/data-to-public");
     } else {

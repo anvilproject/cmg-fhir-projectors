@@ -17,10 +17,9 @@ def AgeAtEventObservation(study, subject, age_at, event_name, age_units) {
 
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
         // Technically, this is supposed to work, but it doesn't
-        // basedOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "participant", "Age at enrollment (d)"));
-        code.text: HarmonizedLocalDisplay("age_at_enrollment_d", "participant");
-        code.coding[]: HarmonizeMapped("age_at_enrollment_d", "participant");
-        code.coding[]: LocalCodeSystemReference(study, "participant", event_name);
+        // basedOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, "subject", "Age at enrollment (d)"));
+        code.text: HarmonizedLocalDisplay(event_name, "subject");
+        code.coding[]: HarmonizeMapped(event_name, "subject");
         
         _valueDateTime.extension[0]: AgeAtExtension(study, subject_id, age_at, age_units);
         status: "final";

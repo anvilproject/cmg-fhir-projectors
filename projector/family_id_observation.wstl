@@ -20,7 +20,6 @@ def FamilyIdObservation(study, tablename, varname, value) {
     // basdOn[].identifier: Key_Identifier(study, "ObservationDefinition", DdVariableId(study.id, tablename, varname));
     code.text: HarmonizedLocalDisplay(varname, tablename);
     code.coding[]: varcode;
-    code.coding[]: LocalCodeSystemReference(study, tablename, varname);
     valueString: value;
     
     status: "final";

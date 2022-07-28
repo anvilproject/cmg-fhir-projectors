@@ -17,9 +17,8 @@ def Tissue_Affected_Status(study, sample) {
 
         var mapped_status: HarmonizeMapped(sample.tissue_affected_status, "tissue_affected_status");
 
-        code.coding[]: HarmonizeMapped(sample.tissue_affected_status, "tissue_affected_status");
-
-        code.coding[]: LocalCodeSystemReference(study, "sample", "tissue_affected_status");
+        code.coding[]: mapped_status;
+        code.coding[]: HarmonizeMapped("tissue_affected_status", "sample");
         code.text: sample.tissue_affected_status;
 
         resourceType: "Observation";
