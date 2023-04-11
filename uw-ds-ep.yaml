@@ -2,8 +2,9 @@ study_id: UW-CMG
 study_accession:  phs000693
 study_title: University of Washington Center for Mendelian Genomics (UW-CMG)
 study_desc: The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.
-url: https://uwcmg.org/fhir
-identifier_prefix: https://uwcmg.org/fhir
+url: https://uwcmg.org
+identifier_prefix: https://uwcmg.org/fhir/ds-ep
+dd_prefix: http://mendelian.org/fhir
 output_filename: uwcmg-ds-ep
 id_colname: ParticipantID
 whistle_src: _cmg.wstl
@@ -15,9 +16,14 @@ consent_group:
   code: DS-EP
   name: Epileptic Encephalopathy
   description: Use of the data must be related to [disease]. (Programmer's note, the disease should be confirmed by someone in the know)
+env:
+  local: dev
+  dev: dev
+  qa: anvil-demo
+  prod: anvil-demo
 require_official: True
 curies:
-  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/hp.owl_: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
 projector_lib: projector
 dataset:
@@ -26,20 +32,20 @@ dataset:
     data_dictionary: 
       filename:  data/subject-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   sample: 
     filename: data/uw/dw-ep/uw_phs000693_ds-ep_sample_2021-04-22_y9q6.csv
     data_dictionary: 
       filename:  data/sample-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   sequencing: 
     filename: data/uw/dw-ep/uw_phs000693_ds-ep_sequencing_2021-04-22_y9q6.csv
@@ -49,40 +55,40 @@ dataset:
     data_dictionary: 
       filename:  data/sequencing-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   family:
     filename: data/uw/dw-ep/uw_phs000693_ds-ep_family_2021-04-22_y9q6.csv
     data_dictionary: 
       filename:  data/family-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   conditions:
     filename: data/uw/dw-ep/conditions-dw-ep.csv
     data_dictionary: 
       filename: data/conditions-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   diseases:
     filename: data/uw/dw-ep/diseases-dw-ep.csv
     data_dictionary: 
       filename: data/disease-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
 active_tables:
   ALL: true

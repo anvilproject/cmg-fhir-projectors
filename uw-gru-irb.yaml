@@ -2,8 +2,9 @@ study_id: UW-CMG
 study_accession:  phs000693
 study_title: University of Washington Center for Mendelian Genomics (UW-CMG)
 study_desc: The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.
-url: https://uwcmg.org/fhir
-identifier_prefix: https://uwcmg.org/fhir
+url: https://uwcmg.org
+identifier_prefix: https://uwcmg.org/fhir/gru-irb
+dd_prefix: http://mendelian.org/fhir
 output_filename: uwcmg-gru-irb
 id_colname: ParticipantID
 study_sponsor:
@@ -17,8 +18,13 @@ whistle_src: _cmg.wstl
 code_harmonization_dir: harmony/uw
 require_official: True
 curies:
-  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/hp.owl_: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
+env:
+  local: dev
+  dev: dev
+  qa: anvil-demo
+  prod: anvil-demo
 projector_lib: projector
 dataset:
   subject: 
@@ -26,20 +32,20 @@ dataset:
     data_dictionary: 
       filename:  data/subject-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   sample: 
     filename: data/uw/gru-irb/uw_phs000693_gru-irb_sample_2021-04-23_y9q6.csv
     data_dictionary: 
       filename:  data/sample-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   sequencing: 
     filename: data/uw/gru-irb/uw_phs000693_gru-irb_sequencing_2021-04-23_y9q6.csv
@@ -49,40 +55,40 @@ dataset:
     data_dictionary: 
       filename:  data/sequencing-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   family:
     filename: data/uw/gru-irb/uw_phs000693_gru-irb_family_2021-04-23_y9q6.csv
     data_dictionary: 
       filename:  data/family-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   conditions:
     filename: data/uw/gru-irb/conditions-gru-irb.csv
     data_dictionary: 
       filename: data/conditions-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
   diseases:
     filename: data/uw/gru-irb/diseases-gru-irb.csv
     data_dictionary: 
       filename: data/disease-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/uw/cmg-harmony.csv
 active_tables:
   ALL: true

@@ -3,7 +3,8 @@ study_accession:  phs000744
 study_title: Baylor-Hopkins Center for Mendelian Genomics (BHCMG)
 study_desc: Johns Hopkins and Baylor College of Medicine have received NIH-NHGRI grant support for the creation of a Center for Mendelian Genomics (CMG) to help “solve” Mendelian disorders for which the genetic etiology is presently unknown.
 url: https://mendeliangenomics.org/
-identifier_prefix: https://bhcmg.org/fhir
+identifier_prefix: https://mendeliangenomics.org/fhir/bh-hmb-npu
+dd_prefix: http://mendelian.org/fhir
 output_filename: bhcmg-hmb-npu
 id_colname: ParticipantID
 whistle_src: _cmg.wstl
@@ -19,6 +20,11 @@ require_official: True
 curies:
   http://purl.obolibrary.org/obo/hp.owl: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
+env:
+  local: dev
+  dev: dev
+  qa: anvil-demo
+  prod: anvil-demo
 projector_lib: projector
 dataset:
   subject: 
@@ -26,20 +32,20 @@ dataset:
     data_dictionary: 
       filename:  data/subject-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/bh/cmg-harmony.csv
   sample: 
     filename: data/bh/hmb-npu/hmb-npu-sample.csv.dupes-removed
     data_dictionary: 
       filename:  data/sample-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/bh/cmg-harmony.csv
   sequencing: 
     filename: data/bh/hmb-npu/hmb-npu-sequencing.csv.dupes-removed
@@ -49,50 +55,50 @@ dataset:
     data_dictionary: 
       filename:  data/sequencing-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/bh/cmg-harmony.csv
   family:
     filename: data/bh/hmb-npu/hmb-npu-family.csv
     data_dictionary: 
       filename:  data/family-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/bh/cmg-harmony.csv
   discovery:
     filename: data/bh/hmb-npu/hmb-npu-discovery.csv
     data_dictionary: 
       filename:  data/discovery-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/bh/cmg-harmony.csv
   conditions:
     filename: data/bh/hmb-npu/conditions-bh-hmb-npu.csv
     data_dictionary: 
       filename: data/conditions-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/bh/cmg-harmony.csv
   diseases:
     filename: data/bh/hmb-npu/diseases-bh-hmb-npu.csv
     data_dictionary: 
       filename: data/disease-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/bh/cmg-harmony.csv
 active_tables:
   ALL: true

@@ -3,7 +3,8 @@ study_accession:  phs000744
 study_title: Yale Center for Mendelian Genomics (Y CMG)
 study_desc: The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.
 url: https://medicine.yale.edu/keck/ycga/mendelian/
-identifier_prefix: https://ycmg.org/fhir
+identifier_prefix: https://medicine.yale.edu/keck/ycga/mendelian/fhir/y-ds-mc
+dd_prefix: http://mendelian.org/fhir
 output_filename: ycmg-ds-mc
 id_colname: ParticipantID
 whistle_src: _cmg.wstl
@@ -17,8 +18,13 @@ consent_group:
 code_harmonization_dir: harmony/yale
 require_official: True
 curies:
-  http://purl.obolibrary.org/obo/hp.owl: HP
+  http://purl.obolibrary.org/obo/hp.owl_: HP
   http://purl.obolibrary.org/obo/mondo.owl: MONDO
+env:
+  local: dev
+  dev: dev
+  qa: anvil-demo
+  prod: anvil-demo
 projector_lib: projector
 dataset:
   subject: 
@@ -26,20 +32,20 @@ dataset:
     data_dictionary: 
       filename:  data/subject-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/yale/cmg-harmony.csv
   sample: 
     filename: data/yale/ds-mc/Sample_CMG_Yale_phs000744_DS-MC_20201218_Y9Q1.csv
     data_dictionary: 
       filename:  data/sample-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/yale/cmg-harmony.csv
   sequencing: 
     filename: data/yale/ds-mc/Sequencing_CMG_Yale_phs000744_DS-MC_20201218_Y9Q1.csv
@@ -49,50 +55,50 @@ dataset:
     data_dictionary: 
       filename:  data/sequencing-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/yale/cmg-harmony.csv
   family:
     filename: data/yale/ds-mc/Family_CMG_Yale_phs000744_DS-MC_20201218_Y9Q1.csv
     data_dictionary: 
       filename:  data/family-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/yale/cmg-harmony.csv
   discovery:
     filename: data/yale/ds-mc/Discovery_CMG_Yale_phs000744_DS-MC_20201218_Y9Q1.csv
     data_dictionary: 
       filename:  data/discovery-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/yale/cmg-harmony.csv
   conditions:
     filename: data/yale/ds-mc/conditions-ds-mc.csv
     data_dictionary: 
       filename: data/conditions-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/yale/cmg-harmony.csv
   diseases:
     filename: data/yale/ds-mc/diseases-ds-mc.csv
     data_dictionary: 
       filename: data/disease-dd.csv
       colnames:
-        varname: varname
-        desc: vardesc
-        type: type
-        values: values
+        varname: variable_name
+        desc: description
+        type: data_type
+        values: enumerations
     code_harmonization: harmony/yale/cmg-harmony.csv
 active_tables:
   ALL: true
