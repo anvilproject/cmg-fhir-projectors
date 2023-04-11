@@ -5,8 +5,10 @@
 // Portal team has asked that we provide a tag for the study to simplify
 // their data pulls
 def StudyMeta(study) {
-    
-    if (study.consent_group.code?) {
+    // This is probably the right way to do this...maybe, but it isn't consistent with 
+    // whistler, and will take more time to fix in whistler than we probably have, so 
+    // we'll just go back to the more basic tagging. 
+    if (study.consent_group.code_?) {
         var study_identifier: Key_Identifier(study, "ResearchStudy", $StrCat(study.id, "-", study.consent_group.code))
     } else {
         var study_identifier: Key_Identifier(study, "ResearchStudy", study.id);

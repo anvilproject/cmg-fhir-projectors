@@ -15,7 +15,7 @@ def Participant(study, subject) {
     meta.tag[]: StudyMeta(study);
     identifier[]: Key_Identifier(study, "Patient", subject.subject_id);
     identifier[0].use: "official";
-    gender (if subject.sex ~= "."): HarmonizeAsCode(subject.sex, "sex");
+    gender (if subject.sex ~= "."): HarmonizeAsCode(subject.sex, "Sex");
     extension[]: RaceExtension(subject);
     extension[]: EthnicityExtension(subject);
     resourceType : "Patient"

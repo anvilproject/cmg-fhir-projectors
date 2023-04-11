@@ -103,7 +103,7 @@ def DdTable(study, dd_entry) {
 def ProcessDatasetDefinition(study, table_name, dd_entry) {
     var entry (if $ToLower(dd_entry.type) = "string" and $ListLen(dd_entry.values) < 2): DdVariable(study, table_name, dd_entry, ["string"]);
     var entry (if $ToLower(dd_entry.type) = "string" and $ListLen(dd_entry.values) > 1): DdVariable(study, table_name, dd_entry, ["CodeableConcept"]);
-    var entry (if dd_entry.type = "Number" or dd_entry.type = "Int" or dd_entry.type="Integer" or dd_entry.type="year(4)"): DdVariable(study, table_name, dd_entry, ["Quantity"]);
+    var entry (if dd_entry.type = "Number" or dd_entry.type = "int" or dd_entry.type = "Int" or dd_entry.type="Integer" or dd_entry.type="year(4)"): DdVariable(study, table_name, dd_entry, ["Quantity"]);
     var entry (if dd_entry.type = "timestamp"): DdVariable(study, table_name, dd_entry, ["dateTime"]);
     
     var entry (if $IsNil(dd_entry.type)): DdVariable(study, table_name, dd_entry, ["CodeableConcept"]);

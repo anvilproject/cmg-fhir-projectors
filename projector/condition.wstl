@@ -8,12 +8,12 @@
 //
 def Condition(study, condition) {
     var subject_id: condition.subject_id;
-    var coding: HarmonizeMapped(condition.condition_code, "condition_code");
+    var coding: HarmonizeMapped(condition.condition_code, "subject");
     
     if (~$IsNil(coding)) {
         meta.tag[]: StudyMeta(study);
         
-        identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, condition.condition_code));
+        identifier[]: Key_Identifier(study, "Condition", BuildConditionId(study, subject_id, $StrCat(condition.condition_code, ".", condition.present_absent)));
         identifier[0].use: "official";
         subject: Reference_Key_Identifier(study, "Patient", subject_id);
 
