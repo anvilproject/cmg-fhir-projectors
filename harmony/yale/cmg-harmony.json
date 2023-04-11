@@ -1283,7 +1283,7 @@
     },
     {
       "source": "subject",
-      "target": "https://uberon.github.io/",
+      "target": "http://purl.obolibrary.org/obo/hp.owl",
       "element": [
         {
           "code": "HP:0000027",
@@ -1875,17 +1875,6 @@
             {
               "code": "HP:0410323",
               "display": "Drug allergy",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "HP:100766",
-          "display": "HP:100766",
-          "target": [
-            {
-              "code": "HP:100766",
-              "display": "HP:100766",
               "equivalence": "equivalent"
             }
           ]
@@ -2489,14 +2478,86 @@
               "equivalence": "equivalent"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "source": "DataSet",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/dataset",
+      "element": [
         {
-          "code": "HP:100766",
-          "display": "HP:100766",
+          "code": "subject",
+          "display": "subject",
           "target": [
             {
-              "code": "HP:100766",
-              "display": "HP:100766",
+              "code": "subject",
+              "display": "subject",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sample",
+          "display": "sample",
+          "target": [
+            {
+              "code": "sample",
+              "display": "sample",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "sequencing",
+          "display": "sequencing",
+          "target": [
+            {
+              "code": "sequencing",
+              "display": "sequencing",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "family",
+          "display": "family",
+          "target": [
+            {
+              "code": "family",
+              "display": "family",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "discovery",
+          "display": "discovery",
+          "target": [
+            {
+              "code": "discovery",
+              "display": "discovery",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "conditions",
+          "display": "conditions",
+          "target": [
+            {
+              "code": "conditions",
+              "display": "conditions",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "diseases",
+          "display": "diseases",
+          "target": [
+            {
+              "code": "diseases",
+              "display": "diseases",
               "equivalence": "equivalent"
             }
           ]
@@ -2505,202 +2566,202 @@
     },
     {
       "source": "subject",
-      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/subject",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/subject",
       "element": [
         {
           "code": "subject_id",
-          "display": "Subject ID",
+          "display": "subject_id",
           "target": [
             {
               "code": "subject_id",
-              "display": "Subject ID",
+              "display": "subject_id",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "family_id",
-          "display": "Family ID",
+          "display": "family_id",
           "target": [
             {
               "code": "family_id",
-              "display": "Family ID",
+              "display": "family_id",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "sex",
-          "display": "Sex",
+          "display": "sex",
           "target": [
             {
               "code": "sex",
-              "display": "Sex",
+              "display": "sex",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "affected_status",
-          "display": "Affected Status",
+          "display": "affected_status",
           "target": [
             {
               "code": "affected_status",
-              "display": "Affected Status",
+              "display": "affected_status",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "proband_relationship",
-          "display": "Proband Relationship",
+          "display": "proband_relationship",
           "target": [
             {
               "code": "proband_relationship",
-              "display": "Proband Relationship",
+              "display": "proband_relationship",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "maternal_id",
-          "display": "Maternal ID",
+          "display": "maternal_id",
           "target": [
             {
               "code": "maternal_id",
-              "display": "Maternal ID",
+              "display": "maternal_id",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "paternal_id",
-          "display": "Paternal ID",
+          "display": "paternal_id",
           "target": [
             {
               "code": "paternal_id",
-              "display": "Paternal ID",
+              "display": "paternal_id",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "twin_id",
-          "display": "Twin ID",
+          "display": "twin_id",
           "target": [
             {
               "code": "twin_id",
-              "display": "Twin ID",
+              "display": "twin_id",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "ancestry",
-          "display": "Ancestry",
+          "display": "ancestry",
           "target": [
             {
               "code": "ancestry",
-              "display": "Ancestry",
+              "display": "ancestry",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "ancestry_detail",
-          "display": "Ancestry Detail",
+          "display": "ancestry_detail",
           "target": [
             {
               "code": "ancestry_detail",
-              "display": "Ancestry Detail",
+              "display": "ancestry_detail",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "disease_description",
-          "display": "Disease Description",
+          "display": "disease_description",
           "target": [
             {
               "code": "disease_description",
-              "display": "Disease Description",
+              "display": "disease_description",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "disease_id",
-          "display": "Disease ID",
+          "display": "disease_id",
           "target": [
             {
               "code": "disease_id",
-              "display": "Disease ID",
+              "display": "disease_id",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "hpo_present",
-          "display": "HPO Present?",
+          "display": "hpo_present",
           "target": [
             {
               "code": "hpo_present",
-              "display": "HPO Present?",
+              "display": "hpo_present",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "hpo_absent",
-          "display": "HPO Absent?",
+          "display": "hpo_absent",
           "target": [
             {
               "code": "hpo_absent",
-              "display": "HPO Absent?",
+              "display": "hpo_absent",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "phenotype_description",
-          "display": "Phenotype Description",
+          "display": "phenotype_description",
           "target": [
             {
               "code": "phenotype_description",
-              "display": "Phenotype Description",
+              "display": "phenotype_description",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "phenotype_group",
-          "display": "Phenotype Group",
+          "display": "phenotype_group",
           "target": [
             {
               "code": "phenotype_group",
-              "display": "Phenotype Group",
+              "display": "phenotype_group",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "age_at_last_observation",
-          "display": "Age at Last Observation",
+          "display": "age_at_last_observation",
           "target": [
             {
               "code": "age_at_last_observation",
-              "display": "Age at Last Observation",
+              "display": "age_at_last_observation",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "age_of_onset",
-          "display": "Age of Onset",
+          "display": "age_of_onset",
           "target": [
             {
               "code": "age_of_onset",
-              "display": "Age of Onset",
+              "display": "age_of_onset",
               "equivalence": "equivalent"
             }
           ]
@@ -2807,8 +2868,373 @@
       ]
     },
     {
+      "source": "sex",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/subject/sex",
+      "element": [
+        {
+          "code": "Female",
+          "display": "Female",
+          "target": [
+            {
+              "code": "Female",
+              "display": "Female",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Male",
+          "display": "Male",
+          "target": [
+            {
+              "code": "Male",
+              "display": "Male",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "affected_status",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/subject/affected_status",
+      "element": [
+        {
+          "code": "Affected",
+          "display": "Affected",
+          "target": [
+            {
+              "code": "Affected",
+              "display": "Affected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unaffected",
+          "display": "Unaffected",
+          "target": [
+            {
+              "code": "Unaffected",
+              "display": "Unaffected",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "proband_relationship",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/subject/proband_relationship",
+      "element": [
+        {
+          "code": "Brother",
+          "display": "Brother",
+          "target": [
+            {
+              "code": "Brother",
+              "display": "Brother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Daughter",
+          "display": "Daughter",
+          "target": [
+            {
+              "code": "Daughter",
+              "display": "Daughter",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Father",
+          "display": "Father",
+          "target": [
+            {
+              "code": "Father",
+              "display": "Father",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "First_cousin_once_removed",
+          "display": "First_cousin_once_removed",
+          "target": [
+            {
+              "code": "First_cousin_once_removed",
+              "display": "First_cousin_once_removed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Married-in",
+          "display": "Married-in",
+          "target": [
+            {
+              "code": "Married-in",
+              "display": "Married-in",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Maternal_grandmother",
+          "display": "Maternal_grandmother",
+          "target": [
+            {
+              "code": "Maternal_grandmother",
+              "display": "Maternal_grandmother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Maternal_great_uncle",
+          "display": "Maternal_great_uncle",
+          "target": [
+            {
+              "code": "Maternal_great_uncle",
+              "display": "Maternal_great_uncle",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Mother",
+          "display": "Mother",
+          "target": [
+            {
+              "code": "Mother",
+              "display": "Mother",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Nephew",
+          "display": "Nephew",
+          "target": [
+            {
+              "code": "Nephew",
+              "display": "Nephew",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Niece",
+          "display": "Niece",
+          "target": [
+            {
+              "code": "Niece",
+              "display": "Niece",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Proband",
+          "display": "Proband",
+          "target": [
+            {
+              "code": "Proband",
+              "display": "Proband",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Second_cousin_once_removed",
+          "display": "Second_cousin_once_removed",
+          "target": [
+            {
+              "code": "Second_cousin_once_removed",
+              "display": "Second_cousin_once_removed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Sister",
+          "display": "Sister",
+          "target": [
+            {
+              "code": "Sister",
+              "display": "Sister",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Son",
+          "display": "Son",
+          "target": [
+            {
+              "code": "Son",
+              "display": "Son",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Wife",
+          "display": "Wife",
+          "target": [
+            {
+              "code": "Wife",
+              "display": "Wife",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "age_of_onset",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/subject/age_of_onset",
+      "element": [
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Congenital onset",
+          "display": "Congenital onset",
+          "target": [
+            {
+              "code": "Congenital onset",
+              "display": "Congenital onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Embryonal onset",
+          "display": "Embryonal onset",
+          "target": [
+            {
+              "code": "Embryonal onset",
+              "display": "Embryonal onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Fetal onset",
+          "display": "Fetal onset",
+          "target": [
+            {
+              "code": "Fetal onset",
+              "display": "Fetal onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Neonatal onset",
+          "display": "Neonatal onset",
+          "target": [
+            {
+              "code": "Neonatal onset",
+              "display": "Neonatal onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Infantile onset",
+          "display": "Infantile onset",
+          "target": [
+            {
+              "code": "Infantile onset",
+              "display": "Infantile onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Childhood onset",
+          "display": "Childhood onset",
+          "target": [
+            {
+              "code": "Childhood onset",
+              "display": "Childhood onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Juvenile onset",
+          "display": "Juvenile onset",
+          "target": [
+            {
+              "code": "Juvenile onset",
+              "display": "Juvenile onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Adult onset",
+          "display": "Adult onset",
+          "target": [
+            {
+              "code": "Adult onset",
+              "display": "Adult onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Young adult onset",
+          "display": "Young adult onset",
+          "target": [
+            {
+              "code": "Young adult onset",
+              "display": "Young adult onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Middle age onset",
+          "display": "Middle age onset",
+          "target": [
+            {
+              "code": "Middle age onset",
+              "display": "Middle age onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Late onset",
+          "display": "Late onset",
+          "target": [
+            {
+              "code": "Late onset",
+              "display": "Late onset",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "sample",
-      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/sample",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/sample",
       "element": [
         {
           "code": "subject_id",
@@ -2880,7 +3306,7 @@
     },
     {
       "source": "sequencing",
-      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/sequencing",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/sequencing",
       "element": [
         {
           "code": "sample_id",
@@ -3018,7 +3444,7 @@
     },
     {
       "source": "family",
-      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/family",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/family",
       "element": [
         {
           "code": "family_id",
@@ -3101,7 +3527,7 @@
     },
     {
       "source": "discovery",
-      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/discovery",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/discovery",
       "element": [
         {
           "code": "subject_id",
@@ -3282,8 +3708,203 @@
       ]
     },
     {
+      "source": "gene",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/discovery/gene",
+      "element": [
+        {
+          "code": "AFF2:Tier 2",
+          "display": "AFF2:Tier 2",
+          "target": [
+            {
+              "code": "AFF2:Tier 2",
+              "display": "AFF2:Tier 2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CIZ1:Tier 2",
+          "display": "CIZ1:Tier 2",
+          "target": [
+            {
+              "code": "CIZ1:Tier 2",
+              "display": "CIZ1:Tier 2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DNAH8:Tier 2",
+          "display": "DNAH8:Tier 2",
+          "target": [
+            {
+              "code": "DNAH8:Tier 2",
+              "display": "DNAH8:Tier 2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LAMA5:Tier 1",
+          "display": "LAMA5:Tier 1",
+          "target": [
+            {
+              "code": "LAMA5:Tier 1",
+              "display": "LAMA5:Tier 1",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "gene_class",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/discovery/gene_class",
+      "element": [
+        {
+          "code": "Candidate",
+          "display": "Candidate",
+          "target": [
+            {
+              "code": "Candidate",
+              "display": "Candidate",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Known",
+          "display": "Known",
+          "target": [
+            {
+              "code": "Known",
+              "display": "Known",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "inheritance_description",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/discovery/inheritance_description",
+      "element": [
+        {
+          "code": "Autosomal recessive (compound heterozygous)",
+          "display": "Autosomal recessive (compound heterozygous)",
+          "target": [
+            {
+              "code": "Autosomal recessive (compound heterozygous)",
+              "display": "Autosomal recessive (compound heterozygous)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Autosomal recessive (homozygous)",
+          "display": "Autosomal recessive (homozygous)",
+          "target": [
+            {
+              "code": "Autosomal recessive (homozygous)",
+              "display": "Autosomal recessive (homozygous)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "X-linked",
+          "display": "X-linked",
+          "target": [
+            {
+              "code": "X-linked",
+              "display": "X-linked",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "de novo",
+          "display": "de novo",
+          "target": [
+            {
+              "code": "de novo",
+              "display": "de novo",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "zygosity",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/discovery/zygosity",
+      "element": [
+        {
+          "code": "Hemizygous",
+          "display": "Hemizygous",
+          "target": [
+            {
+              "code": "Hemizygous",
+              "display": "Hemizygous",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Heterozygous",
+          "display": "Heterozygous",
+          "target": [
+            {
+              "code": "Heterozygous",
+              "display": "Heterozygous",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Homozygous",
+          "display": "Homozygous",
+          "target": [
+            {
+              "code": "Homozygous",
+              "display": "Homozygous",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "significance",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/discovery/significance",
+      "element": [
+        {
+          "code": "Likely pathogenic",
+          "display": "Likely pathogenic",
+          "target": [
+            {
+              "code": "Likely pathogenic",
+              "display": "Likely pathogenic",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Uncertain significance",
+          "display": "Uncertain significance",
+          "target": [
+            {
+              "code": "Uncertain significance",
+              "display": "Uncertain significance",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "conditions",
-      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/conditions",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/conditions",
       "element": [
         {
           "code": "subject_id",
@@ -3333,70 +3954,120 @@
     },
     {
       "source": "diseases",
-      "target": "https://nih-ncpi.github.io/ncpi-fhir-ig/CS/data-dictionary/CMG/diseases",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/diseases",
       "element": [
         {
           "code": "subject_id",
-          "display": "Subject ID",
+          "display": "subject_id",
           "target": [
             {
               "code": "subject_id",
-              "display": "Subject ID",
+              "display": "subject_id",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "condition_code",
-          "display": "Condition Code",
+          "display": "condition_code",
           "target": [
             {
               "code": "condition_code",
-              "display": "Condition Code",
+              "display": "condition_code",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "condition_name",
-          "display": "Condition Name",
+          "display": "condition_name",
           "target": [
             {
               "code": "condition_name",
-              "display": "Condition Name",
+              "display": "condition_name",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "affected_status",
-          "display": "Affected Status",
+          "display": "affected_status",
           "target": [
             {
               "code": "affected_status",
-              "display": "Affected Status",
+              "display": "affected_status",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "disease_description",
-          "display": "Disease Description",
+          "display": "disease_description",
           "target": [
             {
               "code": "disease_description",
-              "display": "Disease Description",
+              "display": "disease_description",
               "equivalence": "equivalent"
             }
           ]
         },
         {
           "code": "phenotype_description",
-          "display": "Phenotype Description",
+          "display": "phenotype_description",
           "target": [
             {
               "code": "phenotype_description",
-              "display": "Phenotype Description",
+              "display": "phenotype_description",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "affected_status",
+      "target": "http://mendelian.org/fhir/CodeSystem/data-dictionary/Y-CMG/diseases/affected_status",
+      "element": [
+        {
+          "code": "Affected",
+          "display": "Affected",
+          "target": [
+            {
+              "code": "Affected",
+              "display": "Affected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unaffected",
+          "display": "Unaffected",
+          "target": [
+            {
+              "code": "Unaffected",
+              "display": "Unaffected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Possibly affected",
+          "display": "Possibly affected",
+          "target": [
+            {
+              "code": "Possibly affected",
+              "display": "Possibly affected",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "Unknown",
+              "display": "Unknown",
               "equivalence": "equivalent"
             }
           ]
